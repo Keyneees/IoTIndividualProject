@@ -14,7 +14,7 @@
 #define WIFI_SSID "TIM-30577277"
 #define WIFI_PWD "SHsxdHKFQGHch6dsTYH4FyQu"
 
-#define MQTT_USERNAME "IotIndividualAssignment"mm
+#define MQTT_USERNAME "IotIndividualAssignment"
 #define MQTT_PWD "IotTest0"
 
 #define URI "mqtts://0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud:8883"
@@ -111,7 +111,11 @@ static void wifi_configuration(float input_avg){
     mqtt_configuration(input_avg);
 }
 
-void mqtt_task(float input_avg){
+void mqtt_task(void* params){
+
+}
+
+void mqtt_init_wifi(float input_avg){
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());

@@ -8,7 +8,7 @@
 static esp_adc_cal_characteristics_t adc1_chars;
 uint32_t values[SAMPLES];
 
-void input_task(){
+void input_task(void * params){
     uint32_t voltage;
 
 

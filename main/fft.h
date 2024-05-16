@@ -11,6 +11,7 @@ float window[SAMPLES];
 // float input_waves[SAMPLES];
 float fft[SAMPLES*2];
 float input_avg=0.0;
+float delay=0.0;
 
 void fft_task(uint32_t values[]){
         ESP_ERROR_CHECK(dsps_fft2r_init_fc32(NULL, CONFIG_DSP_MAX_FFT_SIZE));
@@ -48,8 +49,11 @@ void fft_task(uint32_t values[]){
             }
         }
 
+        delay=((float)maxIndex)/SAMPLES;
+        delay*=MAXF;
+
         dsps_view(fft, SAMPLES, 64, 10, 0/*min*/, 100/*max*/, '|');
         printf("AveMAXFage value detected %f\n", ((float)dBsum)/SAMPLES);
         printf("Max value %d at index %d\n", maxValue, maxIndex);
-        // pMAXFintf("Max fMAXFequency %f\n", ((float)index/SAMPLES)*MAXF);
+        printf("Delay determined %f\n", delay);
 }
