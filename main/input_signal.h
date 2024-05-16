@@ -1,10 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "esp_log.h"
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
 #include "driver/adc.h"
 #include "esp_adc_cal.h"
+
+#include "common.h"
 
 #define APP_NAME "Input_test"
 #define NUM 1024
@@ -27,6 +24,7 @@ void input_task(){
             voltage=esp_adc_cal_raw_to_voltage(adc1_get_raw(ADC1_CHANNEL_0), &adc1_chars);
             ESP_LOGI(APP_NAME, "%" PRIu32 " mV index value: %d", voltage, i);
             values[i]=voltage;
+            input_avg+=(float)voltage;
             i++;
         }else{
             for(int j=0; j<NUM; j++){
