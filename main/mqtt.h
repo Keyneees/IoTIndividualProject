@@ -7,7 +7,7 @@
 #include "nvs_flash.h"
 
 #include "mqtt_client.h"
-
+#include "certificate.h"
 #include "common.h"
 
 #define MQTT "MQTT TASK"
@@ -24,32 +24,34 @@ static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_
     esp_mqtt_client_handle_t client=event->client;
     esp_mqtt_event_id_t id=(esp_mqtt_event_id_t) event_id;
 
-    ESP_LOGI(MQTT, "Event received: %d", (int)event_id);
+    ESP_LOGI(APP_NAME, "Event received: %d", (int)event_id);
 
     switch(id){
         case MQTT_EVENT_CONNECTED:
-            ESP_LOGI(MQTT, "MQTT_EVENT_CONNECTED");
+            ESP_LOGI(APP_NAME, "MQTT_EVENT_CONNECTED");
             break;
         case MQTT_EVENT_DISCONNECTED:
-            ESP_LOGI(MQTT, "MQTT_EVENT_DISCONNECT");
+            ESP_LOGI(APP_NAME, "MQTT_EVENT_DISCONNECT");
             break;
         case MQTT_EVENT_SUBSCRIBED:
-            ESP_LOGI(MQTT, "MQTT_EVENT_SUBSCRIBED");
+            ESP_LOGI(APP_NAME, "MQTT_EVENT_SUBSCRIBED");
             break;
         case MQTT_EVENT_UNSUBSCRIBED:
-            ESP_LOGI(MQTT, "MQTT_EVENT_UNSUBSCRIBED");
+            ESP_LOGI(APP_NAME, "MQTT_EVENT_UNSUBSCRIBED");
             break;
         case MQTT_EVENT_DATA:
-            ESP_LOGI(MQTT, "MQTT_EVENT_DATA");
+            ESP_LOGI(APP_NAME, "MQTT_EVENT_DATA");
             break;
         case MQTT_EVENT_ERROR:
-            ESP_LOGI(MQTT, "MQTT_EVENT_ERROR");
+            ESP_LOGI(APP_NAME, "MQTT_EVENT_ERROR");
             break;
         case MQTT_EVENT_PUBLISHED:
-            ESP_LOGI(MQTT, "MQTT_EVENT_PUBLISHED");
+            ESP_LOGI(APP_NAME, "MQTT_EVENT_PUBLISHED");
+            ESP_ERROR_CHECK(esp_mqtt_client_disconnect(client));
+            // ESP_ERROR_CHECK(esp_mqtt_client_stop(client));
             break;
         default:
-            ESP_LOGI(MQTT, "DEFUALT");
+            ESP_LOGI(APP_NAME, "DEFUALT");
             break;
     }
 }
@@ -98,25 +100,8 @@ static void mqtt_configuration(){
 
 }
 
+
 static void wifi_configuration(){
-    EventGroupHandle_t s_wifi_event_group = xEventGroupCreate();
-    
-    esp_netif_create_default_wifi_sta();
-    wifi_init_config_t wifi_cfg=WIFI_INIT_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK(esp_wifi_init(&wifi_cfg));
-
-    esp_event_handler_instance_t wifi_handler;
-    ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL, &wifi_handler));
-
-    wifi_config_t wifi_struct={
-        .sta.ssid=WIFI_SSID,
-        .sta.password=WIFI_PWD,
-    };
-
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_struct));
-    ESP_ERROR_CHECK(esp_wifi_start());
-
     esp_wifi_connect();
     mqtt_configuration();
 }
@@ -127,5 +112,22 @@ void mqtt_task(){
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
     //connetersi al wifi
+    EventGroupHandle_t s_wifi_event_group = xEventGroupCreate();
+    
+    esp_netif_create_default_wifi_sta();
+    wifi_init_config_t wifi_cfg=WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&wifi_cfg));
+
+    esp_event_handler_instance_t wifi_handler;
+    //ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL, &wifi_handler));
+
+    wifi_config_t wifi_struct={
+        .sta.ssid=WIFI_SSID,
+        .sta.password=WIFI_PWD,
+    };
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_struct));
+    ESP_ERROR_CHECK(esp_wifi_start());
+
     wifi_configuration();
 }
