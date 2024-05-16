@@ -24,34 +24,34 @@ static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_
     esp_mqtt_client_handle_t client=event->client;
     esp_mqtt_event_id_t id=(esp_mqtt_event_id_t) event_id;
 
-    ESP_LOGI(APP_NAME, "Event received: %d", (int)event_id);
+    ESP_LOGI(MQTT, "Event received: %d", (int)event_id);
 
     switch(id){
         case MQTT_EVENT_CONNECTED:
-            ESP_LOGI(APP_NAME, "MQTT_EVENT_CONNECTED");
+            ESP_LOGI(MQTT, "MQTT_EVENT_CONNECTED");
             break;
         case MQTT_EVENT_DISCONNECTED:
-            ESP_LOGI(APP_NAME, "MQTT_EVENT_DISCONNECT");
+            ESP_LOGI(MQTT, "MQTT_EVENT_DISCONNECT");
             break;
         case MQTT_EVENT_SUBSCRIBED:
-            ESP_LOGI(APP_NAME, "MQTT_EVENT_SUBSCRIBED");
+            ESP_LOGI(MQTT, "MQTT_EVENT_SUBSCRIBED");
             break;
         case MQTT_EVENT_UNSUBSCRIBED:
-            ESP_LOGI(APP_NAME, "MQTT_EVENT_UNSUBSCRIBED");
+            ESP_LOGI(MQTT, "MQTT_EVENT_UNSUBSCRIBED");
             break;
         case MQTT_EVENT_DATA:
-            ESP_LOGI(APP_NAME, "MQTT_EVENT_DATA");
+            ESP_LOGI(MQTT, "MQTT_EVENT_DATA");
             break;
         case MQTT_EVENT_ERROR:
-            ESP_LOGI(APP_NAME, "MQTT_EVENT_ERROR");
+            ESP_LOGI(MQTT, "MQTT_EVENT_ERROR");
             break;
         case MQTT_EVENT_PUBLISHED:
-            ESP_LOGI(APP_NAME, "MQTT_EVENT_PUBLISHED");
+            ESP_LOGI(MQTT, "MQTT_EVENT_PUBLISHED");
             ESP_ERROR_CHECK(esp_mqtt_client_disconnect(client));
             // ESP_ERROR_CHECK(esp_mqtt_client_stop(client));
             break;
         default:
-            ESP_LOGI(APP_NAME, "DEFUALT");
+            ESP_LOGI(MQTT, "DEFUALT");
             break;
     }
 }
@@ -101,12 +101,12 @@ static void mqtt_configuration(){
 }
 
 
-static void wifi_configuration(){
+static void wifi_configuration(float input_avg){
     esp_wifi_connect();
     mqtt_configuration();
 }
 
-void mqtt_task(){
+void mqtt_task(float input_avg){
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
@@ -129,5 +129,5 @@ void mqtt_task(){
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_struct));
     ESP_ERROR_CHECK(esp_wifi_start());
 
-    wifi_configuration();
+    wifi_configuration(input_avg);
 }

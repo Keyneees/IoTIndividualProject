@@ -8,7 +8,7 @@ TaskHandle_t mqttTask=NULL;
 void app_main(){
     input_task();
     fft_task(values);
-    mqtt_task();
+    mqtt_task(input_avg);
 
     //LOOP BEGINING
     input_task();
