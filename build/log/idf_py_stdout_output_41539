@@ -1,0 +1,1251 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 16 2024 14:14:48[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=2ce78h (183928) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=0003cea0 vaddr=3fc98600 size=03178h ( 12664) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=9c280h (639616) map[0m
+[0;32mI (253) esp_image: segment 3: paddr=000dc2a8 vaddr=3fc9b778 size=01cd8h (  7384) load[0m
+[0;32mI (255) esp_image: segment 4: paddr=000ddf88 vaddr=40374000 size=14578h ( 83320) load[0m
+[0;32mI (286) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (286) boot: Disabling RNG early entropy source...[0m
+[0;32mI (297) cpu_start: Multicore app[0m
+[0;32mI (307) cpu_start: Pro cpu start user code[0m
+[0;32mI (307) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (307) cpu_start: Application information:[0m
+[0;32mI (310) cpu_start: Project name:     individaul_project[0m
+[0;32mI (316) cpu_start: App version:      898221e-dirty[0m
+[0;32mI (321) cpu_start: Compile time:     May 16 2024 14:14:37[0m
+[0;32mI (327) cpu_start: ELF file SHA256:  fe27682c9...[0m
+[0;32mI (333) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (338) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (343) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (348) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (360) heap_init: At 3FCA5510 len 00044200 (272 KiB): RAM[0m
+[0;32mI (366) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (372) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (378) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (385) spi_flash: detected chip: gd[0m
+[0;32mI (389) spi_flash: flash io: dio[0m
+[0;33mW (392) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (406) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (414) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (421) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (428) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) Input_test: 45 mV index value: 0[0m
+[0;32mI (538) Input_test: 46 mV index value: 1[0m
+[0;32mI (638) Input_test: 44 mV index value: 2[0m
+[0;32mI (738) Input_test: 44 mV index value: 3[0m
+[0;32mI (838) Input_test: 2825 mV index value: 4[0m
+[0;32mI (938) Input_test: 2813 mV index value: 5[0m
+[0;32mI (1038) Input_test: 2823 mV index value: 6[0m
+[0;32mI (1138) Input_test: 45 mV index value: 7[0m
+[0;32mI (1238) Input_test: 44 mV index value: 8[0m
+[0;32mI (1338) Input_test: 47 mV index value: 9[0m
+[0;32mI (1438) Input_test: 2825 mV index value: 10[0m
+[0;32mI (1538) Input_test: 2824 mV index value: 11[0m
+[0;32mI (1638) Input_test: 44 mV index value: 12[0m
+[0;32mI (1738) Input_test: 44 mV index value: 13[0m
+[0;32mI (1838) Input_test: 45 mV index value: 14[0m
+[0;32mI (1938) Input_test: 44 mV index value: 15[0m
+[0;32mI (2038) Input_test: 39 mV index value: 16[0m
+[0;32mI (2138) Input_test: 45 mV index value: 17[0m
+[0;32mI (2238) Input_test: 44 mV index value: 18[0m
+[0;32mI (2338) Input_test: 44 mV index value: 19[0m
+[0;32mI (2438) Input_test: 45 mV index value: 20[0m
+[0;32mI (2538) Input_test: 44 mV index value: 21[0m
+[0;32mI (2638) Input_test: 2799 mV index value: 22[0m
+[0;32mI (2738) Input_test: 2823 mV index value: 23[0m
+[0;32mI (2838) Input_test: 2831 mV index value: 24[0m
+[0;32mI (2938) Input_test: 2824 mV index value: 25[0m
+[0;32mI (3038) Input_test: 46 mV index value: 26[0m
+[0;32mI (3138) Input_test: 45 mV index value: 27[0m
+[0;32mI (3238) Input_test: 44 mV index value: 28[0m
+[0;32mI (3338) Input_test: 2813 mV index value: 29[0m
+[0;32mI (3438) Input_test: 2825 mV index value: 30[0m
+[0;32mI (3538) Input_test: 2825 mV index value: 31[0m
+[0;32mI (3638) Input_test: 2811 mV index value: 32[0m
+[0;32mI (3738) Input_test: 2827 mV index value: 33[0m
+[0;32mI (3838) Input_test: 2831 mV index value: 34[0m
+[0;32mI (3938) Input_test: 2825 mV index value: 35[0m
+[0;32mI (4038) Input_test: 2831 mV index value: 36[0m
+[0;32mI (4138) Input_test: 2829 mV index value: 37[0m
+[0;32mI (4238) Input_test: 2877 mV index value: 38[0m
+[0;32mI (4338) Input_test: 2973 mV index value: 39[0m
+[0;32mI (4438) Input_test: 2985 mV index value: 40[0m
+[0;32mI (4538) Input_test: 2989 mV index value: 41[0m
+[0;32mI (4638) Input_test: 3004 mV index value: 42[0m
+[0;32mI (4738) Input_test: 3011 mV index value: 43[0m
+[0;32mI (4838) Input_test: 3012 mV index value: 44[0m
+[0;32mI (4938) Input_test: 3012 mV index value: 45[0m
+[0;32mI (5038) Input_test: 3011 mV index value: 46[0m
+[0;32mI (5138) Input_test: 3018 mV index value: 47[0m
+[0;32mI (5238) Input_test: 3048 mV index value: 48[0m
+[0;32mI (5338) Input_test: 3082 mV index value: 49[0m
+[0;32mI (5438) Input_test: 3082 mV index value: 50[0m
+[0;32mI (5538) Input_test: 3082 mV index value: 51[0m
+[0;32mI (5638) Input_test: 3082 mV index value: 52[0m
+[0;32mI (5738) Input_test: 3082 mV index value: 53[0m
+[0;32mI (5838) Input_test: 3082 mV index value: 54[0m
+[0;32mI (5938) Input_test: 3082 mV index value: 55[0m
+[0;32mI (6038) Input_test: 3082 mV index value: 56[0m
+[0;32mI (6138) Input_test: 3082 mV index value: 57[0m
+[0;32mI (6238) Input_test: 3082 mV index value: 58[0m
+[0;32mI (6338) Input_test: 3082 mV index value: 59[0m
+[0;32mI (6438) Input_test: 3082 mV index value: 60[0m
+[0;32mI (6538) Input_test: 3082 mV index value: 61[0m
+[0;32mI (6638) Input_test: 2594 mV index value: 62[0m
+[0;32mI (6738) Input_test: 1855 mV index value: 63[0m
+[0;32mI (6838) Input_test: 1162 mV index value: 64[0m
+[0;32mI (6938) Input_test: 414 mV index value: 65[0m
+[0;32mI (7038) Input_test: 0 mV index value: 66[0m
+[0;32mI (7138) Input_test: 0 mV index value: 67[0m
+[0;32mI (7238) Input_test: 0 mV index value: 68[0m
+[0;32mI (7338) Input_test: 0 mV index value: 69[0m
+[0;32mI (7438) Input_test: 0 mV index value: 70[0m
+[0;32mI (7538) Input_test: 19 mV index value: 71[0m
+[0;32mI (7638) Input_test: 505 mV index value: 72[0m
+[0;32mI (7738) Input_test: 982 mV index value: 73[0m
+[0;32mI (7838) Input_test: 1445 mV index value: 74[0m
+[0;32mI (7938) Input_test: 1775 mV index value: 75[0m
+[0;32mI (8038) Input_test: 1954 mV index value: 76[0m
+[0;32mI (8138) Input_test: 1944 mV index value: 77[0m
+[0;32mI (8238) Input_test: 1691 mV index value: 78[0m
+[0;32mI (8338) Input_test: 1242 mV index value: 79[0m
+[0;32mI (8438) Input_test: 799 mV index value: 80[0m
+[0;32mI (8538) Input_test: 725 mV index value: 81[0m
+[0;32mI (8638) Input_test: 988 mV index value: 82[0m
+[0;32mI (8738) Input_test: 1463 mV index value: 83[0m
+[0;32mI (8838) Input_test: 1637 mV index value: 84[0m
+[0;32mI (8938) Input_test: 1473 mV index value: 85[0m
+[0;32mI (9038) Input_test: 975 mV index value: 86[0m
+[0;32mI (9138) Input_test: 682 mV index value: 87[0m
+[0;32mI (9238) Input_test: 756 mV index value: 88[0m
+[0;32mI (9338) Input_test: 1054 mV index value: 89[0m
+[0;32mI (9438) Input_test: 1413 mV index value: 90[0m
+[0;32mI (9538) Input_test: 1567 mV index value: 91[0m
+[0;32mI (9638) Input_test: 1422 mV index value: 92[0m
+[0;32mI (9738) Input_test: 904 mV index value: 93[0m
+[0;32mI (9838) Input_test: 531 mV index value: 94[0m
+[0;32mI (9938) Input_test: 604 mV index value: 95[0m
+[0;32mI (10038) Input_test: 937 mV index value: 96[0m
+[0;32mI (10138) Input_test: 1432 mV index value: 97[0m
+[0;32mI (10238) Input_test: 1878 mV index value: 98[0m
+[0;32mI (10338) Input_test: 2055 mV index value: 99[0m
+[0;32mI (10438) Input_test: 1891 mV index value: 100[0m
+[0;32mI (10538) Input_test: 1486 mV index value: 101[0m
+[0;32mI (10638) Input_test: 1054 mV index value: 102[0m
+[0;32mI (10738) Input_test: 976 mV index value: 103[0m
+[0;32mI (10838) Input_test: 1273 mV index value: 104[0m
+[0;32mI (10938) Input_test: 1730 mV index value: 105[0m
+[0;32mI (11038) Input_test: 1969 mV index value: 106[0m
+[0;32mI (11138) Input_test: 1791 mV index value: 107[0m
+[0;32mI (11238) Input_test: 1427 mV index value: 108[0m
+[0;32mI (11338) Input_test: 1241 mV index value: 109[0m
+[0;32mI (11438) Input_test: 1351 mV index value: 110[0m
+[0;32mI (11538) Input_test: 1703 mV index value: 111[0m
+[0;32mI (11638) Input_test: 2005 mV index value: 112[0m
+[0;32mI (11738) Input_test: 1954 mV index value: 113[0m
+[0;32mI (11838) Input_test: 1531 mV index value: 114[0m
+[0;32mI (11938) Input_test: 1050 mV index value: 115[0m
+[0;32mI (12038) Input_test: 1032 mV index value: 116[0m
+[0;32mI (12138) Input_test: 1392 mV index value: 117[0m
+[0;32mI (12238) Input_test: 1869 mV index value: 118[0m
+[0;32mI (12338) Input_test: 2220 mV index value: 119[0m
+[0;32mI (12438) Input_test: 2200 mV index value: 120[0m
+[0;32mI (12538) Input_test: 1906 mV index value: 121[0m
+[0;32mI (12638) Input_test: 1417 mV index value: 122[0m
+[0;32mI (12738) Input_test: 1191 mV index value: 123[0m
+[0;32mI (12838) Input_test: 1395 mV index value: 124[0m
+[0;32mI (12938) Input_test: 1750 mV index value: 125[0m
+[0;32mI (13038) Input_test: 1894 mV index value: 126[0m
+[0;32mI (13138) Input_test: 1861 mV index value: 127[0m
+[0;32mI (13238) Input_test: 1724 mV index value: 128[0m
+[0;32mI (13338) Input_test: 1693 mV index value: 129[0m
+[0;32mI (13438) Input_test: 1695 mV index value: 130[0m
+[0;32mI (13538) Input_test: 1742 mV index value: 131[0m
+[0;32mI (13638) Input_test: 1807 mV index value: 132[0m
+[0;32mI (13738) Input_test: 1894 mV index value: 133[0m
+[0;32mI (13838) Input_test: 1991 mV index value: 134[0m
+[0;32mI (13938) Input_test: 2096 mV index value: 135[0m
+[0;32mI (14038) Input_test: 2186 mV index value: 136[0m
+[0;32mI (14138) Input_test: 2224 mV index value: 137[0m
+[0;32mI (14238) Input_test: 2221 mV index value: 138[0m
+[0;32mI (14338) Input_test: 2171 mV index value: 139[0m
+[0;32mI (14438) Input_test: 2037 mV index value: 140[0m
+[0;32mI (14538) Input_test: 1993 mV index value: 141[0m
+[0;32mI (14638) Input_test: 1996 mV index value: 142[0m
+[0;32mI (14738) Input_test: 2080 mV index value: 143[0m
+[0;32mI (14838) Input_test: 2190 mV index value: 144[0m
+[0;32mI (14938) Input_test: 2271 mV index value: 145[0m
+[0;32mI (15038) Input_test: 2296 mV index value: 146[0m
+[0;32mI (15138) Input_test: 2306 mV index value: 147[0m
+[0;32mI (15238) Input_test: 2321 mV index value: 148[0m
+[0;32mI (15338) Input_test: 2333 mV index value: 149[0m
+[0;32mI (15438) Input_test: 2334 mV index value: 150[0m
+[0;32mI (15538) Input_test: 2337 mV index value: 151[0m
+[0;32mI (15638) Input_test: 2341 mV index value: 152[0m
+[0;32mI (15738) Input_test: 2223 mV index value: 153[0m
+[0;32mI (15838) Input_test: 1937 mV index value: 154[0m
+[0;32mI (15938) Input_test: 1739 mV index value: 155[0m
+[0;32mI (16038) Input_test: 1888 mV index value: 156[0m
+[0;32mI (16138) Input_test: 2269 mV index value: 157[0m
+[0;32mI (16238) Input_test: 2580 mV index value: 158[0m
+[0;32mI (16338) Input_test: 2590 mV index value: 159[0m
+[0;32mI (16438) Input_test: 2335 mV index value: 160[0m
+[0;32mI (16538) Input_test: 1943 mV index value: 161[0m
+[0;32mI (16638) Input_test: 1543 mV index value: 162[0m
+[0;32mI (16738) Input_test: 1551 mV index value: 163[0m
+[0;32mI (16838) Input_test: 1878 mV index value: 164[0m
+[0;32mI (16938) Input_test: 2246 mV index value: 165[0m
+[0;32mI (17038) Input_test: 2579 mV index value: 166[0m
+[0;32mI (17138) Input_test: 2713 mV index value: 167[0m
+[0;32mI (17238) Input_test: 2695 mV index value: 168[0m
+[0;32mI (17338) Input_test: 2645 mV index value: 169[0m
+[0;32mI (17438) Input_test: 2638 mV index value: 170[0m
+[0;32mI (17538) Input_test: 2638 mV index value: 171[0m
+[0;32mI (17638) Input_test: 2519 mV index value: 172[0m
+[0;32mI (17738) Input_test: 2222 mV index value: 173[0m
+[0;32mI (17838) Input_test: 1886 mV index value: 174[0m
+[0;32mI (17938) Input_test: 1755 mV index value: 175[0m
+[0;32mI (18038) Input_test: 1946 mV index value: 176[0m
+[0;32mI (18138) Input_test: 2293 mV index value: 177[0m
+[0;32mI (18238) Input_test: 2626 mV index value: 178[0m
+[0;32mI (18338) Input_test: 2774 mV index value: 179[0m
+[0;32mI (18438) Input_test: 2626 mV index value: 180[0m
+[0;32mI (18538) Input_test: 2288 mV index value: 181[0m
+[0;32mI (18638) Input_test: 1931 mV index value: 182[0m
+[0;32mI (18738) Input_test: 1882 mV index value: 183[0m
+[0;32mI (18838) Input_test: 2180 mV index value: 184[0m
+[0;32mI (18938) Input_test: 2546 mV index value: 185[0m
+[0;32mI (19038) Input_test: 2854 mV index value: 186[0m
+[0;32mI (19138) Input_test: 2759 mV index value: 187[0m
+[0;32mI (19238) Input_test: 2379 mV index value: 188[0m
+[0;32mI (19338) Input_test: 1957 mV index value: 189[0m
+[0;32mI (19438) Input_test: 1567 mV index value: 190[0m
+[0;32mI (19538) Input_test: 1258 mV index value: 191[0m
+[0;32mI (19638) Input_test: 1123 mV index value: 192[0m
+[0;32mI (19738) Input_test: 1290 mV index value: 193[0m
+[0;32mI (19838) Input_test: 1666 mV index value: 194[0m
+[0;32mI (19938) Input_test: 2096 mV index value: 195[0m
+[0;32mI (20038) Input_test: 2484 mV index value: 196[0m
+[0;32mI (20138) Input_test: 2877 mV index value: 197[0m
+[0;32mI (20238) Input_test: 3082 mV index value: 198[0m
+[0;32mI (20338) Input_test: 3082 mV index value: 199[0m
+[0;32mI (20438) Input_test: 3082 mV index value: 200[0m
+[0;32mI (20538) Input_test: 3082 mV index value: 201[0m
+[0;32mI (20638) Input_test: 3082 mV index value: 202[0m
+[0;32mI (20738) Input_test: 3082 mV index value: 203[0m
+[0;32mI (20838) Input_test: 2792 mV index value: 204[0m
+[0;32mI (20938) Input_test: 2328 mV index value: 205[0m
+[0;32mI (21038) Input_test: 1891 mV index value: 206[0m
+[0;32mI (21138) Input_test: 1464 mV index value: 207[0m
+[0;32mI (21238) Input_test: 1037 mV index value: 208[0m
+[0;32mI (21338) Input_test: 937 mV index value: 209[0m
+[0;32mI (21438) Input_test: 1182 mV index value: 210[0m
+[0;32mI (21538) Input_test: 1637 mV index value: 211[0m
+[0;32mI (21638) Input_test: 2150 mV index value: 212[0m
+[0;32mI (21738) Input_test: 2665 mV index value: 213[0m
+[0;32mI (21838) Input_test: 3082 mV index value: 214[0m
+[0;32mI (21938) Input_test: 3082 mV index value: 215[0m
+[0;32mI (22038) Input_test: 3082 mV index value: 216[0m
+[0;32mI (22138) Input_test: 3082 mV index value: 217[0m
+[0;32mI (22238) Input_test: 3082 mV index value: 218[0m
+[0;32mI (22338) Input_test: 3082 mV index value: 219[0m
+[0;32mI (22438) Input_test: 3082 mV index value: 220[0m
+[0;32mI (22538) Input_test: 3072 mV index value: 221[0m
+[0;32mI (22638) Input_test: 2544 mV index value: 222[0m
+[0;32mI (22738) Input_test: 2104 mV index value: 223[0m
+[0;32mI (22838) Input_test: 1718 mV index value: 224[0m
+[0;32mI (22938) Input_test: 1416 mV index value: 225[0m
+[0;32mI (23038) Input_test: 1219 mV index value: 226[0m
+[0;32mI (23138) Input_test: 1241 mV index value: 227[0m
+[0;32mI (23238) Input_test: 1496 mV index value: 228[0m
+[0;32mI (23338) Input_test: 1884 mV index value: 229[0m
+[0;32mI (23438) Input_test: 2344 mV index value: 230[0m
+[0;32mI (23538) Input_test: 2851 mV index value: 231[0m
+[0;32mI (23638) Input_test: 3082 mV index value: 232[0m
+[0;32mI (23738) Input_test: 3082 mV index value: 233[0m
+[0;32mI (23838) Input_test: 3082 mV index value: 234[0m
+[0;32mI (23938) Input_test: 3082 mV index value: 235[0m
+[0;32mI (24038) Input_test: 3082 mV index value: 236[0m
+[0;32mI (24138) Input_test: 3082 mV index value: 237[0m
+[0;32mI (24238) Input_test: 3082 mV index value: 238[0m
+[0;32mI (24338) Input_test: 3082 mV index value: 239[0m
+[0;32mI (24438) Input_test: 3082 mV index value: 240[0m
+[0;32mI (24538) Input_test: 3082 mV index value: 241[0m
+[0;32mI (24638) Input_test: 3082 mV index value: 242[0m
+[0;32mI (24738) Input_test: 3020 mV index value: 243[0m
+[0;32mI (24838) Input_test: 2546 mV index value: 244[0m
+[0;32mI (24938) Input_test: 2201 mV index value: 245[0m
+[0;32mI (25038) Input_test: 1849 mV index value: 246[0m
+[0;32mI (25138) Input_test: 1528 mV index value: 247[0m
+[0;32mI (25238) Input_test: 1194 mV index value: 248[0m
+[0;32mI (25338) Input_test: 864 mV index value: 249[0m
+[0;32mI (25438) Input_test: 572 mV index value: 250[0m
+[0;32mI (25538) Input_test: 354 mV index value: 251[0m
+[0;32mI (25638) Input_test: 348 mV index value: 252[0m
+[0;32mI (25738) Input_test: 491 mV index value: 253[0m
+[0;32mI (25838) Input_test: 756 mV index value: 254[0m
+[0;32mI (25938) Input_test: 1162 mV index value: 255[0m
+[0;32mI (26038) Input_test: 1590 mV index value: 256[0m
+[0;32mI (26138) Input_test: 1931 mV index value: 257[0m
+[0;32mI (26238) Input_test: 2213 mV index value: 258[0m
+[0;32mI (26338) Input_test: 2320 mV index value: 259[0m
+[0;32mI (26438) Input_test: 2197 mV index value: 260[0m
+[0;32mI (26538) Input_test: 1920 mV index value: 261[0m
+[0;32mI (26638) Input_test: 1580 mV index value: 262[0m
+[0;32mI (26738) Input_test: 1225 mV index value: 263[0m
+[0;32mI (26838) Input_test: 914 mV index value: 264[0m
+[0;32mI (26938) Input_test: 687 mV index value: 265[0m
+[0;32mI (27038) Input_test: 633 mV index value: 266[0m
+[0;32mI (27138) Input_test: 635 mV index value: 267[0m
+[0;32mI (27238) Input_test: 634 mV index value: 268[0m
+[0;32mI (27338) Input_test: 636 mV index value: 269[0m
+[0;32mI (27438) Input_test: 744 mV index value: 270[0m
+[0;32mI (27538) Input_test: 964 mV index value: 271[0m
+[0;32mI (27638) Input_test: 1289 mV index value: 272[0m
+[0;32mI (27738) Input_test: 1662 mV index value: 273[0m
+[0;32mI (27838) Input_test: 2005 mV index value: 274[0m
+[0;32mI (27938) Input_test: 2356 mV index value: 275[0m
+[0;32mI (28038) Input_test: 2730 mV index value: 276[0m
+[0;32mI (28138) Input_test: 2900 mV index value: 277[0m
+[0;32mI (28238) Input_test: 2908 mV index value: 278[0m
+[0;32mI (28338) Input_test: 2906 mV index value: 279[0m
+[0;32mI (28438) Input_test: 2905 mV index value: 280[0m
+[0;32mI (28538) Input_test: 2870 mV index value: 281[0m
+[0;32mI (28638) Input_test: 2689 mV index value: 282[0m
+[0;32mI (28738) Input_test: 2430 mV index value: 283[0m
+[0;32mI (28838) Input_test: 2131 mV index value: 284[0m
+[0;32mI (28938) Input_test: 1791 mV index value: 285[0m
+[0;32mI (29038) Input_test: 1406 mV index value: 286[0m
+[0;32mI (29138) Input_test: 1005 mV index value: 287[0m
+[0;32mI (29238) Input_test: 718 mV index value: 288[0m
+[0;32mI (29338) Input_test: 465 mV index value: 289[0m
+[0;32mI (29438) Input_test: 201 mV index value: 290[0m
+[0;32mI (29538) Input_test: 0 mV index value: 291[0m
+[0;32mI (29638) Input_test: 0 mV index value: 292[0m
+[0;32mI (29738) Input_test: 0 mV index value: 293[0m
+[0;32mI (29838) Input_test: 0 mV index value: 294[0m
+[0;32mI (29938) Input_test: 0 mV index value: 295[0m
+[0;32mI (30038) Input_test: 482 mV index value: 296[0m
+[0;32mI (30138) Input_test: 967 mV index value: 297[0m
+[0;32mI (30238) Input_test: 1391 mV index value: 298[0m
+[0;32mI (30338) Input_test: 1805 mV index value: 299[0m
+[0;32mI (30438) Input_test: 2291 mV index value: 300[0m
+[0;32mI (30538) Input_test: 2909 mV index value: 301[0m
+[0;32mI (30638) Input_test: 3082 mV index value: 302[0m
+[0;32mI (30738) Input_test: 3082 mV index value: 303[0m
+[0;32mI (30838) Input_test: 3082 mV index value: 304[0m
+[0;32mI (30938) Input_test: 3082 mV index value: 305[0m
+[0;32mI (31038) Input_test: 3082 mV index value: 306[0m
+[0;32mI (31138) Input_test: 3082 mV index value: 307[0m
+[0;32mI (31238) Input_test: 3082 mV index value: 308[0m
+[0;32mI (31338) Input_test: 3027 mV index value: 309[0m
+[0;32mI (31438) Input_test: 2514 mV index value: 310[0m
+[0;32mI (31538) Input_test: 2105 mV index value: 311[0m
+[0;32mI (31638) Input_test: 1742 mV index value: 312[0m
+[0;32mI (31738) Input_test: 1392 mV index value: 313[0m
+[0;32mI (31838) Input_test: 1086 mV index value: 314[0m
+[0;32mI (31938) Input_test: 1064 mV index value: 315[0m
+[0;32mI (32038) Input_test: 1303 mV index value: 316[0m
+[0;32mI (32138) Input_test: 1772 mV index value: 317[0m
+[0;32mI (32238) Input_test: 2303 mV index value: 318[0m
+[0;32mI (32338) Input_test: 2932 mV index value: 319[0m
+[0;32mI (32438) Input_test: 3082 mV index value: 320[0m
+[0;32mI (32538) Input_test: 3082 mV index value: 321[0m
+[0;32mI (32638) Input_test: 3082 mV index value: 322[0m
+[0;32mI (32738) Input_test: 3082 mV index value: 323[0m
+[0;32mI (32838) Input_test: 3082 mV index value: 324[0m
+[0;32mI (32938) Input_test: 2591 mV index value: 325[0m
+[0;32mI (33038) Input_test: 2175 mV index value: 326[0m
+[0;32mI (33138) Input_test: 2078 mV index value: 327[0m
+[0;32mI (33238) Input_test: 2280 mV index value: 328[0m
+[0;32mI (33338) Input_test: 2898 mV index value: 329[0m
+[0;32mI (33438) Input_test: 3082 mV index value: 330[0m
+[0;32mI (33538) Input_test: 3082 mV index value: 331[0m
+[0;32mI (33638) Input_test: 3082 mV index value: 332[0m
+[0;32mI (33738) Input_test: 3082 mV index value: 333[0m
+[0;32mI (33838) Input_test: 3082 mV index value: 334[0m
+[0;32mI (33938) Input_test: 2673 mV index value: 335[0m
+[0;32mI (34038) Input_test: 2298 mV index value: 336[0m
+[0;32mI (34138) Input_test: 2174 mV index value: 337[0m
+[0;32mI (34238) Input_test: 2296 mV index value: 338[0m
+[0;32mI (34338) Input_test: 2702 mV index value: 339[0m
+[0;32mI (34438) Input_test: 3082 mV index value: 340[0m
+[0;32mI (34538) Input_test: 3082 mV index value: 341[0m
+[0;32mI (34638) Input_test: 3082 mV index value: 342[0m
+[0;32mI (34738) Input_test: 3082 mV index value: 343[0m
+[0;32mI (34838) Input_test: 3082 mV index value: 344[0m
+[0;32mI (34938) Input_test: 3082 mV index value: 345[0m
+[0;32mI (35038) Input_test: 3082 mV index value: 346[0m
+[0;32mI (35138) Input_test: 2435 mV index value: 347[0m
+[0;32mI (35238) Input_test: 1847 mV index value: 348[0m
+[0;32mI (35338) Input_test: 1278 mV index value: 349[0m
+[0;32mI (35438) Input_test: 815 mV index value: 350[0m
+[0;32mI (35538) Input_test: 518 mV index value: 351[0m
+[0;32mI (35638) Input_test: 324 mV index value: 352[0m
+[0;32mI (35738) Input_test: 306 mV index value: 353[0m
+[0;32mI (35838) Input_test: 306 mV index value: 354[0m
+[0;32mI (35938) Input_test: 304 mV index value: 355[0m
+[0;32mI (36038) Input_test: 306 mV index value: 356[0m
+[0;32mI (36138) Input_test: 307 mV index value: 357[0m
+[0;32mI (36238) Input_test: 307 mV index value: 358[0m
+[0;32mI (36338) Input_test: 305 mV index value: 359[0m
+[0;32mI (36438) Input_test: 306 mV index value: 360[0m
+[0;32mI (36538) Input_test: 271 mV index value: 361[0m
+[0;32mI (36638) Input_test: 127 mV index value: 362[0m
+[0;32mI (36738) Input_test: 0 mV index value: 363[0m
+[0;32mI (36838) Input_test: 0 mV index value: 364[0m
+[0;32mI (36938) Input_test: 0 mV index value: 365[0m
+[0;32mI (37038) Input_test: 0 mV index value: 366[0m
+[0;32mI (37138) Input_test: 0 mV index value: 367[0m
+[0;32mI (37238) Input_test: 25 mV index value: 368[0m
+[0;32mI (37338) Input_test: 383 mV index value: 369[0m
+[0;32mI (37438) Input_test: 601 mV index value: 370[0m
+[0;32mI (37538) Input_test: 738 mV index value: 371[0m
+[0;32mI (37638) Input_test: 790 mV index value: 372[0m
+[0;32mI (37738) Input_test: 773 mV index value: 373[0m
+[0;32mI (37838) Input_test: 614 mV index value: 374[0m
+[0;32mI (37938) Input_test: 408 mV index value: 375[0m
+[0;32mI (38038) Input_test: 267 mV index value: 376[0m
+[0;32mI (38138) Input_test: 204 mV index value: 377[0m
+[0;32mI (38238) Input_test: 185 mV index value: 378[0m
+[0;32mI (38338) Input_test: 176 mV index value: 379[0m
+[0;32mI (38438) Input_test: 161 mV index value: 380[0m
+[0;32mI (38538) Input_test: 177 mV index value: 381[0m
+[0;32mI (38638) Input_test: 127 mV index value: 382[0m
+[0;32mI (38738) Input_test: 44 mV index value: 383[0m
+[0;32mI (38838) Input_test: 0 mV index value: 384[0m
+[0;32mI (38938) Input_test: 0 mV index value: 385[0m
+[0;32mI (39038) Input_test: 0 mV index value: 386[0m
+[0;32mI (39138) Input_test: 0 mV index value: 387[0m
+[0;32mI (39238) Input_test: 0 mV index value: 388[0m
+[0;32mI (39338) Input_test: 0 mV index value: 389[0m
+[0;32mI (39438) Input_test: 0 mV index value: 390[0m
+[0;32mI (39538) Input_test: 0 mV index value: 391[0m
+[0;32mI (39638) Input_test: 0 mV index value: 392[0m
+[0;32mI (39738) Input_test: 0 mV index value: 393[0m
+[0;32mI (39838) Input_test: 0 mV index value: 394[0m
+[0;32mI (39938) Input_test: 198 mV index value: 395[0m
+[0;32mI (40038) Input_test: 487 mV index value: 396[0m
+[0;32mI (40138) Input_test: 606 mV index value: 397[0m
+[0;32mI (40238) Input_test: 646 mV index value: 398[0m
+[0;32mI (40338) Input_test: 660 mV index value: 399[0m
+[0;32mI (40438) Input_test: 661 mV index value: 400[0m
+[0;32mI (40538) Input_test: 661 mV index value: 401[0m
+[0;32mI (40638) Input_test: 659 mV index value: 402[0m
+[0;32mI (40738) Input_test: 661 mV index value: 403[0m
+[0;32mI (40838) Input_test: 661 mV index value: 404[0m
+[0;32mI (40938) Input_test: 661 mV index value: 405[0m
+[0;32mI (41038) Input_test: 660 mV index value: 406[0m
+[0;32mI (41138) Input_test: 661 mV index value: 407[0m
+[0;32mI (41238) Input_test: 658 mV index value: 408[0m
+[0;32mI (41338) Input_test: 659 mV index value: 409[0m
+[0;32mI (41438) Input_test: 661 mV index value: 410[0m
+[0;32mI (41538) Input_test: 619 mV index value: 411[0m
+[0;32mI (41638) Input_test: 482 mV index value: 412[0m
+[0;32mI (41738) Input_test: 521 mV index value: 413[0m
+[0;32mI (41838) Input_test: 822 mV index value: 414[0m
+[0;32mI (41938) Input_test: 1153 mV index value: 415[0m
+[0;32mI (42038) Input_test: 1518 mV index value: 416[0m
+[0;32mI (42138) Input_test: 1870 mV index value: 417[0m
+[0;32mI (42238) Input_test: 2184 mV index value: 418[0m
+[0;32mI (42338) Input_test: 2396 mV index value: 419[0m
+[0;32mI (42438) Input_test: 2430 mV index value: 420[0m
+[0;32mI (42538) Input_test: 2296 mV index value: 421[0m
+[0;32mI (42638) Input_test: 1987 mV index value: 422[0m
+[0;32mI (42738) Input_test: 1565 mV index value: 423[0m
+[0;32mI (42838) Input_test: 1101 mV index value: 424[0m
+[0;32mI (42938) Input_test: 742 mV index value: 425[0m
+[0;32mI (43038) Input_test: 644 mV index value: 426[0m
+[0;32mI (43138) Input_test: 816 mV index value: 427[0m
+[0;32mI (43238) Input_test: 1153 mV index value: 428[0m
+[0;32mI (43338) Input_test: 1383 mV index value: 429[0m
+[0;32mI (43438) Input_test: 1490 mV index value: 430[0m
+[0;32mI (43538) Input_test: 1562 mV index value: 431[0m
+[0;32mI (43638) Input_test: 1617 mV index value: 432[0m
+[0;32mI (43738) Input_test: 1678 mV index value: 433[0m
+[0;32mI (43838) Input_test: 1823 mV index value: 434[0m
+[0;32mI (43938) Input_test: 1897 mV index value: 435[0m
+[0;32mI (44038) Input_test: 1750 mV index value: 436[0m
+[0;32mI (44138) Input_test: 1511 mV index value: 437[0m
+[0;32mI (44238) Input_test: 1387 mV index value: 438[0m
+[0;32mI (44338) Input_test: 1452 mV index value: 439[0m
+[0;32mI (44438) Input_test: 1768 mV index value: 440[0m
+[0;32mI (44538) Input_test: 2156 mV index value: 441[0m
+[0;32mI (44638) Input_test: 2345 mV index value: 442[0m
+[0;32mI (44738) Input_test: 2286 mV index value: 443[0m
+[0;32mI (44838) Input_test: 2053 mV index value: 444[0m
+[0;32mI (44938) Input_test: 1739 mV index value: 445[0m
+[0;32mI (45038) Input_test: 1444 mV index value: 446[0m
+[0;32mI (45138) Input_test: 1336 mV index value: 447[0m
+[0;32mI (45238) Input_test: 1426 mV index value: 448[0m
+[0;32mI (45338) Input_test: 1702 mV index value: 449[0m
+[0;32mI (45438) Input_test: 2100 mV index value: 450[0m
+[0;32mI (45538) Input_test: 2384 mV index value: 451[0m
+[0;32mI (45638) Input_test: 2394 mV index value: 452[0m
+[0;32mI (45738) Input_test: 2254 mV index value: 453[0m
+[0;32mI (45838) Input_test: 1969 mV index value: 454[0m
+[0;32mI (45938) Input_test: 1615 mV index value: 455[0m
+[0;32mI (46038) Input_test: 1284 mV index value: 456[0m
+[0;32mI (46138) Input_test: 1195 mV index value: 457[0m
+[0;32mI (46238) Input_test: 1323 mV index value: 458[0m
+[0;32mI (46338) Input_test: 1624 mV index value: 459[0m
+[0;32mI (46438) Input_test: 1989 mV index value: 460[0m
+[0;32mI (46538) Input_test: 2296 mV index value: 461[0m
+[0;32mI (46638) Input_test: 2543 mV index value: 462[0m
+[0;32mI (46738) Input_test: 2700 mV index value: 463[0m
+[0;32mI (46838) Input_test: 2896 mV index value: 464[0m
+[0;32mI (46938) Input_test: 3019 mV index value: 465[0m
+[0;32mI (47038) Input_test: 2954 mV index value: 466[0m
+[0;32mI (47138) Input_test: 2864 mV index value: 467[0m
+[0;32mI (47238) Input_test: 2863 mV index value: 468[0m
+[0;32mI (47338) Input_test: 2831 mV index value: 469[0m
+[0;32mI (47438) Input_test: 2691 mV index value: 470[0m
+[0;32mI (47538) Input_test: 2414 mV index value: 471[0m
+[0;32mI (47638) Input_test: 2175 mV index value: 472[0m
+[0;32mI (47738) Input_test: 2072 mV index value: 473[0m
+[0;32mI (47838) Input_test: 2135 mV index value: 474[0m
+[0;32mI (47938) Input_test: 2323 mV index value: 475[0m
+[0;32mI (48038) Input_test: 2475 mV index value: 476[0m
+[0;32mI (48138) Input_test: 2507 mV index value: 477[0m
+[0;32mI (48238) Input_test: 2493 mV index value: 478[0m
+[0;32mI (48338) Input_test: 2430 mV index value: 479[0m
+[0;32mI (48438) Input_test: 2312 mV index value: 480[0m
+[0;32mI (48538) Input_test: 2215 mV index value: 481[0m
+[0;32mI (48638) Input_test: 2200 mV index value: 482[0m
+[0;32mI (48738) Input_test: 2284 mV index value: 483[0m
+[0;32mI (48838) Input_test: 2447 mV index value: 484[0m
+[0;32mI (48938) Input_test: 2687 mV index value: 485[0m
+[0;32mI (49038) Input_test: 3040 mV index value: 486[0m
+[0;32mI (49138) Input_test: 3082 mV index value: 487[0m
+[0;32mI (49238) Input_test: 3082 mV index value: 488[0m
+[0;32mI (49338) Input_test: 3027 mV index value: 489[0m
+[0;32mI (49438) Input_test: 2758 mV index value: 490[0m
+[0;32mI (49538) Input_test: 2521 mV index value: 491[0m
+[0;32mI (49638) Input_test: 2321 mV index value: 492[0m
+[0;32mI (49738) Input_test: 2197 mV index value: 493[0m
+[0;32mI (49838) Input_test: 2337 mV index value: 494[0m
+[0;32mI (49938) Input_test: 2663 mV index value: 495[0m
+[0;32mI (50038) Input_test: 2905 mV index value: 496[0m
+[0;32mI (50138) Input_test: 2864 mV index value: 497[0m
+[0;32mI (50238) Input_test: 2621 mV index value: 498[0m
+[0;32mI (50338) Input_test: 2333 mV index value: 499[0m
+[0;32mI (50438) Input_test: 2047 mV index value: 500[0m
+[0;32mI (50538) Input_test: 1721 mV index value: 501[0m
+[0;32mI (50638) Input_test: 1450 mV index value: 502[0m
+[0;32mI (50738) Input_test: 1245 mV index value: 503[0m
+[0;32mI (50838) Input_test: 1213 mV index value: 504[0m
+[0;32mI (50938) Input_test: 1166 mV index value: 505[0m
+[0;32mI (51038) Input_test: 1115 mV index value: 506[0m
+[0;32mI (51138) Input_test: 1137 mV index value: 507[0m
+[0;32mI (51238) Input_test: 1330 mV index value: 508[0m
+[0;32mI (51338) Input_test: 1652 mV index value: 509[0m
+[0;32mI (51438) Input_test: 1994 mV index value: 510[0m
+[0;32mI (51538) Input_test: 2320 mV index value: 511[0m
+[0;32mI (51638) Input_test: 2691 mV index value: 512[0m
+[0;32mI (51738) Input_test: 3079 mV index value: 513[0m
+[0;32mI (51838) Input_test: 3082 mV index value: 514[0m
+[0;32mI (51938) Input_test: 3082 mV index value: 515[0m
+[0;32mI (52038) Input_test: 2988 mV index value: 516[0m
+[0;32mI (52138) Input_test: 2664 mV index value: 517[0m
+[0;32mI (52238) Input_test: 2348 mV index value: 518[0m
+[0;32mI (52338) Input_test: 2062 mV index value: 519[0m
+[0;32mI (52438) Input_test: 1898 mV index value: 520[0m
+[0;32mI (52538) Input_test: 1987 mV index value: 521[0m
+[0;32mI (52638) Input_test: 2213 mV index value: 522[0m
+[0;32mI (52738) Input_test: 2501 mV index value: 523[0m
+[0;32mI (52838) Input_test: 2833 mV index value: 524[0m
+[0;32mI (52938) Input_test: 3000 mV index value: 525[0m
+[0;32mI (53038) Input_test: 2953 mV index value: 526[0m
+[0;32mI (53138) Input_test: 2719 mV index value: 527[0m
+[0;32mI (53238) Input_test: 2379 mV index value: 528[0m
+[0;32mI (53338) Input_test: 2093 mV index value: 529[0m
+[0;32mI (53438) Input_test: 1805 mV index value: 530[0m
+[0;32mI (53538) Input_test: 1555 mV index value: 531[0m
+[0;32mI (53638) Input_test: 1393 mV index value: 532[0m
+[0;32mI (53738) Input_test: 1485 mV index value: 533[0m
+[0;32mI (53838) Input_test: 1819 mV index value: 534[0m
+[0;32mI (53938) Input_test: 2226 mV index value: 535[0m
+[0;32mI (54038) Input_test: 2691 mV index value: 536[0m
+[0;32mI (54138) Input_test: 3082 mV index value: 537[0m
+[0;32mI (54238) Input_test: 3082 mV index value: 538[0m
+[0;32mI (54338) Input_test: 3059 mV index value: 539[0m
+[0;32mI (54438) Input_test: 2677 mV index value: 540[0m
+[0;32mI (54538) Input_test: 2261 mV index value: 541[0m
+[0;32mI (54638) Input_test: 1925 mV index value: 542[0m
+[0;32mI (54738) Input_test: 1805 mV index value: 543[0m
+[0;32mI (54838) Input_test: 1971 mV index value: 544[0m
+[0;32mI (54938) Input_test: 2352 mV index value: 545[0m
+[0;32mI (55038) Input_test: 2833 mV index value: 546[0m
+[0;32mI (55138) Input_test: 3082 mV index value: 547[0m
+[0;32mI (55238) Input_test: 3082 mV index value: 548[0m
+[0;32mI (55338) Input_test: 3082 mV index value: 549[0m
+[0;32mI (55438) Input_test: 3082 mV index value: 550[0m
+[0;32mI (55538) Input_test: 3082 mV index value: 551[0m
+[0;32mI (55638) Input_test: 3004 mV index value: 552[0m
+[0;32mI (55738) Input_test: 2469 mV index value: 553[0m
+[0;32mI (55838) Input_test: 2235 mV index value: 554[0m
+[0;32mI (55938) Input_test: 2287 mV index value: 555[0m
+[0;32mI (56038) Input_test: 2634 mV index value: 556[0m
+[0;32mI (56138) Input_test: 3082 mV index value: 557[0m
+[0;32mI (56238) Input_test: 3082 mV index value: 558[0m
+[0;32mI (56338) Input_test: 3082 mV index value: 559[0m
+[0;32mI (56438) Input_test: 3082 mV index value: 560[0m
+[0;32mI (56538) Input_test: 3082 mV index value: 561[0m
+[0;32mI (56638) Input_test: 3082 mV index value: 562[0m
+[0;32mI (56738) Input_test: 3082 mV index value: 563[0m
+[0;32mI (56838) Input_test: 3073 mV index value: 564[0m
+[0;32mI (56938) Input_test: 2718 mV index value: 565[0m
+[0;32mI (57038) Input_test: 2345 mV index value: 566[0m
+[0;32mI (57138) Input_test: 1996 mV index value: 567[0m
+[0;32mI (57238) Input_test: 1676 mV index value: 568[0m
+[0;32mI (57338) Input_test: 1411 mV index value: 569[0m
+[0;32mI (57438) Input_test: 1192 mV index value: 570[0m
+[0;32mI (57538) Input_test: 1082 mV index value: 571[0m
+[0;32mI (57638) Input_test: 1076 mV index value: 572[0m
+[0;32mI (57738) Input_test: 1078 mV index value: 573[0m
+[0;32mI (57838) Input_test: 1069 mV index value: 574[0m
+[0;32mI (57938) Input_test: 1078 mV index value: 575[0m
+[0;32mI (58038) Input_test: 1085 mV index value: 576[0m
+[0;32mI (58138) Input_test: 1078 mV index value: 577[0m
+[0;32mI (58238) Input_test: 1078 mV index value: 578[0m
+[0;32mI (58338) Input_test: 1087 mV index value: 579[0m
+[0;32mI (58438) Input_test: 1078 mV index value: 580[0m
+[0;32mI (58538) Input_test: 1078 mV index value: 581[0m
+[0;32mI (58638) Input_test: 1082 mV index value: 582[0m
+[0;32mI (58738) Input_test: 1078 mV index value: 583[0m
+[0;32mI (58838) Input_test: 1076 mV index value: 584[0m
+[0;32mI (58938) Input_test: 1078 mV index value: 585[0m
+[0;32mI (59038) Input_test: 1078 mV index value: 586[0m
+[0;32mI (59138) Input_test: 1078 mV index value: 587[0m
+[0;32mI (59238) Input_test: 1078 mV index value: 588[0m
+[0;32mI (59338) Input_test: 1081 mV index value: 589[0m
+[0;32mI (59438) Input_test: 1081 mV index value: 590[0m
+[0;32mI (59538) Input_test: 1078 mV index value: 591[0m
+[0;32mI (59638) Input_test: 1078 mV index value: 592[0m
+[0;32mI (59738) Input_test: 1076 mV index value: 593[0m
+[0;32mI (59838) Input_test: 1082 mV index value: 594[0m
+[0;32mI (59938) Input_test: 1085 mV index value: 595[0m
+[0;32mI (60038) Input_test: 1089 mV index value: 596[0m
+[0;32mI (60138) Input_test: 1095 mV index value: 597[0m
+[0;32mI (60238) Input_test: 1115 mV index value: 598[0m
+[0;32mI (60338) Input_test: 1137 mV index value: 599[0m
+[0;32mI (60438) Input_test: 1178 mV index value: 600[0m
+[0;32mI (60538) Input_test: 1251 mV index value: 601[0m
+[0;32mI (60638) Input_test: 1323 mV index value: 602[0m
+[0;32mI (60738) Input_test: 1385 mV index value: 603[0m
+[0;32mI (60838) Input_test: 1468 mV index value: 604[0m
+[0;32mI (60938) Input_test: 1546 mV index value: 605[0m
+[0;32mI (61038) Input_test: 1599 mV index value: 606[0m
+[0;32mI (61138) Input_test: 1604 mV index value: 607[0m
+[0;32mI (61238) Input_test: 1595 mV index value: 608[0m
+[0;32mI (61338) Input_test: 1572 mV index value: 609[0m
+[0;32mI (61438) Input_test: 1536 mV index value: 610[0m
+[0;32mI (61538) Input_test: 1545 mV index value: 611[0m
+[0;32mI (61638) Input_test: 1597 mV index value: 612[0m
+[0;32mI (61738) Input_test: 1643 mV index value: 613[0m
+[0;32mI (61838) Input_test: 1704 mV index value: 614[0m
+[0;32mI (61938) Input_test: 1768 mV index value: 615[0m
+[0;32mI (62038) Input_test: 1865 mV index value: 616[0m
+[0;32mI (62138) Input_test: 1937 mV index value: 617[0m
+[0;32mI (62238) Input_test: 2005 mV index value: 618[0m
+[0;32mI (62338) Input_test: 1989 mV index value: 619[0m
+[0;32mI (62438) Input_test: 1996 mV index value: 620[0m
+[0;32mI (62538) Input_test: 2030 mV index value: 621[0m
+[0;32mI (62638) Input_test: 2054 mV index value: 622[0m
+[0;32mI (62738) Input_test: 2049 mV index value: 623[0m
+[0;32mI (62838) Input_test: 1931 mV index value: 624[0m
+[0;32mI (62938) Input_test: 1715 mV index value: 625[0m
+[0;32mI (63038) Input_test: 1469 mV index value: 626[0m
+[0;32mI (63138) Input_test: 1201 mV index value: 627[0m
+[0;32mI (63238) Input_test: 929 mV index value: 628[0m
+[0;32mI (63338) Input_test: 774 mV index value: 629[0m
+[0;32mI (63438) Input_test: 838 mV index value: 630[0m
+[0;32mI (63538) Input_test: 1143 mV index value: 631[0m
+[0;32mI (63638) Input_test: 1523 mV index value: 632[0m
+[0;32mI (63738) Input_test: 1849 mV index value: 633[0m
+[0;32mI (63838) Input_test: 2121 mV index value: 634[0m
+[0;32mI (63938) Input_test: 2288 mV index value: 635[0m
+[0;32mI (64038) Input_test: 2368 mV index value: 636[0m
+[0;32mI (64138) Input_test: 2379 mV index value: 637[0m
+[0;32mI (64238) Input_test: 2377 mV index value: 638[0m
+[0;32mI (64338) Input_test: 2245 mV index value: 639[0m
+[0;32mI (64438) Input_test: 2008 mV index value: 640[0m
+[0;32mI (64538) Input_test: 1741 mV index value: 641[0m
+[0;32mI (64638) Input_test: 1468 mV index value: 642[0m
+[0;32mI (64738) Input_test: 1233 mV index value: 643[0m
+[0;32mI (64838) Input_test: 1157 mV index value: 644[0m
+[0;32mI (64938) Input_test: 1260 mV index value: 645[0m
+[0;32mI (65038) Input_test: 1550 mV index value: 646[0m
+[0;32mI (65138) Input_test: 1861 mV index value: 647[0m
+[0;32mI (65238) Input_test: 2127 mV index value: 648[0m
+[0;32mI (65338) Input_test: 2370 mV index value: 649[0m
+[0;32mI (65438) Input_test: 2613 mV index value: 650[0m
+[0;32mI (65538) Input_test: 2853 mV index value: 651[0m
+[0;32mI (65638) Input_test: 2962 mV index value: 652[0m
+[0;32mI (65738) Input_test: 2944 mV index value: 653[0m
+[0;32mI (65838) Input_test: 2813 mV index value: 654[0m
+[0;32mI (65938) Input_test: 2587 mV index value: 655[0m
+[0;32mI (66038) Input_test: 2359 mV index value: 656[0m
+[0;32mI (66138) Input_test: 2096 mV index value: 657[0m
+[0;32mI (66238) Input_test: 1886 mV index value: 658[0m
+[0;32mI (66338) Input_test: 1694 mV index value: 659[0m
+[0;32mI (66438) Input_test: 1477 mV index value: 660[0m
+[0;32mI (66538) Input_test: 1385 mV index value: 661[0m
+[0;32mI (66638) Input_test: 1536 mV index value: 662[0m
+[0;32mI (66738) Input_test: 1904 mV index value: 663[0m
+[0;32mI (66838) Input_test: 2261 mV index value: 664[0m
+[0;32mI (66938) Input_test: 2565 mV index value: 665[0m
+[0;32mI (67038) Input_test: 2870 mV index value: 666[0m
+[0;32mI (67138) Input_test: 2955 mV index value: 667[0m
+[0;32mI (67238) Input_test: 2763 mV index value: 668[0m
+[0;32mI (67338) Input_test: 2435 mV index value: 669[0m
+[0;32mI (67438) Input_test: 2146 mV index value: 670[0m
+[0;32mI (67538) Input_test: 1865 mV index value: 671[0m
+[0;32mI (67638) Input_test: 1721 mV index value: 672[0m
+[0;32mI (67738) Input_test: 1840 mV index value: 673[0m
+[0;32mI (67838) Input_test: 2127 mV index value: 674[0m
+[0;32mI (67938) Input_test: 2443 mV index value: 675[0m
+[0;32mI (68038) Input_test: 2728 mV index value: 676[0m
+[0;32mI (68138) Input_test: 2771 mV index value: 677[0m
+[0;32mI (68238) Input_test: 2601 mV index value: 678[0m
+[0;32mI (68338) Input_test: 2319 mV index value: 679[0m
+[0;32mI (68438) Input_test: 2060 mV index value: 680[0m
+[0;32mI (68538) Input_test: 1849 mV index value: 681[0m
+[0;32mI (68638) Input_test: 1732 mV index value: 682[0m
+[0;32mI (68738) Input_test: 1704 mV index value: 683[0m
+[0;32mI (68838) Input_test: 1898 mV index value: 684[0m
+[0;32mI (68938) Input_test: 2207 mV index value: 685[0m
+[0;32mI (69038) Input_test: 2474 mV index value: 686[0m
+[0;32mI (69138) Input_test: 2541 mV index value: 687[0m
+[0;32mI (69238) Input_test: 2444 mV index value: 688[0m
+[0;32mI (69338) Input_test: 2233 mV index value: 689[0m
+[0;32mI (69438) Input_test: 1996 mV index value: 690[0m
+[0;32mI (69538) Input_test: 1817 mV index value: 691[0m
+[0;32mI (69638) Input_test: 1818 mV index value: 692[0m
+[0;32mI (69738) Input_test: 2049 mV index value: 693[0m
+[0;32mI (69838) Input_test: 2379 mV index value: 694[0m
+[0;32mI (69938) Input_test: 2745 mV index value: 695[0m
+[0;32mI (70038) Input_test: 2731 mV index value: 696[0m
+[0;32mI (70138) Input_test: 2461 mV index value: 697[0m
+[0;32mI (70238) Input_test: 2160 mV index value: 698[0m
+[0;32mI (70338) Input_test: 1846 mV index value: 699[0m
+[0;32mI (70438) Input_test: 1545 mV index value: 700[0m
+[0;32mI (70538) Input_test: 1269 mV index value: 701[0m
+[0;32mI (70638) Input_test: 1026 mV index value: 702[0m
+[0;32mI (70738) Input_test: 1018 mV index value: 703[0m
+[0;32mI (70838) Input_test: 1279 mV index value: 704[0m
+[0;32mI (70938) Input_test: 1694 mV index value: 705[0m
+[0;32mI (71038) Input_test: 2073 mV index value: 706[0m
+[0;32mI (71138) Input_test: 2284 mV index value: 707[0m
+[0;32mI (71238) Input_test: 2183 mV index value: 708[0m
+[0;32mI (71338) Input_test: 1910 mV index value: 709[0m
+[0;32mI (71438) Input_test: 1584 mV index value: 710[0m
+[0;32mI (71538) Input_test: 1395 mV index value: 711[0m
+[0;32mI (71638) Input_test: 1533 mV index value: 712[0m
+[0;32mI (71738) Input_test: 1907 mV index value: 713[0m
+[0;32mI (71838) Input_test: 2322 mV index value: 714[0m
+[0;32mI (71938) Input_test: 2683 mV index value: 715[0m
+[0;32mI (72038) Input_test: 2887 mV index value: 716[0m
+[0;32mI (72138) Input_test: 2845 mV index value: 717[0m
+[0;32mI (72238) Input_test: 2734 mV index value: 718[0m
+[0;32mI (72338) Input_test: 2691 mV index value: 719[0m
+[0;32mI (72438) Input_test: 2695 mV index value: 720[0m
+[0;32mI (72538) Input_test: 2691 mV index value: 721[0m
+[0;32mI (72638) Input_test: 2659 mV index value: 722[0m
+[0;32mI (72738) Input_test: 2519 mV index value: 723[0m
+[0;32mI (72838) Input_test: 2404 mV index value: 724[0m
+[0;32mI (72938) Input_test: 2345 mV index value: 725[0m
+[0;32mI (73038) Input_test: 2335 mV index value: 726[0m
+[0;32mI (73138) Input_test: 2291 mV index value: 727[0m
+[0;32mI (73238) Input_test: 2144 mV index value: 728[0m
+[0;32mI (73338) Input_test: 1994 mV index value: 729[0m
+[0;32mI (73438) Input_test: 2063 mV index value: 730[0m
+[0;32mI (73538) Input_test: 2377 mV index value: 731[0m
+[0;32mI (73638) Input_test: 2659 mV index value: 732[0m
+[0;32mI (73738) Input_test: 2948 mV index value: 733[0m
+[0;32mI (73838) Input_test: 3082 mV index value: 734[0m
+[0;32mI (73938) Input_test: 3082 mV index value: 735[0m
+[0;32mI (74038) Input_test: 3082 mV index value: 736[0m
+[0;32mI (74138) Input_test: 3082 mV index value: 737[0m
+[0;32mI (74238) Input_test: 3082 mV index value: 738[0m
+[0;32mI (74338) Input_test: 2919 mV index value: 739[0m
+[0;32mI (74438) Input_test: 2776 mV index value: 740[0m
+[0;32mI (74538) Input_test: 2660 mV index value: 741[0m
+[0;32mI (74638) Input_test: 2634 mV index value: 742[0m
+[0;32mI (74738) Input_test: 2744 mV index value: 743[0m
+[0;32mI (74838) Input_test: 2981 mV index value: 744[0m
+[0;32mI (74938) Input_test: 3082 mV index value: 745[0m
+[0;32mI (75038) Input_test: 3082 mV index value: 746[0m
+[0;32mI (75138) Input_test: 3082 mV index value: 747[0m
+[0;32mI (75238) Input_test: 3082 mV index value: 748[0m
+[0;32mI (75338) Input_test: 3082 mV index value: 749[0m
+[0;32mI (75438) Input_test: 3082 mV index value: 750[0m
+[0;32mI (75538) Input_test: 3082 mV index value: 751[0m
+[0;32mI (75638) Input_test: 3082 mV index value: 752[0m
+[0;32mI (75738) Input_test: 3082 mV index value: 753[0m
+[0;32mI (75838) Input_test: 3082 mV index value: 754[0m
+[0;32mI (75938) Input_test: 3082 mV index value: 755[0m
+[0;32mI (76038) Input_test: 3082 mV index value: 756[0m
+[0;32mI (76138) Input_test: 3082 mV index value: 757[0m
+[0;32mI (76238) Input_test: 3082 mV index value: 758[0m
+[0;32mI (76338) Input_test: 3038 mV index value: 759[0m
+[0;32mI (76438) Input_test: 2943 mV index value: 760[0m
+[0;32mI (76538) Input_test: 2877 mV index value: 761[0m
+[0;32mI (76638) Input_test: 2944 mV index value: 762[0m
+[0;32mI (76738) Input_test: 3082 mV index value: 763[0m
+[0;32mI (76838) Input_test: 3082 mV index value: 764[0m
+[0;32mI (76938) Input_test: 3082 mV index value: 765[0m
+[0;32mI (77038) Input_test: 3082 mV index value: 766[0m
+[0;32mI (77138) Input_test: 3082 mV index value: 767[0m
+[0;32mI (77238) Input_test: 3082 mV index value: 768[0m
+[0;32mI (77338) Input_test: 3082 mV index value: 769[0m
+[0;32mI (77438) Input_test: 3082 mV index value: 770[0m
+[0;32mI (77538) Input_test: 3082 mV index value: 771[0m
+[0;32mI (77638) Input_test: 3078 mV index value: 772[0m
+[0;32mI (77738) Input_test: 2734 mV index value: 773[0m
+[0;32mI (77838) Input_test: 2426 mV index value: 774[0m
+[0;32mI (77938) Input_test: 2151 mV index value: 775[0m
+[0;32mI (78038) Input_test: 1883 mV index value: 776[0m
+[0;32mI (78138) Input_test: 1662 mV index value: 777[0m
+[0;32mI (78238) Input_test: 1444 mV index value: 778[0m
+[0;32mI (78338) Input_test: 1245 mV index value: 779[0m
+[0;32mI (78438) Input_test: 1066 mV index value: 780[0m
+[0;32mI (78538) Input_test: 897 mV index value: 781[0m
+[0;32mI (78638) Input_test: 723 mV index value: 782[0m
+[0;32mI (78738) Input_test: 529 mV index value: 783[0m
+[0;32mI (78838) Input_test: 331 mV index value: 784[0m
+[0;32mI (78938) Input_test: 160 mV index value: 785[0m
+[0;32mI (79038) Input_test: 7 mV index value: 786[0m
+[0;32mI (79138) Input_test: 0 mV index value: 787[0m
+[0;32mI (79238) Input_test: 0 mV index value: 788[0m
+[0;32mI (79338) Input_test: 0 mV index value: 789[0m
+[0;32mI (79438) Input_test: 0 mV index value: 790[0m
+[0;32mI (79538) Input_test: 0 mV index value: 791[0m
+[0;32mI (79638) Input_test: 157 mV index value: 792[0m
+[0;32mI (79738) Input_test: 413 mV index value: 793[0m
+[0;32mI (79838) Input_test: 656 mV index value: 794[0m
+[0;32mI (79938) Input_test: 871 mV index value: 795[0m
+[0;32mI (80038) Input_test: 1140 mV index value: 796[0m
+[0;32mI (80138) Input_test: 1422 mV index value: 797[0m
+[0;32mI (80238) Input_test: 1613 mV index value: 798[0m
+[0;32mI (80338) Input_test: 1536 mV index value: 799[0m
+[0;32mI (80438) Input_test: 1272 mV index value: 800[0m
+[0;32mI (80538) Input_test: 917 mV index value: 801[0m
+[0;32mI (80638) Input_test: 527 mV index value: 802[0m
+[0;32mI (80738) Input_test: 106 mV index value: 803[0m
+[0;32mI (80838) Input_test: 0 mV index value: 804[0m
+[0;32mI (80938) Input_test: 0 mV index value: 805[0m
+[0;32mI (81038) Input_test: 93 mV index value: 806[0m
+[0;32mI (81138) Input_test: 398 mV index value: 807[0m
+[0;32mI (81238) Input_test: 747 mV index value: 808[0m
+[0;32mI (81338) Input_test: 1163 mV index value: 809[0m
+[0;32mI (81438) Input_test: 1533 mV index value: 810[0m
+[0;32mI (81538) Input_test: 1537 mV index value: 811[0m
+[0;32mI (81638) Input_test: 1297 mV index value: 812[0m
+[0;32mI (81738) Input_test: 897 mV index value: 813[0m
+[0;32mI (81838) Input_test: 512 mV index value: 814[0m
+[0;32mI (81938) Input_test: 413 mV index value: 815[0m
+[0;32mI (82038) Input_test: 538 mV index value: 816[0m
+[0;32mI (82138) Input_test: 871 mV index value: 817[0m
+[0;32mI (82238) Input_test: 1273 mV index value: 818[0m
+[0;32mI (82338) Input_test: 1460 mV index value: 819[0m
+[0;32mI (82438) Input_test: 1367 mV index value: 820[0m
+[0;32mI (82538) Input_test: 1073 mV index value: 821[0m
+[0;32mI (82638) Input_test: 711 mV index value: 822[0m
+[0;32mI (82738) Input_test: 402 mV index value: 823[0m
+[0;32mI (82838) Input_test: 385 mV index value: 824[0m
+[0;32mI (82938) Input_test: 629 mV index value: 825[0m
+[0;32mI (83038) Input_test: 1014 mV index value: 826[0m
+[0;32mI (83138) Input_test: 1153 mV index value: 827[0m
+[0;32mI (83238) Input_test: 1018 mV index value: 828[0m
+[0;32mI (83338) Input_test: 683 mV index value: 829[0m
+[0;32mI (83438) Input_test: 375 mV index value: 830[0m
+[0;32mI (83538) Input_test: 382 mV index value: 831[0m
+[0;32mI (83638) Input_test: 624 mV index value: 832[0m
+[0;32mI (83738) Input_test: 967 mV index value: 833[0m
+[0;32mI (83838) Input_test: 1086 mV index value: 834[0m
+[0;32mI (83938) Input_test: 910 mV index value: 835[0m
+[0;32mI (84038) Input_test: 659 mV index value: 836[0m
+[0;32mI (84138) Input_test: 693 mV index value: 837[0m
+[0;32mI (84238) Input_test: 898 mV index value: 838[0m
+[0;32mI (84338) Input_test: 942 mV index value: 839[0m
+[0;32mI (84438) Input_test: 1034 mV index value: 840[0m
+[0;32mI (84538) Input_test: 1064 mV index value: 841[0m
+[0;32mI (84638) Input_test: 872 mV index value: 842[0m
+[0;32mI (84738) Input_test: 636 mV index value: 843[0m
+[0;32mI (84838) Input_test: 684 mV index value: 844[0m
+[0;32mI (84938) Input_test: 982 mV index value: 845[0m
+[0;32mI (85038) Input_test: 1078 mV index value: 846[0m
+[0;32mI (85138) Input_test: 888 mV index value: 847[0m
+[0;32mI (85238) Input_test: 577 mV index value: 848[0m
+[0;32mI (85338) Input_test: 421 mV index value: 849[0m
+[0;32mI (85438) Input_test: 428 mV index value: 850[0m
+[0;32mI (85538) Input_test: 428 mV index value: 851[0m
+[0;32mI (85638) Input_test: 430 mV index value: 852[0m
+[0;32mI (85738) Input_test: 426 mV index value: 853[0m
+[0;32mI (85838) Input_test: 426 mV index value: 854[0m
+[0;32mI (85938) Input_test: 440 mV index value: 855[0m
+[0;32mI (86038) Input_test: 427 mV index value: 856[0m
+[0;32mI (86138) Input_test: 428 mV index value: 857[0m
+[0;32mI (86238) Input_test: 428 mV index value: 858[0m
+[0;32mI (86338) Input_test: 487 mV index value: 859[0m
+[0;32mI (86438) Input_test: 623 mV index value: 860[0m
+[0;32mI (86538) Input_test: 757 mV index value: 861[0m
+[0;32mI (86638) Input_test: 726 mV index value: 862[0m
+[0;32mI (86738) Input_test: 506 mV index value: 863[0m
+[0;32mI (86838) Input_test: 324 mV index value: 864[0m
+[0;32mI (86938) Input_test: 312 mV index value: 865[0m
+[0;32mI (87038) Input_test: 417 mV index value: 866[0m
+[0;32mI (87138) Input_test: 572 mV index value: 867[0m
+[0;32mI (87238) Input_test: 673 mV index value: 868[0m
+[0;32mI (87338) Input_test: 666 mV index value: 869[0m
+[0;32mI (87438) Input_test: 518 mV index value: 870[0m
+[0;32mI (87538) Input_test: 319 mV index value: 871[0m
+[0;32mI (87638) Input_test: 268 mV index value: 872[0m
+[0;32mI (87738) Input_test: 347 mV index value: 873[0m
+[0;32mI (87838) Input_test: 500 mV index value: 874[0m
+[0;32mI (87938) Input_test: 630 mV index value: 875[0m
+[0;32mI (88038) Input_test: 676 mV index value: 876[0m
+[0;32mI (88138) Input_test: 661 mV index value: 877[0m
+[0;32mI (88238) Input_test: 512 mV index value: 878[0m
+[0;32mI (88338) Input_test: 325 mV index value: 879[0m
+[0;32mI (88438) Input_test: 270 mV index value: 880[0m
+[0;32mI (88538) Input_test: 298 mV index value: 881[0m
+[0;32mI (88638) Input_test: 402 mV index value: 882[0m
+[0;32mI (88738) Input_test: 458 mV index value: 883[0m
+[0;32mI (88838) Input_test: 579 mV index value: 884[0m
+[0;32mI (88938) Input_test: 678 mV index value: 885[0m
+[0;32mI (89038) Input_test: 654 mV index value: 886[0m
+[0;32mI (89138) Input_test: 493 mV index value: 887[0m
+[0;32mI (89238) Input_test: 304 mV index value: 888[0m
+[0;32mI (89338) Input_test: 197 mV index value: 889[0m
+[0;32mI (89438) Input_test: 238 mV index value: 890[0m
+[0;32mI (89538) Input_test: 387 mV index value: 891[0m
+[0;32mI (89638) Input_test: 551 mV index value: 892[0m
+[0;32mI (89738) Input_test: 708 mV index value: 893[0m
+[0;32mI (89838) Input_test: 873 mV index value: 894[0m
+[0;32mI (89938) Input_test: 1067 mV index value: 895[0m
+[0;32mI (90038) Input_test: 1272 mV index value: 896[0m
+[0;32mI (90138) Input_test: 1481 mV index value: 897[0m
+[0;32mI (90238) Input_test: 1653 mV index value: 898[0m
+[0;32mI (90338) Input_test: 1810 mV index value: 899[0m
+[0;32mI (90438) Input_test: 1931 mV index value: 900[0m
+[0;32mI (90538) Input_test: 2008 mV index value: 901[0m
+[0;32mI (90638) Input_test: 1994 mV index value: 902[0m
+[0;32mI (90738) Input_test: 1847 mV index value: 903[0m
+[0;32mI (90838) Input_test: 1637 mV index value: 904[0m
+[0;32mI (90938) Input_test: 1415 mV index value: 905[0m
+[0;32mI (91038) Input_test: 1162 mV index value: 906[0m
+[0;32mI (91138) Input_test: 912 mV index value: 907[0m
+[0;32mI (91238) Input_test: 663 mV index value: 908[0m
+[0;32mI (91338) Input_test: 440 mV index value: 909[0m
+[0;32mI (91438) Input_test: 253 mV index value: 910[0m
+[0;32mI (91538) Input_test: 93 mV index value: 911[0m
+[0;32mI (91638) Input_test: 0 mV index value: 912[0m
+[0;32mI (91738) Input_test: 0 mV index value: 913[0m
+[0;32mI (91838) Input_test: 0 mV index value: 914[0m
+[0;32mI (91938) Input_test: 0 mV index value: 915[0m
+[0;32mI (92038) Input_test: 0 mV index value: 916[0m
+[0;32mI (92138) Input_test: 7 mV index value: 917[0m
+[0;32mI (92238) Input_test: 300 mV index value: 918[0m
+[0;32mI (92338) Input_test: 546 mV index value: 919[0m
+[0;32mI (92438) Input_test: 750 mV index value: 920[0m
+[0;32mI (92538) Input_test: 963 mV index value: 921[0m
+[0;32mI (92638) Input_test: 1234 mV index value: 922[0m
+[0;32mI (92738) Input_test: 1535 mV index value: 923[0m
+[0;32mI (92838) Input_test: 1807 mV index value: 924[0m
+[0;32mI (92938) Input_test: 2005 mV index value: 925[0m
+[0;32mI (93038) Input_test: 2223 mV index value: 926[0m
+[0;32mI (93138) Input_test: 2475 mV index value: 927[0m
+[0;32mI (93238) Input_test: 2756 mV index value: 928[0m
+[0;32mI (93338) Input_test: 3042 mV index value: 929[0m
+[0;32mI (93438) Input_test: 3082 mV index value: 930[0m
+[0;32mI (93538) Input_test: 3082 mV index value: 931[0m
+[0;32mI (93638) Input_test: 3082 mV index value: 932[0m
+[0;32mI (93738) Input_test: 3082 mV index value: 933[0m
+[0;32mI (93838) Input_test: 3082 mV index value: 934[0m
+[0;32mI (93938) Input_test: 3082 mV index value: 935[0m
+[0;32mI (94038) Input_test: 3082 mV index value: 936[0m
+[0;32mI (94138) Input_test: 3082 mV index value: 937[0m
+[0;32mI (94238) Input_test: 2898 mV index value: 938[0m
+[0;32mI (94338) Input_test: 2674 mV index value: 939[0m
+[0;32mI (94438) Input_test: 2741 mV index value: 940[0m
+[0;32mI (94538) Input_test: 2774 mV index value: 941[0m
+[0;32mI (94638) Input_test: 2884 mV index value: 942[0m
+[0;32mI (94738) Input_test: 3082 mV index value: 943[0m
+[0;32mI (94838) Input_test: 3082 mV index value: 944[0m
+[0;32mI (94938) Input_test: 3082 mV index value: 945[0m
+[0;32mI (95038) Input_test: 3082 mV index value: 946[0m
+[0;32mI (95138) Input_test: 3082 mV index value: 947[0m
+[0;32mI (95238) Input_test: 3082 mV index value: 948[0m
+[0;32mI (95338) Input_test: 3082 mV index value: 949[0m
+[0;32mI (95438) Input_test: 3082 mV index value: 950[0m
+[0;32mI (95538) Input_test: 3082 mV index value: 951[0m
+[0;32mI (95638) Input_test: 3082 mV index value: 952[0m
+[0;32mI (95738) Input_test: 3082 mV index value: 953[0m
+[0;32mI (95838) Input_test: 3082 mV index value: 954[0m
+[0;32mI (95938) Input_test: 3082 mV index value: 955[0m
+[0;32mI (96038) Input_test: 3082 mV index value: 956[0m
+[0;32mI (96138) Input_test: 2981 mV index value: 957[0m
+[0;32mI (96238) Input_test: 2653 mV index value: 958[0m
+[0;32mI (96338) Input_test: 2354 mV index value: 959[0m
+[0;32mI (96438) Input_test: 2076 mV index value: 960[0m
+[0;32mI (96538) Input_test: 1808 mV index value: 961[0m
+[0;32mI (96638) Input_test: 1592 mV index value: 962[0m
+[0;32mI (96738) Input_test: 1380 mV index value: 963[0m
+[0;32mI (96838) Input_test: 1178 mV index value: 964[0m
+[0;32mI (96938) Input_test: 1004 mV index value: 965[0m
+[0;32mI (97038) Input_test: 834 mV index value: 966[0m
+[0;32mI (97138) Input_test: 849 mV index value: 967[0m
+[0;32mI (97238) Input_test: 1043 mV index value: 968[0m
+[0;32mI (97338) Input_test: 1416 mV index value: 969[0m
+[0;32mI (97438) Input_test: 1843 mV index value: 970[0m
+[0;32mI (97538) Input_test: 2037 mV index value: 971[0m
+[0;32mI (97638) Input_test: 1931 mV index value: 972[0m
+[0;32mI (97738) Input_test: 1655 mV index value: 973[0m
+[0;32mI (97838) Input_test: 1367 mV index value: 974[0m
+[0;32mI (97938) Input_test: 1162 mV index value: 975[0m
+[0;32mI (98038) Input_test: 1117 mV index value: 976[0m
+[0;32mI (98138) Input_test: 1125 mV index value: 977[0m
+[0;32mI (98238) Input_test: 1125 mV index value: 978[0m
+[0;32mI (98338) Input_test: 1125 mV index value: 979[0m
+[0;32mI (98438) Input_test: 1163 mV index value: 980[0m
+[0;32mI (98538) Input_test: 1357 mV index value: 981[0m
+[0;32mI (98638) Input_test: 1623 mV index value: 982[0m
+[0;32mI (98738) Input_test: 1823 mV index value: 983[0m
+[0;32mI (98838) Input_test: 1855 mV index value: 984[0m
+[0;32mI (98938) Input_test: 1750 mV index value: 985[0m
+[0;32mI (99038) Input_test: 1541 mV index value: 986[0m
+[0;32mI (99138) Input_test: 1336 mV index value: 987[0m
+[0;32mI (99238) Input_test: 1129 mV index value: 988[0m
+[0;32mI (99338) Input_test: 923 mV index value: 989[0m
+[0;32mI (99438) Input_test: 718 mV index value: 990[0m
+[0;32mI (99538) Input_test: 532 mV index value: 991[0m
+[0;32mI (99638) Input_test: 502 mV index value: 992[0m
+[0;32mI (99738) Input_test: 629 mV index value: 993[0m
+[0;32mI (99838) Input_test: 907 mV index value: 994[0m
+[0;32mI (99938) Input_test: 1273 mV index value: 995[0m
+[0;32mI (100038) Input_test: 1671 mV index value: 996[0m
+[0;32mI (100138) Input_test: 1937 mV index value: 997[0m
+[0;32mI (100238) Input_test: 1964 mV index value: 998[0m
+[0;32mI (100338) Input_test: 1831 mV index value: 999[0m
+[0;32mI (100438) Input_test: 1629 mV index value: 1000[0m
+[0;32mI (100538) Input_test: 1321 mV index value: 1001[0m
+[0;32mI (100638) Input_test: 1012 mV index value: 1002[0m
+[0;32mI (100738) Input_test: 750 mV index value: 1003[0m
+[0;32mI (100838) Input_test: 654 mV index value: 1004[0m
+[0;32mI (100938) Input_test: 723 mV index value: 1005[0m
+[0;32mI (101038) Input_test: 982 mV index value: 1006[0m
+[0;32mI (101138) Input_test: 1346 mV index value: 1007[0m
+[0;32mI (101238) Input_test: 1662 mV index value: 1008[0m
+[0;32mI (101338) Input_test: 1920 mV index value: 1009[0m
+[0;32mI (101438) Input_test: 2083 mV index value: 1010[0m
+[0;32mI (101538) Input_test: 2089 mV index value: 1011[0m
+[0;32mI (101638) Input_test: 1971 mV index value: 1012[0m
+[0;32mI (101738) Input_test: 1732 mV index value: 1013[0m
+[0;32mI (101838) Input_test: 1481 mV index value: 1014[0m
+[0;32mI (101938) Input_test: 1206 mV index value: 1015[0m
+[0;32mI (102038) Input_test: 948 mV index value: 1016[0m
+[0;32mI (102138) Input_test: 748 mV index value: 1017[0m
+[0;32mI (102238) Input_test: 643 mV index value: 1018[0m
+[0;32mI (102338) Input_test: 644 mV index value: 1019[0m
+[0;32mI (102438) Input_test: 784 mV index value: 1020[0m
+[0;32mI (102538) Input_test: 1078 mV index value: 1021[0m
+[0;32mI (102638) Input_test: 1374 mV index value: 1022[0m
+[0;32mI (102738) Input_test: 1516 mV index value: 1023[0m
+45,46,44,44,2825,2813,2823,45,44,47,2825,2824,44,44,45,44,39,45,44,44,45,44,2799,2823,2831,2824,46,45,44,2813,2825,2825,
+2811,2827,2831,2825,2831,2829,2877,2973,2985,2989,3004,3011,3012,3012,3011,3018,3048,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,2594,1855,
+1162,414,0,0,0,0,0,19,505,982,1445,1775,1954,1944,1691,1242,799,725,988,1463,1637,1473,975,682,756,1054,1413,1567,1422,904,531,604,
+937,1432,1878,2055,1891,1486,1054,976,1273,1730,1969,1791,1427,1241,1351,1703,2005,1954,1531,1050,1032,1392,1869,2220,2200,1906,1417,1191,1395,1750,1894,1861,
+1724,1693,1695,1742,1807,1894,1991,2096,2186,2224,2221,2171,2037,1993,1996,2080,2190,2271,2296,2306,2321,2333,2334,2337,2341,2223,1937,1739,1888,2269,2580,2590,
+2335,1943,1543,1551,1878,2246,2579,2713,2695,2645,2638,2638,2519,2222,1886,1755,1946,2293,2626,2774,2626,2288,1931,1882,2180,2546,2854,2759,2379,1957,1567,1258,
+1123,1290,1666,2096,2484,2877,3082,3082,3082,3082,3082,3082,2792,2328,1891,1464,1037,937,1182,1637,2150,2665,3082,3082,3082,3082,3082,3082,3082,3072,2544,2104,
+1718,1416,1219,1241,1496,1884,2344,2851,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3020,2546,2201,1849,1528,1194,864,572,354,348,491,756,1162,
+1590,1931,2213,2320,2197,1920,1580,1225,914,687,633,635,634,636,744,964,1289,1662,2005,2356,2730,2900,2908,2906,2905,2870,2689,2430,2131,1791,1406,1005,
+718,465,201,0,0,0,0,0,482,967,1391,1805,2291,2909,3082,3082,3082,3082,3082,3082,3082,3027,2514,2105,1742,1392,1086,1064,1303,1772,2303,2932,
+3082,3082,3082,3082,3082,2591,2175,2078,2280,2898,3082,3082,3082,3082,3082,2673,2298,2174,2296,2702,3082,3082,3082,3082,3082,3082,3082,2435,1847,1278,815,518,
+324,306,306,304,306,307,307,305,306,271,127,0,0,0,0,0,25,383,601,738,790,773,614,408,267,204,185,176,161,177,127,44,
+0,0,0,0,0,0,0,0,0,0,0,198,487,606,646,660,661,661,659,661,661,661,660,661,658,659,661,619,482,521,822,1153,
+1518,1870,2184,2396,2430,2296,1987,1565,1101,742,644,816,1153,1383,1490,1562,1617,1678,1823,1897,1750,1511,1387,1452,1768,2156,2345,2286,2053,1739,1444,1336,
+1426,1702,2100,2384,2394,2254,1969,1615,1284,1195,1323,1624,1989,2296,2543,2700,2896,3019,2954,2864,2863,2831,2691,2414,2175,2072,2135,2323,2475,2507,2493,2430,
+2312,2215,2200,2284,2447,2687,3040,3082,3082,3027,2758,2521,2321,2197,2337,2663,2905,2864,2621,2333,2047,1721,1450,1245,1213,1166,1115,1137,1330,1652,1994,2320,
+2691,3079,3082,3082,2988,2664,2348,2062,1898,1987,2213,2501,2833,3000,2953,2719,2379,2093,1805,1555,1393,1485,1819,2226,2691,3082,3082,3059,2677,2261,1925,1805,
+1971,2352,2833,3082,3082,3082,3082,3082,3004,2469,2235,2287,2634,3082,3082,3082,3082,3082,3082,3082,3073,2718,2345,1996,1676,1411,1192,1082,1076,1078,1069,1078,
+1085,1078,1078,1087,1078,1078,1082,1078,1076,1078,1078,1078,1078,1081,1081,1078,1078,1076,1082,1085,1089,1095,1115,1137,1178,1251,1323,1385,1468,1546,1599,1604,
+1595,1572,1536,1545,1597,1643,1704,1768,1865,1937,2005,1989,1996,2030,2054,2049,1931,1715,1469,1201,929,774,838,1143,1523,1849,2121,2288,2368,2379,2377,2245,
+2008,1741,1468,1233,1157,1260,1550,1861,2127,2370,2613,2853,2962,2944,2813,2587,2359,2096,1886,1694,1477,1385,1536,1904,2261,2565,2870,2955,2763,2435,2146,1865,
+1721,1840,2127,2443,2728,2771,2601,2319,2060,1849,1732,1704,1898,2207,2474,2541,2444,2233,1996,1817,1818,2049,2379,2745,2731,2461,2160,1846,1545,1269,1026,1018,
+1279,1694,2073,2284,2183,1910,1584,1395,1533,1907,2322,2683,2887,2845,2734,2691,2695,2691,2659,2519,2404,2345,2335,2291,2144,1994,2063,2377,2659,2948,3082,3082,
+3082,3082,3082,2919,2776,2660,2634,2744,2981,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3038,2943,2877,2944,3082,3082,3082,3082,3082,
+3082,3082,3082,3082,3078,2734,2426,2151,1883,1662,1444,1245,1066,897,723,529,331,160,7,0,0,0,0,0,157,413,656,871,1140,1422,1613,1536,
+1272,917,527,106,0,0,93,398,747,1163,1533,1537,1297,897,512,413,538,871,1273,1460,1367,1073,711,402,385,629,1014,1153,1018,683,375,382,
+624,967,1086,910,659,693,898,942,1034,1064,872,636,684,982,1078,888,577,421,428,428,430,426,426,440,427,428,428,487,623,757,726,506,
+324,312,417,572,673,666,518,319,268,347,500,630,676,661,512,325,270,298,402,458,579,678,654,493,304,197,238,387,551,708,873,1067,
+1272,1481,1653,1810,1931,2008,1994,1847,1637,1415,1162,912,663,440,253,93,0,0,0,0,0,7,300,546,750,963,1234,1535,1807,2005,2223,2475,
+2756,3042,3082,3082,3082,3082,3082,3082,3082,3082,2898,2674,2741,2774,2884,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,3082,2981,2653,2354,
+2076,1808,1592,1380,1178,1004,834,849,1043,1416,1843,2037,1931,1655,1367,1162,1117,1125,1125,1125,1163,1357,1623,1823,1855,1750,1541,1336,1129,923,718,532,
+502,629,907,1273,1671,1937,1964,1831,1629,1321,1012,750,654,723,982,1346,1662,1920,2083,2089,1971,1732,1481,1206,948,748,643,644,784,1078,1374,1516,
+83.189911	40.082478	23.072426	83.527916	81.774437	67.335876	64.214928	54.111229	78.046265	69.020294	65.891640	62.085388	61.055664	60.324368	63.316360	
+72.523102	65.539734	64.546654	51.945095	72.961319	62.160744	51.486134	61.613670	65.169998	53.192520	65.633156	64.761322	52.416054	65.291878	64.739517	70.017090	
+63.051903	60.707279	60.994278	54.332649	60.486870	60.087929	70.889114	60.639748	57.320107	57.554646	67.567200	54.863262	50.961567	55.975376	59.040367	54.403709	
+19.617691	56.865231	62.083435	52.507191	56.345921	42.941460	40.388214	63.403397	64.887764	62.473560	46.104721	66.638077	66.043068	57.256699	51.398930	61.654198	
+58.957443	58.921265	45.803055	38.490891	33.686787	31.904001	47.456688	47.993530	34.561874	57.530594	60.914421	51.897102	45.026886	58.950470	56.987770	55.944519	
+14.103647	36.956676	52.427856	50.976593	54.131599	49.460293	60.469040	42.783493	57.568810	30.674898	48.195744	49.267754	56.682579	54.144241	42.934021	35.357735	
+58.045883	53.767593	56.680061	52.306152	49.445122	48.720177	55.828552	46.481091	47.204849	57.372936	30.439837	43.053795	55.435902	56.383530	46.278862	38.650352	
+53.731499	32.133709	61.858864	47.289921	52.019646	54.986031	62.729858	51.755634	57.586967	51.669456	19.375261	39.715065	47.294716	17.706306	51.647972	29.600468	
+58.736641	56.164368	56.496258	31.006954	61.896805	37.586056	58.563049	47.191738	50.696190	22.362097	53.559326	53.042072	49.370842	30.560797	38.908379	47.722008	
+40.174866	45.003998	36.845596	37.443542	53.113129	51.239754	46.792759	39.468929	54.251930	41.040291	42.179787	45.209953	52.141151	42.591064	53.470947	51.144413	
+56.974979	24.157534	57.907433	46.019207	19.218706	38.877060	57.640343	46.715965	42.348900	41.402504	60.018620	43.358837	55.517307	46.730881	59.945396	52.417938	
+63.494534	49.504356	51.186096	58.092697	61.305443	47.127071	55.321930	30.201801	47.741734	50.986763	25.923641	56.765785	56.302410	45.982712	61.203037	27.865171	
+42.549606	52.720524	50.413837	56.589924	58.051483	33.309574	60.989052	47.600479	34.729469	49.664673	52.011063	52.626743	58.771042	53.236443	61.321556	51.484314	
+52.062134	59.230583	59.142426	38.640446	41.899296	55.108208	44.489571	52.120205	31.039610	44.713394	53.195724	51.532612	40.806458	48.178692	51.412926	45.693283	
+49.646614	55.824104	56.624062	21.511246	40.994713	46.948719	51.249928	46.429024	42.648117	48.911289	52.839211	51.489532	52.472748	48.142780	52.770561	36.494743	
+44.317989	24.351519	52.388607	43.298676	50.075283	49.896523	55.883526	46.723057	51.563400	43.075619	49.337059	58.744354	41.549870	47.600994	13.832069	59.436920	
+50.850136	52.026157	50.930183	36.609055	60.725117	28.349541	50.821899	40.088459	60.535984	34.403999	-9.868684	39.442131	52.842220	35.583042	49.230331	20.639362	
+52.875107	36.885139	51.714241	33.545242	48.073929	32.915649	50.351429	22.246208	56.170902	33.350922	58.509743	33.153854	58.540741	42.903614	52.546127	39.917137	
+37.043438	46.124187	43.960995	31.920710	58.152725	43.556580	47.607159	37.092209	57.584377	44.243198	25.691519	37.060398	54.118103	43.726555	41.542240	12.327255	
+44.892220	31.183737	5.788355	39.928143	39.449368	32.372787	46.695858	31.375736	46.744797	29.859623	13.932728	37.160923	58.708805	28.882458	47.471191	46.185589	
+60.029655	33.678852	29.559877	39.387497	56.696846	41.682087	50.071007	42.329117	52.052956	40.514225	44.908985	39.503517	44.691727	48.155102	59.309319	22.361986	
+48.182434	47.796154	58.868797	37.727959	55.358387	30.142052	54.270649	43.169632	58.389748	30.699329	49.245090	22.147110	57.238392	41.720692	46.111073	43.886932	
+53.777431	45.065685	45.885536	43.099304	52.602291	46.279392	47.551796	30.502777	47.344887	25.867281	45.681728	50.789162	38.057293	48.284103	46.941933	52.260780	
+34.170303	47.136200	54.391998	35.759945	47.114849	37.338867	39.656254	41.021175	55.060631	49.662762	53.435627	33.499653	54.912495	47.597763	54.825768	45.024570	
+52.772552	33.485657	50.749878	47.115143	54.577072	28.021736	37.475800	49.347805	52.911259	39.882717	46.110462	34.426075	39.391663	46.840900	37.071068	48.850494	
+44.642052	41.212524	56.158028	29.152283	40.443272	25.248365	53.642582	43.610325	49.054230	43.570026	43.793304	36.257515	53.590794	47.346691	53.128937	15.602145	
+50.278019	34.356926	53.089287	19.793404	47.085228	43.968502	44.618164	39.809460	31.381538	49.102989	45.021378	42.648186	38.586952	45.154800	42.218811	50.643749	
+55.331558	50.845650	43.551544	48.868851	53.083954	48.978004	49.749031	38.492702	35.286400	34.470085	41.903038	47.671844	25.854366	46.293861	48.010300	44.331497	
+44.874527	53.513943	50.875694	44.089680	29.672798	51.762482	42.999550	35.598671	43.353275	33.781796	43.329082	35.930653	48.259392	27.835632	50.640442	32.650925	
+44.542660	38.380589	47.957230	44.380474	53.632401	43.706890	39.849083	40.160641	46.570328	50.756310	46.506660	51.852791	43.138126	45.747345	41.910370	51.496597	
+50.093685	41.868408	33.840752	44.573296	43.077408	54.984207	42.929073	42.165333	30.258665	54.852455	33.768066	44.015812	34.706287	42.363640	31.104622	25.646410	
+30.219597	51.696739	39.426228	25.325888	28.069477	49.491798	45.782608	51.003498	36.303123	55.988556	43.973808	47.929539	37.130157	58.264610	25.126381	42.364143	
+50.026024	52.026039	41.216942	43.533264	44.840374	32.675850	42.973465	33.773304	37.439342	45.499802	42.493378	25.853790	37.215538	40.425392	34.721561	36.869263	
+24.405930	36.002708	21.890585	28.779764	32.045284	37.152817	30.252325	26.849258	34.147873	37.977367	22.786030	37.294449	27.152943	33.811779	33.702652	48.386925	
+45.874847	36.847771	41.221939	49.014198	42.911278	40.774467	-17.516655	45.832115	30.529968	31.166805	29.479578	51.714741	44.514290	35.477139	43.759430	53.056622	
+43.915901	47.792988	38.047459	28.900017	27.008457	50.363979	35.029594	45.583809	38.143631	42.021416	37.978981	25.484121	31.703838	45.883202	34.271553	37.493446	
+31.666842	50.718193	33.776325	19.943476	39.527477	32.204357	35.975788	31.836071	33.700241	47.906799	26.983807	48.253731	40.765060	31.200405	38.181492	55.512321	
+32.331108	46.141380	46.348995	47.250710	29.676842	43.653793	48.892433	39.328037	28.900383	25.340038	43.797203	45.789181	37.784771	45.812244	48.574966	52.326103	
+21.767860	48.804596	40.328331	54.799786	38.333927	41.977264	27.548107	52.682072	33.740356	47.040752	37.165409	43.212032	40.593208	54.082241	33.478886	52.288414	
+28.695194	48.294849	23.954981	38.448009	35.950150	35.598015	32.525146	49.006538	24.575270	43.118446	44.272381	52.055527	36.755756	52.045509	41.071381	48.240910	
+38.109486	54.612564	24.610825	43.053787	38.649868	56.944504	36.375404	48.386612	41.129688	52.723080	18.704241	50.833420	3.513803	46.746944	34.810955	47.266918	
+45.362602	51.670284	26.042984	20.030403	46.496460	1.536425	8.427331	45.127899	39.439014	39.357162	28.955738	51.308285	30.674786	34.898380	31.624340	52.849319	
+19.813076	39.390263	21.628664	54.764217	28.986774	43.376541	27.073069	57.459335	41.292198	37.958523	31.197016	57.696686	36.660236	47.230206	29.931831	56.686855	
+33.665600	55.446796	30.883076	54.203789	24.924994	50.528202	36.268387	48.755817	35.097065	51.046135	43.320854	48.475998	40.514130	53.676029	42.562706	55.943279	
+19.858248	50.313450	33.079880	58.590889	29.734501	48.493011	-3.524542	51.817108	32.664627	47.376778	33.212196	40.989830	38.816818	36.857815	31.073236	28.877422	
+37.660286	25.389652	41.210140	51.047283	35.564560	43.661827	25.398054	53.459679	22.029251	52.536575	40.095982	54.022842	35.782574	54.344177	40.239479	49.739117	
+16.721134	45.918541	41.399208	54.235535	41.203674	43.507694	38.622898	60.077015	36.193859	47.426270	28.795843	47.962128	36.024715	36.099819	30.927872	54.287354	
+40.242878	41.379601	40.758167	52.088974	26.009970	42.837440	42.132488	54.225826	32.812050	52.391785	37.569241	60.137936	29.140934	47.275585	23.838940	56.525188	
+36.781761	40.711601	34.731239	32.553288	41.425400	40.682404	11.891548	35.207302	34.503391	54.979729	34.316727	24.393293	32.821617	54.456173	32.781338	38.507828	
+41.102161	43.855099	30.038464	52.323822	34.560970	43.952236	41.308155	51.718655	35.697269	17.352110	41.765900	43.114273	37.023720	53.653492	33.601376	44.543159	
+9.111720	53.229897	16.118462	33.275772	35.210453	48.871071	31.691921	47.247639	36.586983	48.983227	39.265297	17.435175	32.218662	43.438065	41.943497	53.006142	
+25.601282	60.201946	39.713776	37.744820	-17.167881	57.596210	30.228889	54.717251	25.834867	57.038860	10.559897	41.107273	14.187048	57.316116	21.109509	55.233856	
+25.507318	55.419689	20.095894	51.260757	17.294582	57.589455	32.741756	51.825790	30.756462	48.363682	36.293633	32.299934	25.663696	56.867485	4.367300	61.498512	
+25.000927	47.253643	29.640963	61.350639	29.429874	50.735493	22.134951	54.945358	17.078880	54.777100	12.081513	46.589661	32.121693	52.408485	20.494900	55.177429	
+32.677738	35.318829	-0.044880	56.378067	26.398586	39.140083	24.273571	19.858307	28.807497	50.589985	30.109060	49.038143	11.776475	46.699142	17.857929	45.564949	
+16.456882	43.346092	30.935051	43.516319	27.572706	30.980877	5.930407	48.888344	29.237694	55.111275	5.846031	39.158100	16.613972	61.273666	25.270031	52.389870	
+21.870247	54.241203	25.672033	51.987133	33.270763	50.774971	27.388329	49.809170	36.264511	39.287518	1.431744	60.638767	36.401333	57.246948	29.311481	55.277176	
+23.452984	56.431232	31.561556	48.958366	36.417274	46.145023	30.252979	47.408653	36.765015	48.018433	12.382957	49.766136	26.791931	51.132351	31.497774	57.257538	
+-0.219242	47.825508	23.488087	52.934738	9.325698	52.484840	31.078796	54.983139	26.555931	34.218437	23.428297	60.019436	31.680264	45.429321	7.954624	51.955002	
+27.340359	38.928253	31.934757	52.545380	20.886742	53.398422	36.806210	55.897102	-11.766213	50.577816	34.059254	37.101173	29.200933	36.929897	32.765930	48.306728	
+28.279781	44.215012	33.056076	60.206940	21.322849	59.216469	29.085861	59.934330	27.005951	59.639282	30.920940	57.094681	33.114380	-8.232924	33.623825	57.858574	
+20.716829	58.611534	30.076855	53.658314	18.273287	52.880936	26.235762	58.634075	5.664567	66.913971	16.094093	62.418400	9.717886	65.586098	32.473373	38.583511	
+8.470497	54.791054	29.665100	63.160286	31.647720	59.576683	22.669535	56.615177	32.598881	62.780094	25.015152	63.625790	30.329313	68.298866	16.261204	64.053391	
+32.383137	70.048157	12.313361	59.820412	19.570532	38.899750	31.539295	62.196800	29.388729	63.270569	27.449802	71.862854	28.134212	76.991493	8.004484	81.829269	
+[0;32mI (109128) view: Data min[1] = -inf, Data max[4] = 83.527916[0m
+ ________________________________________________________________
+0                                                                |
+1|                                                              ||
+2|||                                                          ||||
+3||||||||| ||||||||||||   |     |        | ||| ||   ||||||||||||||
+4|  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+5|  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+6|  | | || ||  ||||||||| ||||| | ||||||||||| |||||||||||||||||||||
+7|  | | |       || ||              | |   ||  |   |||||||||||||||||
+8|               |                 |      |  |      || | | |||   |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (109208) view: Plot: Length=1024, min=0.000000, max=100.000000[0m
+AveMAXFage value detected 1732.086914
+Max value 83 at index 4
+[0;32mI (109248) pp: pp rom version: e7ae62f[0m
+[0;32mI (109248) net80211: net80211 rom version: e7ae62f[0m
+I (109258) wifi:wifi driver task: 3fcb5898, prio:23, stack:6656, core=0
+I (109268) wifi:wifi firmware version: a9f5b59
+I (109268) wifi:wifi certification version: v7.0
+I (109268) wifi:config NVS flash: enabled
+I (109268) wifi:config nano formating: disabled
+I (109278) wifi:Init data frame dynamic rx buffer num: 32
+I (109278) wifi:Init static rx mgmt buffer num: 5
+I (109278) wifi:Init management short buffer num: 32
+I (109288) wifi:Init dynamic tx buffer num: 32
+I (109288) wifi:Init static tx FG buffer num: 2
+I (109298) wifi:Init static rx buffer size: 1600
+I (109298) wifi:Init static rx buffer num: 10
+I (109308) wifi:Init dynamic rx buffer num: 32
+[0;32mI (109308) wifi_init: rx ba win: 6[0m
+[0;32mI (109308) wifi_init: tcpip mbox: 32[0m
+[0;32mI (109318) wifi_init: udp mbox: 6[0m
+[0;32mI (109318) wifi_init: tcp mbox: 6[0m
+[0;32mI (109328) wifi_init: tcp tx win: 5760[0m
+[0;32mI (109328) wifi_init: tcp rx win: 5760[0m
+[0;32mI (109338) wifi_init: tcp mss: 1440[0m
+[0;32mI (109338) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (109338) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (109348) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (109388) wifi:mode : sta (48:27:e2:e1:e0:f8)
+I (109388) wifi:enable tsf
+[0;32mI (109398) MQTT TASK: Event received: 7[0m
+[0;32mI (109398) MQTT TASK: DEFUALT[0m
+[0;31mE (109398) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (109408) esp-tls: Failed to open new connection[0m
+[0;31mE (109418) transport_base: Failed to open a new connection[0m
+[0;31mE (109418) mqtt_client: Error transport connect[0m
+[0;32mI (109428) MQTT TASK: Event received: 0[0m
+[0;32mI (109428) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (109438) MQTT TASK: Event received: 2[0m
+[0;32mI (109438) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+I (109398) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (109448) wifi:state: init -> auth (b0)
+[0;32mI (109458) MQTT TASK: Message sent: 'Average input signal 2183.241211', sent result 53690[0m
+I (109458) wifi:state: auth -> assoc (0)
+[0;32mI (109468) main_task: Returned from app_main()[0m
+I (109468) wifi:state: assoc -> run (10)
+W (109478) wifi:[ADDBA]rx delba, code:1, delete tid:0
+I (109498) wifi:connected with TIM-30577277, aid = 10, channel 1, BW20, bssid = d6:b7:09:09:cb:f6
+I (109498) wifi:security: WPA2-PSK, phy: bgn, rssi: -81
+I (109498) wifi:pm start, type: 1
+
+I (109498) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (109508) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (109568) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (111618) wifi:<ba-add>idx:0 (ifx:0, d6:b7:09:09:cb:f6), tid:0, ssn:0, winSize:64
+[0;32mI (113018) esp_netif_handlers: sta ip: 192.168.1.26, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (119448) MQTT TASK: Event received: 7[0m
+[0;32mI (119448) MQTT TASK: DEFUALT[0m
+[0;32mI (120058) MQTT TASK: Event received: 1[0m
+[0;32mI (120058) MQTT TASK: MQTT_EVENT_CONNECTED[0m
+[0;32mI (121118) MQTT TASK: Event received: 5[0m
+[0;32mI (121118) MQTT TASK: MQTT_EVENT_PUBLISHED[0m

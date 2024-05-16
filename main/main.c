@@ -11,16 +11,16 @@ void app_main(){
     mqtt_task(input_avg);
 
     //LOOP BEGINING
-    input_task();
-    fft_task(values);
+//     input_task();
+//     fft_task(values);
 
-    xTaskCreate(mqtt_task, "Mqtt task", 4096, NULL, 10, &mqttTask);
-    xTaskCreate(input_task, "Input task", 4096, NULL, 10, &inputTask);
+//     xTaskCreate(mqtt_task, "Mqtt task", 4096, NULL, 10, &mqttTask);
+//     xTaskCreate(input_task, "Input task", 4096, NULL, 10, &inputTask);
 
-    while(1){
-        fft_task(values);
+//     while(1){
+//         fft_task(values);
 
-        vTaskResume(mqttTask);
-        vTaskResume(inputTask);
-    }
+//         vTaskResume(mqttTask);
+//         vTaskResume(inputTask);
+//     }
 }

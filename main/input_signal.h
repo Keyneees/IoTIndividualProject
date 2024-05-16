@@ -37,6 +37,7 @@ void input_task(){
             // sum=0.0;
             i=0;
             vTaskDelay(5000/portTICK_PERIOD_MS);
+            return;
         }
         
         vTaskDelay(pdMS_TO_TICKS(100));
