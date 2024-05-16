@@ -3,15 +3,16 @@
 #include "esp_dsp.h"
 #include "common.h"
 
-#define APP_NAME "Signal_test"
+#define FFT "Signal_test"
 #define SAMPLES 1024
-#define R 2000000
+#define MAXF 2000000
 
 float window[SAMPLES];
 // float input_waves[SAMPLES];
 float fft[SAMPLES*2];
+float input_avg=0.0;
 
-void fft_task(){
+void fft_task(uint32_t values[]){
         ESP_ERROR_CHECK(dsps_fft2r_init_fc32(NULL, CONFIG_DSP_MAX_FFT_SIZE));
 
         dsps_wind_hann_f32(window, SAMPLES);
@@ -32,6 +33,7 @@ void fft_task(){
         for(int i=0; i<SAMPLES; i++){
             fft[i]=10*log10f((fft[i]*fft[i])/SAMPLES);
             dBsum+=values[i];
+            input_avg+=(float)values[i];
             if(!isinf(fft[i])){
                 printf("%f\t", fft[i]);
                 if((i+1)%16==0){
@@ -47,7 +49,7 @@ void fft_task(){
         }
 
         dsps_view(fft, SAMPLES, 64, 10, 0/*min*/, 100/*max*/, '|');
-        printf("Average value detected %f\n", ((float)dBsum)/SAMPLES);
+        printf("AveMAXFage value detected %f\n", ((float)dBsum)/SAMPLES);
         printf("Max value %d at index %d\n", maxValue, maxIndex);
-        // printf("Max frequency %f\n", ((float)index/SAMPLES)*R);
+        // pMAXFintf("Max fMAXFequency %f\n", ((float)index/SAMPLES)*MAXF);
 }

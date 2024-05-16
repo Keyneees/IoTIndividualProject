@@ -3,10 +3,10 @@
 
 #include "common.h"
 
-#define APP_NAME "Input_test"
-#define NUM 1024
+#define INPUT "Input_test"
+
 static esp_adc_cal_characteristics_t adc1_chars;
-uint32_t values[NUM];
+uint32_t values[SAMPLES];
 
 void input_task(){
     uint32_t voltage;
@@ -20,21 +20,20 @@ void input_task(){
     int i=0;
     // long int sum=0;
     while(1){
-        if(i<NUM){
+        if(i<SAMPLES){
             voltage=esp_adc_cal_raw_to_voltage(adc1_get_raw(ADC1_CHANNEL_0), &adc1_chars);
-            ESP_LOGI(APP_NAME, "%" PRIu32 " mV index value: %d", voltage, i);
+            ESP_LOGI(INPUT, "%" PRIu32 " mV index value: %d", voltage, i);
             values[i]=voltage;
-            input_avg+=(float)voltage;
             i++;
         }else{
-            for(int j=0; j<NUM; j++){
+            for(int j=0; j<SAMPLES; j++){
                 // sum+=values[i];
                 printf("%ld,", values[j]);
                 if((j+1)%32==0){
                     printf("\n");
                 }
             }
-            // printf("Average value: %f\n", sum/((float)NUM));
+            // printf("Average value: %f\n", sum/((float)SAMPLES));
             // sum=0.0;
             i=0;
             vTaskDelay(5000/portTICK_PERIOD_MS);

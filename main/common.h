@@ -8,6 +8,6 @@
 #include "esp_log.h"
 #include "esp_system.h"
 
-uint32_t values[NUM];
-#define NUM 1024
-float input_avg=0.0;
+#define SAMPLES 1024
+
+
