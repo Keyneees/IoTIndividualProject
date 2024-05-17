@@ -9,6 +9,7 @@
 #include "mqtt_client.h"
 #include "certificate.h"
 #include "common.h"
+#include "struct.h"
 
 #define MQTT "MQTT TASK"
 #define WIFI_SSID "TIM-30577277"
@@ -19,9 +20,18 @@
 
 #define URI "mqtts://0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud:8883"
 
+esp_mqtt_client_config_t mqtt_cfg={
+    .broker.address.uri=URI,
+    .broker.verification.certificate=(const char*)certificate_pem,
+    .credentials.username=MQTT_USERNAME,
+    .credentials.authentication.password=MQTT_PWD,
+};
+
+esp_mqtt_client_handle_t client;
+
 static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_t event_id, void* event_data){
     esp_mqtt_event_handle_t event=event_data;
-    esp_mqtt_client_handle_t client=event->client;
+    client=event->client;
     esp_mqtt_event_id_t id=(esp_mqtt_event_id_t) event_id;
 
     ESP_LOGI(MQTT, "Event received: %d", (int)event_id);
@@ -83,20 +93,6 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base, int32_t e
 }
 
 static void mqtt_configuration(float input_avg){
-    esp_mqtt_client_config_t mqtt_cfg={
-        .broker.address.uri=URI,
-        .broker.verification.certificate=(const char*)certificate_pem,
-        .credentials.username=MQTT_USERNAME,
-        .credentials.authentication.password=MQTT_PWD,
-    };
-
-    esp_mqtt_client_handle_t client=esp_mqtt_client_init(&mqtt_cfg);
-    if(client==NULL)
-        ESP_LOGE(MQTT, "Can't init client");
-
-    esp_mqtt_client_register_event(client, MQTT_EVENT_ANY, mqtt_event_handler, NULL);
-    esp_mqtt_client_start(client);
-
     char msg[64];
     sprintf(msg, "Average input signal %f", input_avg/SAMPLES);
     char* topic="/test/device1/iot";
@@ -112,7 +108,8 @@ static void wifi_configuration(float input_avg){
 }
 
 void mqtt_task(void* params){
-
+    mqttParamsTask_t* mqttParams=(mqttParamsTask_t*)params;
+    wifi_configuration(mqttParams->average);
 }
 
 void mqtt_init_wifi(float input_avg){
@@ -137,6 +134,13 @@ void mqtt_init_wifi(float input_avg){
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_struct));
     ESP_ERROR_CHECK(esp_wifi_start());
+
+    client=esp_mqtt_client_init(&mqtt_cfg);
+    if(client==NULL)
+        ESP_LOGE(MQTT, "Can't init client");
+
+    esp_mqtt_client_register_event(client, MQTT_EVENT_ANY, mqtt_event_handler, NULL);
+    esp_mqtt_client_start(client);
 
     wifi_configuration(input_avg);
 }

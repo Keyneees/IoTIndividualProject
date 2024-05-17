@@ -1,0 +1,12 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4037cc4f: vPortTaskWrapper at /home/michele/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375a4e: panic_abort at /home/michele/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037c125: esp_system_abort at /home/michele/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40384261: abort at /home/michele/esp/v5.2.1/esp-idf/components/newlib/abort.c:38
+0x4037cc4f: vPortTaskWrapper at /home/michele/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x403759c4: esp_restart_noos at /home/michele/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m

@@ -2,13 +2,13 @@
 
 #include "esp_dsp.h"
 #include "common.h"
+// #include "struct.h"
 
 #define FFT "Signal_test"
 #define SAMPLES 1024
 #define MAXF 2000000
 
 float window[SAMPLES];
-// float input_waves[SAMPLES];
 float fft[SAMPLES*2];
 float input_avg=0.0;
 float delay=0.0;
@@ -40,8 +40,6 @@ void fft_task(uint32_t values[]){
                 if((i+1)%16==0){
                     printf("\n");
                 }
-            }else{
-                // infIndex++;
             }
             if(maxValue<fft[i]){
                 maxIndex=i;

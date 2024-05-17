@@ -1,7 +1,7 @@
 #include "fft.h"
 #include "input_signal.h"
-#include "mqtt.h"
-#include "struct.h"
+// #include "mqtt.h"
+// #include "struct.h"
 
 TaskHandle_t inputTask=NULL;
 TaskHandle_t mqttTask=NULL;
@@ -17,22 +17,22 @@ void app_main(){
     // mqttParams=(mqttParamsTask_t*)malloc(sizeof(mqttParamsTask_t));
     // inputParams=(inputParamsTask_t*)malloc(sizeof(inputParamsTask_t)); 
     //LOOP BEGINING
-    input_task(NULL);
-    fft_task(values);
-    mqttParamsTask_t mqttParams={
-        .average=input_avg,
-    };
-    inputParamsTask_t inputParams={
-        .timeDelay=delay,
-    };
+    // input_task(NULL);
+    // fft_task(values);
+    // mqttParamsTask_t mqttParams={
+    //     .average=input_avg,
+    // };
+    // inputParamsTask_t inputParams={
+    //     .timeDelay=delay,
+    // };
 
-    xTaskCreate(mqtt_task, "Mqtt task", 4096, (void*) &mqttParams, 10, &mqttTask);
-    xTaskCreate(input_task, "Input task", 4096, (void*) &inputParams, 10, &inputTask);
+    // xTaskCreate(mqtt_task, "Mqtt task", 4096, (void*) &mqttParams, 10, &mqttTask);
+    // xTaskCreate(input_task, "Input task", 4096, (void*) &inputParams, 10, &inputTask);
 
-    while(1){
-        fft_task(values);
+    // while(1){
+    //     fft_task(values);
 
-        vTaskResume(mqttTask);
-        vTaskResume(inputTask);
-    }
+    //     vTaskResume(mqttTask);
+    //     vTaskResume(inputTask);
+    // }
 }

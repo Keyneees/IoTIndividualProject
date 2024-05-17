@@ -1,4 +1,4 @@
-#include "common.h"
+#include <stdint.h>
 
 typedef struct{
     float average;
@@ -6,7 +6,7 @@ typedef struct{
 
 //FORSE NON SERVE
 typedef struct{
-    uint32_t values [SAMPLES];
+    //uint32_t values [SAMPLES];
 }fftParamsTask_t;
 
 typedef struct{
