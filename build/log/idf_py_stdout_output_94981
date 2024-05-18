@@ -1,0 +1,632 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 18 2024 17:22:52[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=2cea0h (183968) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=0003cec8 vaddr=3fc98600 size=03150h ( 12624) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=9d5c0h (644544) map[0m
+[0;32mI (254) esp_image: segment 3: paddr=000dd5e8 vaddr=3fc9b750 size=01dd0h (  7632) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000df3c0 vaddr=40374000 size=14578h ( 83320) load[0m
+[0;32mI (286) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Multicore app[0m
+[0;32mI (308) cpu_start: Pro cpu start user code[0m
+[0;32mI (308) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (308) cpu_start: Application information:[0m
+[0;32mI (311) cpu_start: Project name:     individaul_project[0m
+[0;32mI (317) cpu_start: App version:      73d90b4-dirty[0m
+[0;32mI (322) cpu_start: Compile time:     May 18 2024 17:22:43[0m
+[0;32mI (328) cpu_start: ELF file SHA256:  8adbfac22...[0m
+[0;32mI (334) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (339) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (344) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (349) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (353) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 3FCA5C38 len 00043AD8 (270 KiB): RAM[0m
+[0;32mI (367) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (373) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (386) spi_flash: detected chip: gd[0m
+[0;32mI (389) spi_flash: flash io: dio[0m
+[0;33mW (393) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (407) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (415) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (422) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (429) main_task: Started on CPU0[0m
+[0;32mI (439) main_task: Calling app_main()[0m
+Deviation 25.802458
+Mean 11.690047
+current index 0	z value 2.787873
+current index 1	z value 1.760670
+current index 2	z value 2.554130
+current index 3	z value 2.554130
+current index 4	z value 1.672269
+current index 5	z value 1.577793
+current index 6	z value 2.320529
+current index 7	z value 2.344632
+current index 8	z value 2.321048
+current index 9	z value 2.294667
+current index 10	z value 2.164811
+current index 11	z value 2.030335
+current index 12	z value 2.008265
+current index 13	z value 1.564122
+current index 14	z value 2.086977
+current index 15	z value 2.093656
+current index 16	z value 2.087852
+current index 17	z value 2.152206
+current index 18	z value 2.088043
+current index 19	z value 1.980333
+current index 20	z value 2.087652
+current index 21	z value 2.081489
+current index 22	z value 1.877854
+current index 23	z value 1.881891
+current index 24	z value 1.603914
+current index 25	z value 1.579195
+current index 26	z value 1.441887
+current index 27	z value 1.925515
+current index 28	z value 2.008626
+current index 29	z value 1.975767
+current index 30	z value 1.948185
+current index 31	z value 1.856104
+current index 32	z value 1.837275
+current index 33	z value 1.854924
+current index 34	z value 1.781914
+current index 35	z value 1.773715
+current index 36	z value 1.936874
+current index 37	z value 1.831597
+current index 38	z value 1.786524
+current index 39	z value 1.469189
+current index 40	z value 1.857761
+current index 41	z value 1.878616
+current index 42	z value 1.855599
+current index 43	z value 1.920978
+current index 44	z value 1.856951
+current index 45	z value 1.707649
+current index 46	z value 0.378111
+current index 47	z value 1.619341
+current index 48	z value 1.842378
+current index 49	z value 1.809878
+current index 50	z value 0.988695
+current index 51	z value 1.347956
+current index 52	z value 1.858504
+current index 53	z value 1.845600
+current index 54	z value 1.143637
+current index 55	z value 1.397969
+current index 56	z value 1.134623
+current index 57	z value 0.975452
+current index 58	z value 1.060224
+current index 59	z value 1.311546
+current index 60	z value 1.144667
+current index 61	z value 1.388000
+current index 62	z value 1.135776
+current index 63	z value 1.073402
+current index 64	z value 1.219593
+current index 65	z value 1.197697
+current index 66	z value 1.159365
+current index 67	z value 1.299438
+current index 68	z value 1.214751
+current index 69	z value 0.373105
+current index 70	z value 0.922009
+current index 71	z value 1.203940
+current index 72	z value 1.211056
+current index 73	z value 1.117265
+current index 74	z value 1.281432
+current index 75	z value 1.216649
+current index 76	z value 1.237288
+current index 77	z value 1.248659
+current index 78	z value 1.261838
+current index 79	z value 1.249439
+current index 80	z value 1.241500
+current index 81	z value 1.247606
+current index 82	z value 1.242413
+current index 83	z value 1.247815
+current index 84	z value 1.257111
+current index 85	z value 1.248048
+current index 86	z value 1.240164
+current index 87	z value 1.240298
+current index 88	z value 1.209523
+current index 89	z value 1.452186
+current index 90	z value 1.243188
+current index 91	z value 1.327876
+current index 92	z value 0.988123
+current index 93	z value 1.345600
+current index 94	z value 1.236741
+current index 95	z value 1.068943
+current index 96	z value 1.267476
+current index 97	z value 1.244499
+current index 98	z value 1.360462
+current index 99	z value 1.346931
+current index 100	z value 0.381648
+current index 101	z value 1.064384
+current index 102	z value 0.555757
+current index 103	z value 0.150148
+current index 104	z value 0.666825
+current index 105	z value 1.216925
+current index 106	z value 1.137958
+current index 107	z value 1.013344
+current index 108	z value 1.138861
+current index 109	z value 0.902713
+current index 110	z value 1.026672
+current index 111	z value 1.114390
+current index 112	z value 1.234096
+current index 113	z value 1.185140
+current index 114	z value 1.368594
+current index 115	z value 1.385420
+current index 116	z value 1.350536
+current index 117	z value 1.277362
+current index 118	z value 1.015562
+current index 119	z value 1.352469
+current index 120	z value 1.352542
+current index 121	z value 1.033439
+current index 122	z value 0.969153
+current index 123	z value 1.221647
+current index 124	z value 1.366287
+current index 125	z value 1.271906
+current index 126	z value 1.070427
+current index 127	z value 1.265200
+current index 128	z value 1.034315
+current index 129	z value 1.213901
+current index 130	z value 0.818518
+current index 131	z value 1.357917
+current index 132	z value 1.361591
+current index 133	z value 1.308639
+current index 134	z value 1.364728
+current index 135	z value 1.293331
+current index 136	z value 1.170892
+current index 137	z value 1.145730
+current index 138	z value 1.352093
+current index 139	z value 1.318678
+current index 140	z value 0.935828
+current index 141	z value 1.409797
+current index 142	z value 1.313794
+current index 143	z value 1.006060
+current index 144	z value 0.914061
+current index 145	z value 0.946604
+current index 146	z value 1.044718
+current index 147	z value 1.201239
+current index 148	z value 0.983738
+current index 149	z value 1.006616
+current index 150	z value 1.272711
+current index 151	z value 1.172144
+current index 152	z value 1.376618
+current index 153	z value 1.533835
+current index 154	z value 1.479920
+current index 155	z value 1.539007
+current index 156	z value 1.331619
+current index 157	z value 1.474876
+current index 158	z value 1.378063
+current index 159	z value 1.483957
+current index 160	z value 1.541915
+current index 161	z value 1.319176
+current index 162	z value 1.508436
+current index 163	z value 1.583000
+current index 164	z value 1.616254
+current index 165	z value 1.388826
+current index 166	z value 1.415405
+current index 167	z value 1.430441
+current index 168	z value 1.050198
+current index 169	z value 1.442184
+current index 170	z value 1.645454
+current index 171	z value 1.621531
+current index 172	z value 1.429223
+current index 173	z value 1.299388
+current index 174	z value 1.483042
+current index 175	z value 1.611594
+current index 176	z value 1.613849
+current index 177	z value 1.457588
+current index 178	z value 1.651677
+current index 179	z value 1.511311
+current index 180	z value 1.400931
+current index 181	z value 1.110192
+current index 182	z value 1.465598
+current index 183	z value 1.516504
+current index 184	z value 1.315605
+current index 185	z value 1.270252
+current index 186	z value 1.436489
+current index 187	z value 1.533067
+current index 188	z value 1.500778
+current index 189	z value 1.265740
+current index 190	z value 1.709477
+current index 191	z value 1.528961
+current index 192	z value 1.515016
+current index 193	z value 1.620795
+current index 194	z value 1.673497
+current index 195	z value 1.653497
+current index 196	z value 1.502500
+current index 197	z value 1.450079
+current index 198	z value 1.621746
+current index 199	z value 1.882172
+current index 200	z value 1.774946
+current index 201	z value 1.782328
+current index 202	z value 1.691485
+current index 203	z value 1.781910
+current index 204	z value 1.746631
+current index 205	z value 1.603635
+current index 206	z value 1.592373
+current index 207	z value 1.567089
+current index 208	z value 1.650924
+current index 209	z value 1.438141
+current index 210	z value 1.452395
+current index 211	z value 1.566455
+current index 212	z value 1.470576
+current index 213	z value 1.368780
+current index 214	z value 1.223818
+current index 215	z value 1.203620
+current index 216	z value 1.311148
+current index 217	z value 1.547911
+current index 218	z value 1.520933
+current index 219	z value 1.359393
+current index 220	z value 1.386463
+current index 221	z value 1.515332
+current index 222	z value 1.264945
+current index 223	z value 1.438118
+current index 224	z value 1.232425
+current index 225	z value 1.421160
+current index 226	z value 1.115223
+current index 227	z value 1.293832
+current index 228	z value 1.477848
+current index 229	z value 1.206014
+current index 230	z value 0.687298
+current index 231	z value 1.461506
+current index 232	z value 1.369832
+current index 233	z value 1.056499
+current index 234	z value 0.909834
+current index 235	z value 0.907555
+current index 236	z value 1.198855
+current index 237	z value 0.881155
+current index 238	z value 0.898478
+current index 239	z value 1.081566
+current index 240	z value 0.901193
+current index 241	z value 1.033148
+current index 242	z value 0.931983
+current index 243	z value 0.859909
+current index 244	z value 1.119827
+current index 245	z value 0.893129
+current index 246	z value 0.948359
+current index 247	z value 1.112371
+current index 248	z value 0.810108
+current index 249	z value 0.947691
+current index 250	z value 0.987986
+current index 251	z value 0.689707
+current index 252	z value 0.826506
+current index 253	z value 0.917052
+current index 254	z value 0.921791
+current index 255	z value 1.263802
+current index 256	z value 1.513934
+current index 257	z value 1.368250
+current index 258	z value 1.264837
+current index 259	z value 1.079939
+current index 260	z value 1.321070
+current index 261	z value 0.871261
+current index 262	z value 1.389935
+current index 263	z value 1.437924
+current index 264	z value 1.440756
+current index 265	z value 1.468679
+current index 266	z value 1.620053
+current index 267	z value 1.193985
+current index 268	z value 1.315288
+current index 269	z value 1.334329
+current index 270	z value 1.601631
+current index 271	z value 1.739822
+current index 272	z value 1.639014
+current index 273	z value 1.559403
+current index 274	z value 1.519736
+current index 275	z value 1.780640
+current index 276	z value 1.521528
+current index 277	z value 1.866004
+current index 278	z value 1.297071
+current index 279	z value 1.515152
+current index 280	z value 1.479610
+current index 281	z value 1.637117
+current index 282	z value 1.666555
+current index 283	z value 1.809609
+current index 284	z value 1.820063
+current index 285	z value 1.678483
+current index 286	z value 1.682523
+current index 287	z value 1.945878
+current index 288	z value 1.810321
+current index 289	z value 1.484953
+current index 290	z value 1.600121
+current index 291	z value 1.773957
+current index 292	z value 1.304330
+current index 293	z value 1.466733
+current index 294	z value 1.543021
+current index 295	z value 1.663009
+current index 296	z value 1.641865
+current index 297	z value 1.491245
+current index 298	z value 1.576277
+current index 299	z value 1.769887
+current index 300	z value 1.467548
+current index 301	z value 1.464971
+current index 302	z value 1.714426
+current index 303	z value 1.235669
+current index 304	z value 1.379306
+current index 305	z value 1.186581
+current index 306	z value 1.502147
+current index 307	z value 1.455145
+current index 308	z value 1.432324
+current index 309	z value 1.212182
+current index 310	z value 1.654909
+current index 311	z value 1.762973
+current index 312	z value 1.014375
+current index 313	z value 1.327985
+current index 314	z value 1.685605
+current index 315	z value 1.477073
+current index 316	z value 1.664944
+current index 317	z value 1.400843
+current index 318	z value 1.475592
+current index 319	z value 1.529602
+current index 320	z value 1.286118
+current index 321	z value 1.327863
+current index 322	z value 1.719642
+current index 323	z value 1.255506
+current index 324	z value 1.166051
+current index 325	z value 1.420397
+current index 326	z value 1.396837
+current index 327	z value 1.222083
+current index 328	z value 1.390471
+current index 329	z value 1.352688
+current index 330	z value 0.862257
+current index 331	z value 1.478824
+current index 332	z value 1.314489
+current index 333	z value 1.095124
+current index 334	z value 1.145049
+current index 335	z value 1.302338
+current index 336	z value 0.448562
+current index 337	z value 0.478811
+current index 338	z value 0.941973
+current index 339	z value 0.971925
+current index 340	z value 0.878895
+current index 341	z value 0.838678
+current index 342	z value 0.864386
+current index 343	z value 1.013441
+current index 344	z value 0.970260
+current index 345	z value 1.121622
+current index 346	z value 0.636398
+current index 347	z value 0.977272
+current index 348	z value 0.815919
+current index 349	z value 0.981259
+current index 350	z value 1.094712
+current index 351	z value 0.850391
+current index 352	z value 1.096775
+current index 353	z value 1.109972
+current index 354	z value 0.948087
+current index 355	z value 0.782330
+current index 356	z value 1.151698
+current index 357	z value 0.842052
+current index 358	z value 0.827271
+current index 359	z value 1.074032
+current index 360	z value 1.081434
+current index 361	z value 0.921361
+current index 362	z value 0.933130
+current index 363	z value 0.798896
+current index 364	z value 0.816255
+current index 365	z value 0.495370
+current index 366	z value 0.613355
+current index 367	z value 1.015634
+current index 368	z value 1.110136
+current index 369	z value 0.975048
+current index 370	z value 1.149148
+current index 371	z value 1.172348
+current index 372	z value 1.177986
+current index 373	z value 1.193873
+current index 374	z value 1.244424
+current index 375	z value 1.116658
+current index 376	z value 0.965761
+current index 377	z value 1.143906
+current index 378	z value 1.166335
+current index 379	z value 1.168816
+current index 380	z value 1.195336
+current index 381	z value 1.204301
+current index 382	z value 1.197285
+current index 383	z value 0.910658
+current index 384	z value 1.073726
+current index 385	z value 1.152564
+current index 386	z value 1.162043
+current index 387	z value 1.183774
+current index 388	z value 1.188855
+current index 389	z value 1.203297
+current index 390	z value 0.892198
+current index 391	z value 1.069660
+current index 392	z value 1.150095
+current index 393	z value 1.158480
+current index 394	z value 1.183973
+current index 395	z value 1.176571
+current index 396	z value 0.450357
+current index 397	z value 0.369471
+current index 398	z value 0.911031
+current index 399	z value 1.066853
+current index 400	z value 1.124720
+current index 401	z value 1.151243
+current index 402	z value 1.161595
+current index 403	z value 1.184052
+current index 404	z value 1.196158
+current index 405	z value 1.195693
+current index 406	z value 0.473678
+current index 407	z value 0.263040
+current index 408	z value 0.391947
+current index 409	z value 0.346826
+current index 410	z value 0.160354
+current index 411	z value 0.425932
+current index 412	z value 0.260928
+current index 413	z value 0.444609
+current index 414	z value 0.735329
+current index 415	z value 1.123955
+current index 416	z value 1.144500
+current index 417	z value 1.164117
+current index 418	z value 1.175054
+current index 419	z value 1.195494
+current index 420	z value 1.516441
+current index 421	z value 0.370222
+current index 422	z value 1.538512
+current index 423	z value 1.505883
+current index 424	z value 0.961457
+current index 425	z value 1.215880
+current index 426	z value 1.576833
+current index 427	z value 1.602442
+current index 428	z value 1.355855
+current index 429	z value 1.141841
+current index 430	z value 1.221187
+current index 431	z value 1.959127
+current index 432	z value 1.214775
+current index 433	z value 1.602003
+current index 434	z value 1.494897
+current index 435	z value 1.613649
+current index 436	z value 1.405725
+current index 437	z value 1.564773
+current index 438	z value 1.289702
+current index 439	z value 1.458080
+current index 440	z value 1.047902
+current index 441	z value 1.628073
+current index 442	z value 1.662400
+current index 443	z value 1.806352
+current index 444	z value 1.680409
+current index 445	z value 1.161312
+current index 446	z value 1.705019
+current index 447	z value 1.831881
+current index 448	z value 1.450461
+current index 449	z value 1.060626
+current index 450	z value 1.149708
+current index 451	z value 1.914573
+current index 452	z value 1.453543
+current index 453	z value 1.744434
+current index 454	z value 1.746696
+current index 455	z value 1.213867
+current index 456	z value 1.761985
+current index 457	z value 1.634338
+current index 458	z value 1.740524
+current index 459	z value 1.333400
+current index 460	z value 1.362119
+current index 461	z value 1.546663
+current index 462	z value 1.540687
+current index 463	z value 1.726297
+current index 464	z value 1.725694
+current index 465	z value 1.525072
+current index 466	z value 1.750097
+current index 467	z value 1.511576
+current index 468	z value 1.696511
+current index 469	z value 1.621736
+current index 470	z value 1.621612
+current index 471	z value 1.621861
+current index 472	z value 1.628911
+current index 473	z value 1.642196
+current index 474	z value 1.621794
+current index 475	z value 1.963679
+current index 476	z value 1.622074
+current index 477	z value 1.622064
+current index 478	z value 1.686530
+current index 479	z value 1.904027
+current index 480	z value 1.785420
+current index 481	z value 1.620834
+current index 482	z value 1.621631
+current index 483	z value 2.151256
+current index 484	z value 1.627319
+current index 485	z value 1.957854
+current index 486	z value 1.621510
+current index 487	z value 1.621569
+current index 488	z value 1.905172
+current index 489	z value 1.714699
+current index 490	z value 2.063086
+current index 491	z value 2.038938
+current index 492	z value 2.123498
+current index 493	z value 1.756230
+current index 494	z value 1.745171
+current index 495	z value 1.886659
+current index 496	z value 2.041548
+current index 497	z value 1.734866
+current index 498	z value 1.504936
+current index 499	z value 1.467413
+Left index 0, left value 0.000000
+[0;32mI (2049) view: Data min[103] = 15.564241, Data max[0] = 83.624023[0m
+ ________________________________________________________________________________________________________________________________
+0                                                                                                                                |
+1|                                                                                                                               |
+2||| |                                                                                                                      |    |
+3|| | |||||||||                                  | |||                || ||| || |  |                           |  ||||||| ||||||||
+4   |  |  | ||||| ||   || |   |||||||| |||||||||||||  |||||||     ||||  | ||| |||||||||                     ||||||||||   |       |
+5           |    || |||  |||||    |  ||     |              |||||||||                 | ||||||||||||||||||  ||||  |               |
+6           |     |       ||                                                           | |    |       | | | |                    |
+7                          |                                                                             ||                      |
+8                                                                                                                                |
+9                                                                                                                                |
+ 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567
+[0;32mI (2189) view: Plot: Length=500, min=0.000000, max=100.000000[0m
+[0;32mI (2229) pp: pp rom version: e7ae62f[0m
+[0;32mI (2229) net80211: net80211 rom version: e7ae62f[0m
+I (2239) wifi:wifi driver task: 3fcb5fc8, prio:23, stack:6656, core=0
+I (2249) wifi:wifi firmware version: a9f5b59
+I (2249) wifi:wifi certification version: v7.0
+I (2249) wifi:config NVS flash: enabled
+I (2249) wifi:config nano formating: disabled
+I (2249) wifi:Init data frame dynamic rx buffer num: 32
+I (2259) wifi:Init static rx mgmt buffer num: 5
+I (2259) wifi:Init management short buffer num: 32
+I (2269) wifi:Init dynamic tx buffer num: 32
+I (2269) wifi:Init static tx FG buffer num: 2
+I (2279) wifi:Init static rx buffer size: 1600
+I (2279) wifi:Init static rx buffer num: 10
+I (2279) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2289) wifi_init: rx ba win: 6[0m
+[0;32mI (2289) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2299) wifi_init: udp mbox: 6[0m
+[0;32mI (2299) wifi_init: tcp mbox: 6[0m
+[0;32mI (2299) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2309) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2309) wifi_init: tcp mss: 1440[0m
+[0;32mI (2319) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2319) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2329) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (2369) wifi:mode : sta (48:27:e2:e1:e0:f8)
+I (2369) wifi:enable tsf
+[0;32mI (2369) MQTT TASK: Event received: 7[0m
+[0;32mI (2369) MQTT TASK: DEFUALT[0m
+[0;31mE (2369) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2379) esp-tls: Failed to open new connection[0m
+[0;31mE (2389) transport_base: Failed to open a new connection[0m
+[0;31mE (2399) mqtt_client: Error transport connect[0m
+[0;32mI (2399) MQTT TASK: Event received: 0[0m
+[0;32mI (2409) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (2409) MQTT TASK: Event received: 2[0m
+[0;32mI (2409) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (2419) MQTT TASK: Message sent: 'Average input signal 1890.368042', sent result 39464[0m
+[0;32mI (2429) main_task: Returned from app_main()[0m
+I (2469) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (2469) wifi:state: init -> auth (b0)
+I (2479) wifi:state: auth -> assoc (0)
+I (2479) wifi:state: assoc -> run (10)
+W (2479) wifi:[ADDBA]rx delba, code:1, delete tid:0
+I (2499) wifi:connected with TIM-30577277, aid = 10, channel 11, BW20, bssid = d6:b7:09:09:cb:f6
+I (2499) wifi:security: WPA2-PSK, phy: bgn, rssi: -78
+I (2499) wifi:pm start, type: 1
+
+I (2499) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2509) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (2569) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4619) wifi:<ba-add>idx:0 (ifx:0, d6:b7:09:09:cb:f6), tid:0, ssn:0, winSize:64
+[0;32mI (5519) esp_netif_handlers: sta ip: 192.168.1.7, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (12419) MQTT TASK: Event received: 7[0m
+[0;32mI (12419) MQTT TASK: DEFUALT[0m
+[0;32mI (13109) MQTT TASK: Event received: 1[0m
+[0;32mI (13109) MQTT TASK: MQTT_EVENT_CONNECTED[0m
+[0;32mI (14249) MQTT TASK: Event received: 5[0m
+[0;32mI (14249) MQTT TASK: MQTT_EVENT_PUBLISHED[0m

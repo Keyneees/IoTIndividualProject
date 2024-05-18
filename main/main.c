@@ -10,7 +10,7 @@ TaskHandle_t mqttTask=NULL;
 // inputParamsTask_t inputParams;
 
 void app_main(){
-    input_task(NULL);
+    init_input(NULL);
     fft_task(values);
     mqtt_init_wifi(input_avg);
 

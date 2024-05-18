@@ -8,6 +8,6 @@
 #include "esp_log.h"
 #include "esp_system.h"
 
-#define SAMPLES 1000
+#define SAMPLES 1024
 
 
