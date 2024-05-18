@@ -1,0 +1,67 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4200d823: dsps_view at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/managed_components/espressif__esp-dsp/modules/support/view/dsps_view.cpp:33
+[0m
+[0;33m0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m0x40000000: _WindowOverflow4 in ROM
+0x40054bf0: __divdf3 in ROM
+0x40054c0f: __divdf3 in ROM
+[0m
+[0;33m0x4200d820: dsps_view at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/managed_components/espressif__esp-dsp/modules/support/view/dsps_view.cpp:33
+0x4200a061: fft_task at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/fft.h:85
+0x4200a2cc: app_main at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/main.c:14
+0x4209b4eb: main_task at /home/michele/esp/v5.2.1/esp-idf/components/freertos/app_startup.c:208
+0x4037cc15: vPortTaskWrapper at /home/michele/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759a8: esp_restart_noos at /home/michele/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x4200d823: dsps_view at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/managed_components/espressif__esp-dsp/modules/support/view/dsps_view.cpp:33
+[0m
+[0;33m0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m0x40000000: _WindowOverflow4 in ROM
+0x40054bf0: __divdf3 in ROM
+0x40054c0f: __divdf3 in ROM
+[0m
+[0;33m0x4200d820: dsps_view at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/managed_components/espressif__esp-dsp/modules/support/view/dsps_view.cpp:33
+0x4200a061: fft_task at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/fft.h:85
+0x4200a2cc: app_main at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/main.c:14
+0x4209b4eb: main_task at /home/michele/esp/v5.2.1/esp-idf/components/freertos/app_startup.c:208
+0x4037cc15: vPortTaskWrapper at /home/michele/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759a8: esp_restart_noos at /home/michele/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x4200d823: dsps_view at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/managed_components/espressif__esp-dsp/modules/support/view/dsps_view.cpp:33
+[0m
+[0;33m0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m0x40000000: _WindowOverflow4 in ROM
+0x40054bf0: __divdf3 in ROM
+0x40054c0f: __divdf3 in ROM
+[0m
+[0;33m0x4200d820: dsps_view at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/managed_components/espressif__esp-dsp/modules/support/view/dsps_view.cpp:33
+0x4200a061: fft_task at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/fft.h:85
+0x4200a2cc: app_main at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/main.c:14
+0x4209b4eb: main_task at /home/michele/esp/v5.2.1/esp-idf/components/freertos/app_startup.c:208
+0x4037cc15: vPortTaskWrapper at /home/michele/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759a8: esp_restart_noos at /home/michele/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x4200d823: dsps_view at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/managed_components/espressif__esp-dsp/modules/support/view/dsps_view.cpp:33
+[0m
+[0;33m0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m0x40000000: _WindowOverflow4 in ROM
+0x40054bf0: __divdf3 in ROM
+0x40054c0f: __divdf3 in ROM
+[0m
+[0;33m0x4200d820: dsps_view at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/managed_components/espressif__esp-dsp/modules/support/view/dsps_view.cpp:33
+0x4200a061: fft_task at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/fft.h:85
+0x4200a2cc: app_main at /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/main.c:14
+0x4209b4eb: main_task at /home/michele/esp/v5.2.1/esp-idf/components/freertos/app_startup.c:208
+0x4037cc15: vPortTaskWrapper at /home/michele/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759a8: esp_restart_noos at /home/michele/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m
