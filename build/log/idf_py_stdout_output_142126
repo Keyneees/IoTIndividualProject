@@ -604,4 +604,41 @@ I (2319) wifi:Init dynamic rx buffer num: 32
 [0;32mI (2339) wifi_init: tcp mbox: 6[0m
 [0;32mI (2339) wifi_init: tcp tx win: 5760[0m
 [0;32mI (2349) wifi_init: tcp rx win: 5760[0m
-[
+[0;32mI (2349) wifi_init: tcp mss: 1440[0m
+[0;32mI (2359) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2359) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2369) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (2409) wifi:mode : sta (48:27:e2:e1:e0:f8)
+I (2409) wifi:enable tsf
+[0;32mI (2409) MQTT TASK: Event received: 7[0m
+[0;32mI (2409) MQTT TASK: DEFUALT[0m
+[0;31mE (2409) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2419) esp-tls: Failed to open new connection[0m
+[0;31mE (2429) transport_base: Failed to open a new connection[0m
+[0;31mE (2439) mqtt_client: Error transport connect[0m
+[0;32mI (2439) MQTT TASK: Event received: 0[0m
+[0;32mI (2439) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (2449) MQTT TASK: Event received: 2[0m
+[0;32mI (2449) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (2459) MQTT TASK: Message sent: 'Average input signal 1849.657227', sent result 51797[0m
+[0;32mI (2469) main_task: Returned from app_main()[0m
+I (2509) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (2509) wifi:state: init -> auth (b0)
+I (2519) wifi:state: auth -> assoc (0)
+I (2519) wifi:state: assoc -> run (10)
+W (2519) wifi:[ADDBA]rx delba, code:1, delete tid:0
+I (2529) wifi:connected with TIM-30577277, aid = 10, channel 11, BW20, bssid = d6:b7:09:09:cb:f6
+I (2529) wifi:security: WPA2-PSK, phy: bgn, rssi: -80
+I (2539) wifi:pm start, type: 1
+
+I (2539) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2549) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (2609) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4659) wifi:<ba-add>idx:0 (ifx:0, d6:b7:09:09:cb:f6), tid:0, ssn:0, winSize:64
+[0;32mI (5559) esp_netif_handlers: sta ip: 192.168.1.7, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (12459) MQTT TASK: Event received: 7[0m
+[0;32mI (12459) MQTT TASK: DEFUALT[0m
+[0;32mI (13249) MQTT TASK: Event received: 1[0m
+[0;32mI (13249) MQTT TASK: MQTT_EVENT_CONNECTED[0m
+[0;32mI (14309) MQTT TASK: Event received: 5[0m
+[0;32mI (14309) MQTT TASK: MQTT_EVENT_PUBLISHED[0m

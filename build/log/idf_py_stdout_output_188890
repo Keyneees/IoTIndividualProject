@@ -1,0 +1,54 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd "/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/build/bootloader/esp-idf/esptool_py" && /home/michele/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/michele/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/michele/Desktop/iot/individual\ assignement/IoTIndividualProject/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/input_signal.h:1,
+                 from /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/main.c:2:
+/home/michele/esp/v5.2.1/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/input_signal.h:2:
+/home/michele/esp/v5.2.1/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+In file included from /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/input_signal.h:5:
+/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/mqtt.h: In function 'mqtt_init_wifi':
+/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/mqtt.h:127:34: warning: unused variable 'wifi_handler' [-Wunused-variable]
+  127 |     esp_event_handler_instance_t wifi_handler;
+      |                                  ^~~~~~~~~~~~
+/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/mqtt.h:121:24: warning: unused variable 's_wifi_event_group' [-Wunused-variable]
+  121 |     EventGroupHandle_t s_wifi_event_group = xEventGroupCreate();
+      |                        ^~~~~~~~~~~~~~~~~~
+/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/input_signal.h: In function 'init_input':
+/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/input_signal.h:24:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   24 |     esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTEN_DB_11, ADC_WIDTH_BIT_DEFAULT, 0, &adc1_chars);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/michele/esp/v5.2.1/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from /home/michele/esp/v5.2.1/esp-idf/components/driver/deprecated/driver/adc.h:15:
+/home/michele/esp/v5.2.1/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/input_signal.h:27:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   27 |     ESP_ERROR_CHECK(adc1_config_channel_atten(ADC1_CHANNEL_0, ADC_ATTEN_DB_11));
+      |     ^~~~~~~~~~~~~~~
+/home/michele/esp/v5.2.1/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/input_signal.h:22:24: warning: unused variable 'inputParams' [-Wunused-variable]
+   22 |     inputParamsTask_t* inputParams=(inputParamsTask_t*)params;
+      |                        ^~~~~~~~~~~
+/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/mqtt.h: At top level:
+/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/main/mqtt.h:70:13: warning: 'wifi_event_handler' defined but not used [-Wunused-function]
+   70 | static void wifi_event_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data){
+      |             ^~~~~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable individaul_project.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/michele/Desktop/iot/individual assignement/IoTIndividualProject/build/individaul_project.bin
+[7/7] cd "/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/build/esp-idf/esptool_py" && /home/michele/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/michele/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/michele/Desktop/iot/individual\ assignement/IoTIndividualProject/build/partition_table/partition-table.bin /home/michele/Desktop/iot/individual\ assignement/IoTIndividualProject/build/individaul_project.bin
+individaul_project.bin binary size 0xe38e0 bytes. Smallest app partition is 0x100000 bytes. 0x1c720 bytes (11%) free.

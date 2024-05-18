@@ -6,7 +6,6 @@
 
 #define FFT "Signal_test"
 #define HALF_SAMPLES SAMPLES/2
-#define MAXF SAMPLES/1
 
 __attribute__((aligned(16)))
 float window[SAMPLES];
@@ -18,7 +17,7 @@ __attribute__((aligned(16)))
 float dBresult[HALF_SAMPLES];
 // float zScore[HALF_SAMPLES];
 float input_avg=0.0;
-float delay=0.0;
+float hertz=0.0;
 
 void fft_task(uint32_t values[]){
         ESP_ERROR_CHECK(dsps_fft2r_init_fc32(NULL, CONFIG_DSP_MAX_FFT_SIZE));
@@ -48,22 +47,20 @@ void fft_task(uint32_t values[]){
             deviation=deviation+pow((dBresult[i]-dBmean),2);
         }
         deviation=sqrt(deviation/(HALF_SAMPLES));
-        printf("Deviation %f\n", deviation);
-        printf("Mean %f\n", dBmean);
         
         float zValue=0.0;
         float threshold=3.0;
         int rigthIndex=0;
-        float rigthValue=0.0;
         for(int i=0; i<HALF_SAMPLES; i++){
             zValue=(dBresult[i]-dBmean)/deviation;
-            printf("current index %d\tz value %f\n", i, zValue);
             if(zValue>threshold){
                 rigthIndex=i;
-                rigthValue=dBresult[i];
             }
         }
+        
+        hertz=(rigthIndex*FREQUENCY)/SAMPLES;
+        printf("Frequency recustructed %f\n", hertz);
+        printf("Optimistic sample frequency %f\n", hertz*2);
 
-        printf("Left index %d, left value %f\n", rigthIndex, rigthValue);
         dsps_view(dBresult, HALF_SAMPLES, 128, 10, 0/*min*/, 100/*max*/, '|');
 }

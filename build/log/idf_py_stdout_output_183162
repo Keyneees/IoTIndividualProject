@@ -1,0 +1,73 @@
+[1/5] cd "/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/build/esp-idf/esptool_py" && /home/michele/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/michele/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/michele/Desktop/iot/individual\ assignement/IoTIndividualProject/build/partition_table/partition-table.bin /home/michele/Desktop/iot/individual\ assignement/IoTIndividualProject/build/individaul_project.bin
+individaul_project.bin binary size 0xe38d0 bytes. Smallest app partition is 0x100000 bytes. 0x1c730 bytes (11%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd "/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/build/bootloader/esp-idf/esptool_py" && /home/michele/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/michele/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/michele/Desktop/iot/individual\ assignement/IoTIndividualProject/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/3] cd /home/michele/esp/v5.2.1/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/michele/esp/v5.2.1/esp-idf -D "SERIAL_TOOL=/home/michele/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/michele/esp/v5.2.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D "WORKING_DIRECTORY=/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/build" -P /home/michele/esp/v5.2.1/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 individaul_project.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded Flash 8MB (GD)
+Crystal is 40MHz
+MAC: 48:27:e2:e1:e0:f8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f3fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21072 bytes to 13076...
+Writing at 0x00000000... (100 %)
+Wrote 21072 bytes (13076 compressed) at 0x00000000 in 0.6 seconds (effective 285.7 kbit/s)...
+Hash of data verified.
+Compressed 932048 bytes to 580165...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001de3f... (5 %)
+Writing at 0x000265bc... (8 %)
+Writing at 0x0002c4ff... (11 %)
+Writing at 0x00031388... (13 %)
+Writing at 0x0003a552... (16 %)
+Writing at 0x00043ffa... (19 %)
+Writing at 0x0004a44f... (22 %)
+Writing at 0x0005068a... (25 %)
+Writing at 0x00056916... (27 %)
+Writing at 0x0005c815... (30 %)
+Writing at 0x00062492... (33 %)
+Writing at 0x00068d74... (36 %)
+Writing at 0x0006e918... (38 %)
+Writing at 0x00074645... (41 %)
+Writing at 0x00079826... (44 %)
+Writing at 0x0007e84c... (47 %)
+Writing at 0x00083913... (50 %)
+Writing at 0x00088a1f... (52 %)
+Writing at 0x0008dec4... (55 %)
+Writing at 0x00093162... (58 %)
+Writing at 0x00099185... (61 %)
+Writing at 0x0009eab0... (63 %)
+Writing at 0x000a45c3... (66 %)
+Writing at 0x000aa177... (69 %)
+Writing at 0x000afe43... (72 %)
+Writing at 0x000b57c6... (75 %)
+Writing at 0x000bb4a4... (77 %)
+Writing at 0x000c0ddb... (80 %)
+Writing at 0x000c660d... (83 %)
+Writing at 0x000d0615... (86 %)
+Writing at 0x000d8348... (88 %)
+Writing at 0x000dec96... (91 %)
+Writing at 0x000e5081... (94 %)
+Writing at 0x000eb5a9... (97 %)
+Writing at 0x000f0ed8... (100 %)
+Wrote 932048 bytes (580165 compressed) at 0x00010000 in 13.0 seconds (effective 571.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 523.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
