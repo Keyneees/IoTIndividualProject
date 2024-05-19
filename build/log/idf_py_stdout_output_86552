@@ -1,0 +1,302 @@
+[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 18 2024 18:26:14[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=2d040h (184384) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=0003d068 vaddr=3fc98600 size=02fb0h ( 12208) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=9d76ch (644972) map[0m
+[0;32mI (254) esp_image: segment 3: paddr=000dd794 vaddr=3fc9b5b0 size=01f70h (  8048) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000df70c vaddr=40374000 size=14560h ( 83296) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Multicore app[0m
+[0;32mI (308) cpu_start: Pro cpu start user code[0m
+[0;32mI (308) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (308) cpu_start: Application information:[0m
+[0;32mI (311) cpu_start: Project name:     individaul_project[0m
+[0;32mI (317) cpu_start: App version:      efec77d-dirty[0m
+[0;32mI (322) cpu_start: Compile time:     May 19 2024 10:04:47[0m
+[0;32mI (329) cpu_start: ELF file SHA256:  022b77c75...[0m
+[0;32mI (334) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (339) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (344) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (349) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (354) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 3FCA5DE8 len 00043928 (270 KiB): RAM[0m
+[0;32mI (367) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (373) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (386) spi_flash: detected chip: gd[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;33mW (394) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (407) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (415) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (422) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (429) main_task: Started on CPU0[0m
+[0;32mI (433) main_task: Calling app_main()[0m
+[0;32mI (1462) INPUT TASK: Values save[0m
+Frequency recustructed 440.000000
+Optimistic sample frequency 880.000000
+[0;32mI (1478) view: Data min[114] = -0.367906, Data max[1] = 89.581902[0m
+ ________________________________________________________________________________________________________________________________
+0|                                                                                                                               |
+1|                                                                                                                               |
+2|                                                                                                               |               |
+3|                                                                                                               ||              |
+4|                                                                                                               ||              |
+5|                                                                                                                |              |
+6|||||||||||||||| || || ||||||| ||||   ||| ||||||||||||    ||||||||| | || ||||||||||||||||||||| |||| || |||||| ||  |||||||||||||||
+7           | || |  |  | |  || |   ||||| ||| |       | |||||   | |  | | || |        |       | || || | ||  | | ||   ||  |         |
+8                            |                          |  |        |                                 |                          |
+9                                                                                                                                |
+ 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567
+[0;32mI (1617) view: Plot: Length=512, min=0.000000, max=100.000000[0m
+[0;32mI (1651) pp: pp rom version: e7ae62f[0m
+[0;32mI (1651) net80211: net80211 rom version: e7ae62f[0m
+I (1653) wifi:wifi driver task: 3fcb6178, prio:23, stack:6656, core=0
+I (1669) wifi:wifi firmware version: a9f5b59
+I (1670) wifi:wifi certification version: v7.0
+I (1670) wifi:config NVS flash: enabled
+I (1671) wifi:config nano formating: disabled
+I (1675) wifi:Init data frame dynamic rx buffer num: 32
+I (1680) wifi:Init static rx mgmt buffer num: 5
+I (1684) wifi:Init management short buffer num: 32
+I (1688) wifi:Init dynamic tx buffer num: 32
+I (1692) wifi:Init static tx FG buffer num: 2
+I (1696) wifi:Init static rx buffer size: 1600
+I (1701) wifi:Init static rx buffer num: 10
+I (1704) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1709) wifi_init: rx ba win: 6[0m
+[0;32mI (1712) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1716) wifi_init: udp mbox: 6[0m
+[0;32mI (1720) wifi_init: tcp mbox: 6[0m
+[0;32mI (1724) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1728) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1733) wifi_init: tcp mss: 1440[0m
+[0;32mI (1737) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1741) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1748) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1789) wifi:mode : sta (48:27:e2:e1:e0:f8)
+I (1790) wifi:enable tsf
+[0;32mI (1790) MQTT TASK: Wifi event[0m
+[0;32mI (1791) MQTT TASK: Wifi event default[0m
+[0;32mI (1794) MQTT TASK: Wifi event[0m
+[0;32mI (1798) MQTT TASK: Wifi start[0m
+[0;32mI (1801) MQTT TASK: Event received: 7[0m
+[0;32mI (1805) MQTT TASK: DEFUALT[0m
+[0;31mE (1809) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1821) esp-tls: Failed to open new connection[0m
+[0;31mE (1826) transport_base: Failed to open a new connection[0m
+[0;31mE (1833) mqtt_client: Error transport connect[0m
+[0;32mI (1837) MQTT TASK: Event received: 0[0m
+[0;32mI (1842) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (1846) MQTT TASK: Event received: 2[0m
+[0;32mI (1850) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (1856) MQTT TASK: Message sent: 'Average input signal 1882.410156', sent result 35167[0m
+I (1891) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (1892) wifi:state: init -> auth (b0)
+I (1899) wifi:state: auth -> assoc (0)
+I (1905) wifi:state: assoc -> run (10)
+W (1906) wifi:[ADDBA]rx delba, code:1, delete tid:0
+I (1917) wifi:connected with TIM-30577277, aid = 11, channel 1, BW20, bssid = d6:b7:09:09:cb:f6
+I (1918) wifi:security: WPA2-PSK, phy: bgn, rssi: -82
+I (1923) wifi:pm start, type: 1
+
+I (1924) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1931) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+[0;32mI (1941) MQTT TASK: Wifi event[0m
+[0;32mI (1943) MQTT TASK: Wifi event default[0m
+I (1992) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2927) INPUT TASK: Values save[0m
+[0;32mI (2928) MQTT TASK: Message sent: 'Average input signal 1877.375000', sent result 34918[0m
+[0;32mI (3954) INPUT TASK: Values save[0m
+I (4042) wifi:<ba-add>idx:0 (ifx:0, d6:b7:09:09:cb:f6), tid:0, ssn:0, winSize:64
+[0;32mI (4942) esp_netif_handlers: sta ip: 192.168.1.7, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (9978) INPUT TASK: Values save[0m
+[0;32mI (9979) MQTT TASK: Message sent: 'Average input signal 1880.686523', sent result 27034[0m
+[0;32mI (11004) INPUT TASK: Values save[0m
+[0;32mI (11855) MQTT TASK: Event received: 7[0m
+[0;32mI (11855) MQTT TASK: DEFUALT[0m
+[0;32mI (13884) MQTT TASK: Event received: 1[0m
+[0;32mI (13884) MQTT TASK: MQTT_EVENT_CONNECTED[0m
+[0;32mI (14943) MQTT TASK: Event received: 5[0m
+[0;32mI (14943) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (15000) MQTT TASK: Event received: 5[0m
+[0;32mI (15001) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (15057) MQTT TASK: Event received: 5[0m
+[0;32mI (15058) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17029) INPUT TASK: Values save[0m
+[0;32mI (17033) MQTT TASK: Message sent: 'Average input signal 1882.472656', sent result 63456[0m
+[0;32mI (17086) MQTT TASK: Event received: 5[0m
+[0;32mI (17086) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18064) INPUT TASK: Values save[0m
+[0;32mI (24089) INPUT TASK: Values save[0m
+[0;32mI (24093) MQTT TASK: Message sent: 'Average input signal 1881.160156', sent result 55451[0m
+[0;32mI (24146) MQTT TASK: Event received: 5[0m
+[0;32mI (24147) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (25120) INPUT TASK: Values save[0m
+[0;32mI (31145) INPUT TASK: Values save[0m
+[0;32mI (31149) MQTT TASK: Message sent: 'Average input signal 1881.686523', sent result 14776[0m
+[0;32mI (31273) MQTT TASK: Event received: 5[0m
+[0;32mI (31274) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (32179) INPUT TASK: Values save[0m
+[0;32mI (38204) INPUT TASK: Values save[0m
+[0;32mI (38208) MQTT TASK: Message sent: 'Average input signal 1880.871094', sent result 24961[0m
+[0;32mI (38262) MQTT TASK: Event received: 5[0m
+[0;32mI (38262) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (39237) INPUT TASK: Values save[0m
+[0;32mI (45262) INPUT TASK: Values save[0m
+[0;32mI (45266) MQTT TASK: Message sent: 'Average input signal 1877.905273', sent result 7502[0m
+[0;32mI (45320) MQTT TASK: Event received: 5[0m
+[0;32mI (45320) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (46296) INPUT TASK: Values save[0m
+[0;32mI (52321) INPUT TASK: Values save[0m
+[0;32mI (52325) MQTT TASK: Message sent: 'Average input signal 1877.152344', sent result 15481[0m
+[0;32mI (52379) MQTT TASK: Event received: 5[0m
+[0;32mI (52379) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (53356) INPUT TASK: Values save[0m
+[0;32mI (59381) INPUT TASK: Values save[0m
+[0;32mI (59385) MQTT TASK: Message sent: 'Average input signal 1879.341797', sent result 44260[0m
+[0;32mI (59441) MQTT TASK: Event received: 5[0m
+[0;32mI (59442) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (60415) INPUT TASK: Values save[0m
+[0;32mI (66440) INPUT TASK: Values save[0m
+[0;32mI (66444) MQTT TASK: Message sent: 'Average input signal 1880.027344', sent result 17346[0m
+[0;32mI (66497) MQTT TASK: Event received: 5[0m
+[0;32mI (66498) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (67474) INPUT TASK: Values save[0m
+[0;32mI (73499) INPUT TASK: Values save[0m
+[0;32mI (73503) MQTT TASK: Message sent: 'Average input signal 1878.804688', sent result 5261[0m
+[0;32mI (73573) MQTT TASK: Event received: 5[0m
+[0;32mI (73574) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (74533) INPUT TASK: Values save[0m
+[0;32mI (80558) INPUT TASK: Values save[0m
+[0;32mI (80562) MQTT TASK: Message sent: 'Average input signal 1881.370117', sent result 22981[0m
+[0;32mI (80638) MQTT TASK: Event received: 5[0m
+[0;32mI (80639) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (81591) INPUT TASK: Values save[0m
+[0;32mI (87616) INPUT TASK: Values save[0m
+[0;32mI (87620) MQTT TASK: Message sent: 'Average input signal 1879.784180', sent result 59817[0m
+[0;32mI (87704) MQTT TASK: Event received: 5[0m
+[0;32mI (87705) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (88647) INPUT TASK: Values save[0m
+[0;32mI (94672) INPUT TASK: Values save[0m
+[0;32mI (94676) MQTT TASK: Message sent: 'Average input signal 1880.340820', sent result 38700[0m
+[0;32mI (94729) MQTT TASK: Event received: 5[0m
+[0;32mI (94730) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (95706) INPUT TASK: Values save[0m
+[0;32mI (101731) INPUT TASK: Values save[0m
+[0;32mI (101735) MQTT TASK: Message sent: 'Average input signal 1881.651367', sent result 51438[0m
+[0;32mI (101789) MQTT TASK: Event received: 5[0m
+[0;32mI (101789) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (102764) INPUT TASK: Values save[0m
+[0;32mI (108789) INPUT TASK: Values save[0m
+[0;32mI (108792) MQTT TASK: Message sent: 'Average input signal 1881.795898', sent result 37813[0m
+[0;32mI (108847) MQTT TASK: Event received: 5[0m
+[0;32mI (108847) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (109823) INPUT TASK: Values save[0m
+[0;32mI (115848) INPUT TASK: Values save[0m
+[0;32mI (115852) MQTT TASK: Message sent: 'Average input signal 1880.493164', sent result 52926[0m
+[0;32mI (115905) MQTT TASK: Event received: 5[0m
+[0;32mI (115906) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (116882) INPUT TASK: Values save[0m
+[0;32mI (122907) INPUT TASK: Values save[0m
+[0;32mI (122911) MQTT TASK: Message sent: 'Average input signal 1879.928711', sent result 7037[0m
+[0;32mI (122966) MQTT TASK: Event received: 5[0m
+[0;32mI (122967) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (123941) INPUT TASK: Values save[0m
+[0;32mI (129966) INPUT TASK: Values save[0m
+[0;32mI (129970) MQTT TASK: Message sent: 'Average input signal 1879.287109', sent result 55168[0m
+[0;32mI (130024) MQTT TASK: Event received: 5[0m
+[0;32mI (130024) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (131000) INPUT TASK: Values save[0m
+[0;32mI (137025) INPUT TASK: Values save[0m
+[0;32mI (137029) MQTT TASK: Message sent: 'Average input signal 1882.096680', sent result 3954[0m
+[0;32mI (137082) MQTT TASK: Event received: 5[0m
+[0;32mI (137083) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (138057) INPUT TASK: Values save[0m
+[0;32mI (144082) INPUT TASK: Values save[0m
+[0;32mI (144086) MQTT TASK: Message sent: 'Average input signal 1881.270508', sent result 26456[0m
+[0;32mI (144228) MQTT TASK: Event received: 5[0m
+[0;32mI (144228) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (145116) INPUT TASK: Values save[0m
+[0;32mI (151141) INPUT TASK: Values save[0m
+[0;32mI (151145) MQTT TASK: Message sent: 'Average input signal 1880.750977', sent result 64255[0m
+[0;32mI (151198) MQTT TASK: Event received: 5[0m
+[0;32mI (151198) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (152175) INPUT TASK: Values save[0m
+[0;32mI (158200) INPUT TASK: Values save[0m
+[0;32mI (158204) MQTT TASK: Message sent: 'Average input signal 1878.214844', sent result 47392[0m
+[0;32mI (158257) MQTT TASK: Event received: 5[0m
+[0;32mI (158258) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (159230) INPUT TASK: Values save[0m
+[0;32mI (165255) INPUT TASK: Values save[0m
+[0;32mI (165259) MQTT TASK: Message sent: 'Average input signal 1880.703125', sent result 52704[0m
+[0;32mI (165312) MQTT TASK: Event received: 5[0m
+[0;32mI (165313) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (166286) INPUT TASK: Values save[0m
+[0;32mI (172311) INPUT TASK: Values save[0m
+[0;32mI (172315) MQTT TASK: Message sent: 'Average input signal 1880.179688', sent result 30683[0m
+[0;32mI (172368) MQTT TASK: Event received: 5[0m
+[0;32mI (172369) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (173344) INPUT TASK: Values save[0m
+[0;32mI (179369) INPUT TASK: Values save[0m
+[0;32mI (179373) MQTT TASK: Message sent: 'Average input signal 1879.130859', sent result 54006[0m
+[0;32mI (179426) MQTT TASK: Event received: 5[0m
+[0;32mI (179426) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (180403) INPUT TASK: Values save[0m
+[0;32mI (186428) INPUT TASK: Values save[0m
+[0;32mI (186432) MQTT TASK: Message sent: 'Average input signal 1881.426758', sent result 19764[0m
+[0;32mI (186485) MQTT TASK: Event received: 5[0m
+[0;32mI (186486) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (187462) INPUT TASK: Values save[0m
+[0;32mI (193487) INPUT TASK: Values save[0m
+[0;32mI (193491) MQTT TASK: Message sent: 'Average input signal 1880.601562', sent result 19579[0m
+[0;32mI (193545) MQTT TASK: Event received: 5[0m
+[0;32mI (193545) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (194520) INPUT TASK: Values save[0m
+[0;32mI (200545) INPUT TASK: Values save[0m
+[0;32mI (200549) MQTT TASK: Message sent: 'Average input signal 1879.727539', sent result 34065[0m
+[0;32mI (200602) MQTT TASK: Event received: 5[0m
+[0;32mI (200603) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (201578) INPUT TASK: Values save[0m
+[0;32mI (207603) INPUT TASK: Values save[0m
+[0;32mI (207606) MQTT TASK: Message sent: 'Average input signal 1881.024414', sent result 25322[0m
+[0;32mI (207715) MQTT TASK: Event received: 5[0m
+[0;32mI (207716) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (208637) INPUT TASK: Values save[0m
+[0;32mI (214662) INPUT TASK: Values save[0m
+[0;32mI (214666) MQTT TASK: Message sent: 'Average input signal 1879.291016', sent result 17451[0m
+[0;32mI (214719) MQTT TASK: Event received: 5[0m
+[0;32mI (214720) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (215695) INPUT TASK: Values save[0m
+[0;32mI (221720) INPUT TASK: Values save[0m
+[0;32mI (221724) MQTT TASK: Message sent: 'Average input signal 1880.421875', sent result 4720[0m
+[0;32mI (221777) MQTT TASK: Event received: 5[0m
+[0;32mI (221777) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (222753) INPUT TASK: Values save[0m
+[0;32mI (228778) INPUT TASK: Values save[0m
+[0;32mI (228782) MQTT TASK: Message sent: 'Average input signal 1878.960938', sent result 51796[0m
+[0;32mI (228913) MQTT TASK: Event received: 5[0m
+[0;32mI (228913) MQTT TASK: MQTT_EVENT_PUBLISHED[0m

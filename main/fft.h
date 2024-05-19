@@ -16,7 +16,6 @@ float* fft2=&fft[SAMPLES];
 __attribute__((aligned(16)))
 float dBresult[HALF_SAMPLES];
 // float zScore[HALF_SAMPLES];
-float input_avg=0.0;
 float hertz=0.0;
 
 void fft_task(uint32_t values[]){
@@ -27,7 +26,6 @@ void fft_task(uint32_t values[]){
         for(int i=0; i<SAMPLES; i++){
             fft[i*2+0]=values[i]*window[i];
             fft[i*2+1]=0;
-            input_avg+=(float)values[i];
         }
 
         dsps_fft2r_fc32(fft, SAMPLES);

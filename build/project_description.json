@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "individaul_project",
-    "project_version":    "dc316b9-dirty",
+    "project_version":    "efec77d-dirty",
     "project_path":       "/home/michele/Desktop/iot/individual assignement/IoTIndividualProject",
     "idf_path":           "/home/michele/esp/v5.2.1/esp-idf",
     "build_dir":          "/home/michele/Desktop/iot/individual assignement/IoTIndividualProject/build",

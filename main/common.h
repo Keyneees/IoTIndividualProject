@@ -10,5 +10,3 @@
 
 #define SAMPLES 1024
 #define FREQUENCY 1000
-
-

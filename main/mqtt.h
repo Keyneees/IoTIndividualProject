@@ -9,7 +9,7 @@
 #include "mqtt_client.h"
 #include "certificate.h"
 #include "common.h"
-#include "struct.h"
+// #include "struct.h"
 
 #define MQTT "MQTT TASK"
 #define WIFI_SSID "TIM-30577277"
@@ -95,21 +95,16 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base, int32_t e
 static void mqtt_configuration(float input_avg){
     char msg[64];
     sprintf(msg, "Average input signal %f", input_avg/SAMPLES);
+    input_avg=0;
     char* topic="/test/device1/iot";
     int res=esp_mqtt_client_publish(client, topic, msg, strlen(msg), 1, false);
     ESP_LOGI(MQTT, "Message sent: '%s', sent result %d", msg, res);
 
 }
 
-
-static void wifi_configuration(float input_avg){
-    esp_wifi_connect();
+static void mqtt_send_avg(float input_avg){
+    // esp_wifi_connect();
     mqtt_configuration(input_avg);
-}
-
-void mqtt_task(void* params){
-    mqttParamsTask_t* mqttParams=(mqttParamsTask_t*)params;
-    wifi_configuration(mqttParams->average);
 }
 
 void mqtt_init_wifi(float input_avg){
@@ -125,7 +120,7 @@ void mqtt_init_wifi(float input_avg){
     ESP_ERROR_CHECK(esp_wifi_init(&wifi_cfg));
 
     esp_event_handler_instance_t wifi_handler;
-    //ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL, &wifi_handler));
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL, &wifi_handler));
 
     wifi_config_t wifi_struct={
         .sta.ssid=WIFI_SSID,
@@ -142,5 +137,5 @@ void mqtt_init_wifi(float input_avg){
     esp_mqtt_client_register_event(client, MQTT_EVENT_ANY, mqtt_event_handler, NULL);
     esp_mqtt_client_start(client);
 
-    wifi_configuration(input_avg);
+    mqtt_configuration(input_avg);
 }
