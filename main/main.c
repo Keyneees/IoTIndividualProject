@@ -29,17 +29,17 @@ void app_main(){
     while(1){
         if(total_samples>0){
             for(int i=0; i<cicles; i++){
-                input_task(SAMPLES);
+                input_task(SAMPLES, SAMPLES/opt_hertz);
                 avg(SAMPLES);
             }
         }
         if(rest>0){
-            input_task(rest);
+            input_task(rest, SAMPLES/opt_hertz);
             avg(rest);
         }
         mqtt_send_avg(total_avg/total_samples);
         total_avg=0.0;
 
-        vTaskDelay(5000/portTICK_PERIOD_MS);
+        // vTaskDelay(5000/portTICK_PERIOD_MS);
     }
 }
