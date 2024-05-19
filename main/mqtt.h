@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <time.h>
 
 #include "esp_wifi.h"
 #include "esp_event.h"
@@ -26,8 +27,13 @@ esp_mqtt_client_config_t mqtt_cfg={
     .credentials.username=MQTT_USERNAME,
     .credentials.authentication.password=MQTT_PWD,
 };
-
 esp_mqtt_client_handle_t client;
+
+struct timespec start;
+struct timespec end;
+long secdiff=0;
+long nsecdiff=0;
+long latency=0;
 
 static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_t event_id, void* event_data){
     esp_mqtt_event_handle_t event=event_data;
@@ -57,8 +63,11 @@ static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_
             break;
         case MQTT_EVENT_PUBLISHED:
             ESP_LOGI(MQTT, "MQTT_EVENT_PUBLISHED");
-            // ESP_ERROR_CHECK(esp_mqtt_client_disconnect(client));
-            // ESP_ERROR_CHECK(esp_mqtt_client_stop(client));
+            clock_gettime(CLOCK_MONOTONIC, &end);
+            secdiff=end.tv_sec-start.tv_sec;
+            nsecdiff=end.tv_nsec-start.tv_nsec;
+            latency=secdiff*1000+nsecdiff/1000000;
+            ESP_LOGI(MQTT, "Latency for sending message: %ld ms", latency);
             return;
             break;
         default:
@@ -94,9 +103,9 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base, int32_t e
 
 static void mqtt_configuration(float input_avg){
     char msg[64];
-    sprintf(msg, "Average input signal %f", input_avg/SAMPLES);
-    input_avg=0;
+    sprintf(msg, "Average input signal %f", input_avg);
     char* topic="/test/device1/iot";
+    clock_gettime(CLOCK_MONOTONIC, &start);
     int res=esp_mqtt_client_publish(client, topic, msg, strlen(msg), 1, false);
     ESP_LOGI(MQTT, "Message sent: '%s', sent result %d", msg, res);
 
@@ -137,5 +146,6 @@ void mqtt_init_wifi(float input_avg){
     esp_mqtt_client_register_event(client, MQTT_EVENT_ANY, mqtt_event_handler, NULL);
     esp_mqtt_client_start(client);
 
+    vTaskDelay(15000/portTICK_PERIOD_MS);
     mqtt_configuration(input_avg);
 }

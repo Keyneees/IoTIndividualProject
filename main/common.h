@@ -10,3 +10,4 @@
 
 #define SAMPLES 1024
 #define FREQUENCY 1000
+#define SAMPLE_TIME 3

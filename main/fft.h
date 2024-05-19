@@ -17,6 +17,7 @@ __attribute__((aligned(16)))
 float dBresult[HALF_SAMPLES];
 // float zScore[HALF_SAMPLES];
 float hertz=0.0;
+float opt_hertz=0.0;
 
 void fft_task(uint32_t values[]){
         ESP_ERROR_CHECK(dsps_fft2r_init_fc32(NULL, CONFIG_DSP_MAX_FFT_SIZE));
@@ -58,7 +59,8 @@ void fft_task(uint32_t values[]){
         
         hertz=(rigthIndex*FREQUENCY)/SAMPLES;
         printf("Frequency recustructed %f\n", hertz);
-        printf("Optimistic sample frequency %f\n", hertz*2);
+        opt_hertz=hertz*2;
+        printf("Optimistic sample frequency %f\n", opt_hertz);
 
         dsps_view(dBresult, HALF_SAMPLES, 128, 10, 0/*min*/, 100/*max*/, '|');
 }

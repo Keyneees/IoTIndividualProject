@@ -10,9 +10,9 @@ __attribute__((aligned(16)))
 uint32_t values[SAMPLES];
 float input_avg=0.0;
 
-void input_task(){
+void input_task(float samples){
     input_avg=0.0;
-    for(int i=0; i<SAMPLES; i++){
+    for(int i=0; i<samples; i++){
         values[i]=esp_adc_cal_raw_to_voltage(adc1_get_raw(ADC1_CHANNEL_0), &adc1_chars);
         vTaskDelay(pdMS_TO_TICKS(1));
     }
@@ -25,5 +25,5 @@ void init_input(){
     ESP_ERROR_CHECK(adc1_config_width(ADC_WIDTH_BIT_DEFAULT));
     ESP_ERROR_CHECK(adc1_config_channel_atten(ADC1_CHANNEL_0, ADC_ATTEN_DB_11)); 
 
-    input_task();
+    input_task(SAMPLES);
 }
