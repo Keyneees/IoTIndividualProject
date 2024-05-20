@@ -14,7 +14,7 @@ void input_task(float samples, float tick_delay){
     input_avg=0.0;
     for(int i=0; i<samples; i++){
         values[i]=esp_adc_cal_raw_to_voltage(adc1_get_raw(ADC1_CHANNEL_0), &adc1_chars);
-        vTaskDelay(pdMS_TO_TICKS(1));
+        vTaskDelay(pdMS_TO_TICKS(tick_delay));
     }
     ESP_LOGI(INPUT, "Values save");
 }

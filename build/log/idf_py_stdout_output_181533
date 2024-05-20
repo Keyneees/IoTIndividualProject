@@ -1,0 +1,522 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 18 2024 18:26:14[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=2d080h (184448) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=0003d0a8 vaddr=3fc98600 size=02f70h ( 12144) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=9d934h (645428) map[0m
+[0;32mI (254) esp_image: segment 3: paddr=000dd95c vaddr=3fc9b570 size=01fb0h (  8112) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000df914 vaddr=40374000 size=14560h ( 83296) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Multicore app[0m
+[0;32mI (308) cpu_start: Pro cpu start user code[0m
+[0;32mI (308) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (308) cpu_start: Application information:[0m
+[0;32mI (311) cpu_start: Project name:     individaul_project[0m
+[0;32mI (317) cpu_start: App version:      92bf700-dirty[0m
+[0;32mI (323) cpu_start: Compile time:     May 20 2024 12:14:05[0m
+[0;32mI (329) cpu_start: ELF file SHA256:  1b815d502...[0m
+[0;32mI (334) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (339) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (344) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (349) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (354) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 3FCA5E28 len 000438E8 (270 KiB): RAM[0m
+[0;32mI (367) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (373) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: gd[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;33mW (394) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (407) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (415) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (422) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (429) main_task: Started on CPU0[0m
+[0;32mI (433) main_task: Calling app_main()[0m
+[0;32mI (1462) INPUT TASK: Values save[0m
+Frequency recustructed 0.000000
+Optimistic sample frequency 0.000000
+[0;32mI (1477) view: Data min[199] = -0.083122, Data max[1] = 89.578903[0m
+ ________________________________________________________________________________________________________________________________
+0|                                                                                                                               |
+1|                                                                                                                               |
+2|                                                                                                                               |
+3|                                                                                                                               |
+4|                                                                                                                               |
+5|                                                                                                                               |
+6|||  | || || ||||||||||||  ||| |||||||||||||||||   |||||||||||||||||||||||| |||||||||  || |||||||||||||||| ||||||||||||||||||||||
+7   || |  |  ||           ||   |    |      |     |||   |             |  |   |    |    ||  |     |          |   |   | ||          |
+8      |                  |                       ||                        |          |  |                                      |
+9                                                                                                                                |
+ 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567
+[0;32mI (1616) view: Plot: Length=512, min=0.000000, max=100.000000[0m
+[0;32mI (1648) pp: pp rom version: e7ae62f[0m
+[0;32mI (1649) net80211: net80211 rom version: e7ae62f[0m
+I (1651) wifi:wifi driver task: 3fcb61bc, prio:23, stack:6656, core=0
+I (1667) wifi:wifi firmware version: a9f5b59
+I (1668) wifi:wifi certification version: v7.0
+I (1668) wifi:config NVS flash: enabled
+I (1668) wifi:config nano formating: disabled
+I (1673) wifi:Init data frame dynamic rx buffer num: 32
+I (1678) wifi:Init static rx mgmt buffer num: 5
+I (1682) wifi:Init management short buffer num: 32
+I (1686) wifi:Init dynamic tx buffer num: 32
+I (1690) wifi:Init static tx FG buffer num: 2
+I (1694) wifi:Init static rx buffer size: 1600
+I (1699) wifi:Init static rx buffer num: 10
+I (1702) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1707) wifi_init: rx ba win: 6[0m
+[0;32mI (1710) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1714) wifi_init: udp mbox: 6[0m
+[0;32mI (1718) wifi_init: tcp mbox: 6[0m
+[0;32mI (1722) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1726) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1731) wifi_init: tcp mss: 1440[0m
+[0;32mI (1735) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1739) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1746) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1786) wifi:mode : sta (48:27:e2:e1:e0:f8)
+I (1787) wifi:enable tsf
+[0;32mI (1788) MQTT TASK: Wifi event[0m
+[0;32mI (1788) MQTT TASK: Wifi event default[0m
+[0;32mI (1791) MQTT TASK: Wifi event[0m
+[0;32mI (1795) MQTT TASK: Wifi start[0m
+[0;32mI (1798) MQTT TASK: Event received: 7[0m
+[0;32mI (1802) MQTT TASK: DEFUALT[0m
+[0;31mE (1806) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1818) esp-tls: Failed to open new connection[0m
+[0;31mE (1824) transport_base: Failed to open a new connection[0m
+[0;31mE (1830) mqtt_client: Error transport connect[0m
+[0;32mI (1835) MQTT TASK: Event received: 0[0m
+[0;32mI (1839) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (1844) MQTT TASK: Event received: 2[0m
+I (1845) wifi:[0;32mI (1848) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (1859) wifi:state: init -> auth (b0)
+[0;32mI (1862) MQTT TASK: Wifi event[0m
+[0;32mI (1866) MQTT TASK: Wifi event default[0m
+I (1868) wifi:state: auth -> assoc (0)
+I (1878) wifi:state: assoc -> run (10)
+W (1879) wifi:[ADDBA]rx delba, code:1, delete tid:0
+I (1893) wifi:connected with TIM-30577277, aid = 12, channel 11, BW20, bssid = d6:b7:09:09:cb:f6
+I (1893) wifi:security: WPA2-PSK, phy: bgn, rssi: -90
+I (1899) wifi:pm start, type: 1
+
+I (1899) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1906) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+[0;32mI (1916) MQTT TASK: Wifi event[0m
+[0;32mI (1918) MQTT TASK: Wifi event default[0m
+I (1945) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3995) wifi:<ba-add>idx:0 (ifx:0, d6:b7:09:09:cb:f6), tid:0, ssn:0, winSize:64
+[0;32mI (4917) esp_netif_handlers: sta ip: 192.168.1.7, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (11854) MQTT TASK: Event received: 7[0m
+[0;32mI (11854) MQTT TASK: DEFUALT[0m
+[0;32mI (13767) MQTT TASK: Event received: 1[0m
+[0;32mI (13767) MQTT TASK: MQTT_EVENT_CONNECTED[0m
+[0;32mI (16809) MQTT TASK: Message sent: 'Average input signal 1881.491211', sent result 62864[0m
+[0;32mI (16812) MQTT TASK: Message sent: 'Average input signal inf', sent result 55205[0m
+[0;32mI (16818) MQTT TASK: Message sent: 'Average input signal nan', sent result 40335[0m
+[0;32mI (16826) MQTT TASK: Message sent: 'Average input signal nan', sent result 16401[0m
+[0;32mI (16834) MQTT TASK: Message sent: 'Average input signal nan', sent result 40692[0m
+[0;32mI (16842) MQTT TASK: Message sent: 'Average input signal nan', sent result 40639[0m
+[0;32mI (16850) MQTT TASK: Message sent: 'Average input signal nan', sent result 6069[0m
+[0;32mI (16858) MQTT TASK: Message sent: 'Average input signal nan', sent result 3327[0m
+[0;32mI (16865) MQTT TASK: Event received: 5[0m
+[0;32mI (16868) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (16873) MQTT TASK: Latency for sending message: 4 ms[0m
+[0;32mI (16882) MQTT TASK: Message sent: 'Average input signal nan', sent result 54451[0m
+[0;32mI (16889) MQTT TASK: Message sent: 'Average input signal nan', sent result 8557[0m
+[0;32mI (16897) MQTT TASK: Message sent: 'Average input signal nan', sent result 13691[0m
+[0;32mI (16905) MQTT TASK: Message sent: 'Average input signal nan', sent result 7383[0m
+[0;32mI (16913) MQTT TASK: Message sent: 'Average input signal nan', sent result 14890[0m
+[0;32mI (16925) MQTT TASK: Event received: 5[0m
+[0;32mI (16925) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (16928) MQTT TASK: Latency for sending message: 4 ms[0m
+[0;32mI (16930) MQTT TASK: Message sent: 'Average input signal nan', sent result 7141[0m
+[0;32mI (16937) MQTT TASK: Event received: 5[0m
+[0;32mI (16946) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (16951) MQTT TASK: Latency for sending message: 15 ms[0m
+[0;32mI (16959) MQTT TASK: Event received: 5[0m
+[0;32mI (16961) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (16966) MQTT TASK: Latency for sending message: 23 ms[0m
+[0;32mI (16974) MQTT TASK: Event received: 5[0m
+[0;32mI (16976) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (16981) MQTT TASK: Latency for sending message: 30 ms[0m
+[0;32mI (16989) MQTT TASK: Event received: 5[0m
+[0;32mI (16991) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (16996) MQTT TASK: Latency for sending message: 38 ms[0m
+[0;32mI (17004) MQTT TASK: Event received: 5[0m
+[0;32mI (17006) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17011) MQTT TASK: Latency for sending message: 45 ms[0m
+[0;32mI (17019) MQTT TASK: Event received: 5[0m
+[0;32mI (17021) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17026) MQTT TASK: Latency for sending message: 53 ms[0m
+[0;32mI (17035) MQTT TASK: Event received: 5[0m
+[0;32mI (17036) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17041) MQTT TASK: Latency for sending message: 2 ms[0m
+[0;32mI (17053) MQTT TASK: Event received: 5[0m
+[0;32mI (17054) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17056) MQTT TASK: Latency for sending message: 9 ms[0m
+[0;32mI (17064) MQTT TASK: Event received: 5[0m
+[0;32mI (17066) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17071) MQTT TASK: Latency for sending message: 17 ms[0m
+[0;32mI (17079) MQTT TASK: Event received: 5[0m
+[0;32mI (17081) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17086) MQTT TASK: Latency for sending message: 24 ms[0m
+[0;32mI (17095) MQTT TASK: Event received: 5[0m
+[0;32mI (17096) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17100) MQTT TASK: Message sent: 'Average input signal nan', sent result 47512[0m
+[0;32mI (17101) MQTT TASK: Latency for sending message: 32 ms[0m
+[0;32mI (17118) MQTT TASK: Event received: 5[0m
+[0;32mI (17119) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17124) MQTT TASK: Latency for sending message: 43 ms[0m
+[0;32mI (17132) MQTT TASK: Event received: 5[0m
+[0;32mI (17134) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17139) MQTT TASK: Latency for sending message: 1 ms[0m
+[0;32mI (17149) MQTT TASK: Message sent: 'Average input signal nan', sent result 64445[0m
+[0;32mI (17155) MQTT TASK: Message sent: 'Average input signal nan', sent result 51228[0m
+[0;32mI (17163) MQTT TASK: Message sent: 'Average input signal nan', sent result 32456[0m
+[0;32mI (17171) MQTT TASK: Message sent: 'Average input signal nan', sent result 10726[0m
+[0;32mI (17179) MQTT TASK: Message sent: 'Average input signal nan', sent result 57053[0m
+[0;32mI (17187) MQTT TASK: Message sent: 'Average input signal nan', sent result 21525[0m
+[0;32mI (17195) MQTT TASK: Message sent: 'Average input signal nan', sent result 41482[0m
+[0;32mI (17209) MQTT TASK: Event received: 5[0m
+[0;32mI (17209) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17210) MQTT TASK: Latency for sending message: 4 ms[0m
+[0;32mI (17217) MQTT TASK: Message sent: 'Average input signal nan', sent result 21674[0m
+[0;32mI (17226) MQTT TASK: Message sent: 'Average input signal nan', sent result 7145[0m
+[0;32mI (17234) MQTT TASK: Message sent: 'Average input signal nan', sent result 46197[0m
+[0;32mI (17242) MQTT TASK: Message sent: 'Average input signal nan', sent result 42893[0m
+[0;32mI (17250) MQTT TASK: Message sent: 'Average input signal nan', sent result 25563[0m
+[0;32mI (17259) MQTT TASK: Message sent: 'Average input signal nan', sent result 36978[0m
+[0;32mI (17266) MQTT TASK: Event received: 5[0m
+[0;32mI (17269) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17274) MQTT TASK: Latency for sending message: 2 ms[0m
+[0;32mI (17285) MQTT TASK: Event received: 5[0m
+[0;32mI (17285) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17289) MQTT TASK: Latency for sending message: 9 ms[0m
+[0;32mI (17297) MQTT TASK: Event received: 5[0m
+[0;32mI (17299) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17303) MQTT TASK: Latency for sending message: 17 ms[0m
+[0;32mI (17311) MQTT TASK: Message sent: 'Average input signal nan', sent result 46960[0m
+[0;32mI (17312) MQTT TASK: Event received: 5[0m
+[0;32mI (17322) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17327) MQTT TASK: Latency for sending message: 2 ms[0m
+[0;32mI (17338) MQTT TASK: Event received: 5[0m
+[0;32mI (17338) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17341) MQTT TASK: Latency for sending message: 9 ms[0m
+[0;32mI (17350) MQTT TASK: Event received: 5[0m
+[0;32mI (17352) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17356) MQTT TASK: Latency for sending message: 17 ms[0m
+[0;32mI (17365) MQTT TASK: Event received: 5[0m
+[0;32mI (17367) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17371) MQTT TASK: Latency for sending message: 24 ms[0m
+[0;32mI (17379) MQTT TASK: Message sent: 'Average input signal nan', sent result 51174[0m
+[0;32mI (17381) MQTT TASK: Event received: 5[0m
+[0;32mI (17390) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17395) MQTT TASK: Latency for sending message: 36 ms[0m
+[0;32mI (17403) MQTT TASK: Event received: 5[0m
+[0;32mI (17405) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17410) MQTT TASK: Latency for sending message: 43 ms[0m
+[0;32mI (17418) MQTT TASK: Event received: 5[0m
+[0;32mI (17420) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17425) MQTT TASK: Latency for sending message: 51 ms[0m
+[0;32mI (17434) MQTT TASK: Event received: 5[0m
+[0;32mI (17435) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17440) MQTT TASK: Latency for sending message: 58 ms[0m
+[0;32mI (17448) MQTT TASK: Event received: 5[0m
+[0;32mI (17450) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17455) MQTT TASK: Latency for sending message: 3 ms[0m
+[0;32mI (17466) MQTT TASK: Message sent: 'Average input signal nan', sent result 12522[0m
+[0;32mI (17467) MQTT TASK: Event received: 5[0m
+[0;32mI (17473) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17478) MQTT TASK: Latency for sending message: 15 ms[0m
+[0;32mI (17486) MQTT TASK: Event received: 5[0m
+[0;32mI (17488) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17493) MQTT TASK: Latency for sending message: 22 ms[0m
+[0;32mI (17501) MQTT TASK: Message sent: 'Average input signal nan', sent result 44620[0m
+[0;32mI (17509) MQTT TASK: Message sent: 'Average input signal nan', sent result 62316[0m
+[0;32mI (17521) MQTT TASK: Event received: 5[0m
+[0;32mI (17522) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17524) MQTT TASK: Latency for sending message: 4 ms[0m
+[0;32mI (17530) MQTT TASK: Message sent: 'Average input signal nan', sent result 39032[0m
+[0;32mI (17540) MQTT TASK: Message sent: 'Average input signal nan', sent result 35468[0m
+[0;32mI (17548) MQTT TASK: Message sent: 'Average input signal nan', sent result 50649[0m
+[0;32mI (17556) MQTT TASK: Message sent: 'Average input signal nan', sent result 27225[0m
+[0;32mI (17564) MQTT TASK: Message sent: 'Average input signal nan', sent result 1659[0m
+[0;32mI (17576) MQTT TASK: Event received: 5[0m
+[0;32mI (17576) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17577) MQTT TASK: Message sent: 'Average input signal nan', sent result 62092[0m
+[0;32mI (17579) MQTT TASK: Latency for sending message: 4 ms[0m
+[0;32mI (17596) MQTT TASK: Event received: 5[0m
+[0;32mI (17597) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17602) MQTT TASK: Latency for sending message: 15 ms[0m
+[0;32mI (17611) MQTT TASK: Message sent: 'Average input signal nan', sent result 58795[0m
+[0;32mI (17618) MQTT TASK: Message sent: 'Average input signal nan', sent result 10875[0m
+[0;32mI (17626) MQTT TASK: Message sent: 'Average input signal nan', sent result 1882[0m
+[0;32mI (17631) MQTT TASK: Event received: 5[0m
+[0;32mI (17636) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17641) MQTT TASK: Latency for sending message: 8 ms[0m
+[0;32mI (17650) MQTT TASK: Event received: 5[0m
+[0;32mI (17651) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17656) MQTT TASK: Latency for sending message: 15 ms[0m
+[0;32mI (17664) MQTT TASK: Event received: 5[0m
+[0;32mI (17666) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17671) MQTT TASK: Latency for sending message: 23 ms[0m
+[0;32mI (17680) MQTT TASK: Event received: 5[0m
+[0;32mI (17681) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17686) MQTT TASK: Latency for sending message: 30 ms[0m
+[0;32mI (17695) MQTT TASK: Event received: 5[0m
+[0;32mI (17696) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17701) MQTT TASK: Latency for sending message: 38 ms[0m
+[0;32mI (17710) MQTT TASK: Event received: 5[0m
+[0;32mI (17711) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17716) MQTT TASK: Latency for sending message: 0 ms[0m
+[0;32mI (17728) MQTT TASK: Event received: 5[0m
+[0;32mI (17729) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17731) MQTT TASK: Latency for sending message: 7 ms[0m
+[0;32mI (17739) MQTT TASK: Event received: 5[0m
+[0;32mI (17741) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17746) MQTT TASK: Latency for sending message: 15 ms[0m
+[0;32mI (17755) MQTT TASK: Event received: 5[0m
+[0;32mI (17756) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17761) MQTT TASK: Latency for sending message: 22 ms[0m
+[0;32mI (17768) MQTT TASK: Message sent: 'Average input signal nan', sent result 63778[0m
+[0;32mI (17777) MQTT TASK: Message sent: 'Average input signal nan', sent result 47321[0m
+[0;32mI (17781) MQTT TASK: Event received: 5[0m
+[0;32mI (17787) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17792) MQTT TASK: Latency for sending message: 8 ms[0m
+[0;32mI (17801) MQTT TASK: Message sent: 'Average input signal nan', sent result 45907[0m
+[0;32mI (17808) MQTT TASK: Message sent: 'Average input signal nan', sent result 25929[0m
+[0;32mI (17816) MQTT TASK: Message sent: 'Average input signal nan', sent result 2097[0m
+[0;32mI (17824) MQTT TASK: Message sent: 'Average input signal nan', sent result 53182[0m
+[0;32mI (17837) MQTT TASK: Event received: 5[0m
+[0;32mI (17837) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17839) MQTT TASK: Latency for sending message: 4 ms[0m
+[0;32mI (17846) MQTT TASK: Message sent: 'Average input signal nan', sent result 12030[0m
+[0;32mI (17855) MQTT TASK: Message sent: 'Average input signal nan', sent result 20919[0m
+[0;32mI (17863) MQTT TASK: Message sent: 'Average input signal nan', sent result 33863[0m
+[0;32mI (17871) MQTT TASK: Message sent: 'Average input signal nan', sent result 46138[0m
+[0;32mI (17880) MQTT TASK: Message sent: 'Average input signal nan', sent result 41315[0m
+[0;32mI (17892) MQTT TASK: Event received: 5[0m
+[0;32mI (17892) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17895) MQTT TASK: Latency for sending message: 4 ms[0m
+[0;32mI (17902) MQTT TASK: Message sent: 'Average input signal nan', sent result 25379[0m
+[0;32mI (17903) MQTT TASK: Event received: 5[0m
+[0;32mI (17913) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17918) MQTT TASK: Latency for sending message: 15 ms[0m
+[0;32mI (17926) MQTT TASK: Event received: 5[0m
+[0;32mI (17928) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17933) MQTT TASK: Latency for sending message: 23 ms[0m
+[0;32mI (17941) MQTT TASK: Event received: 5[0m
+[0;32mI (17943) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (17948) MQTT TASK: Latency for sending message: 3 ms[0m
+[0;32mI (17956) MQTT TASK: Message sent: 'Average input signal nan', sent result 15935[0m
+[0;32mI (17964) MQTT TASK: Message sent: 'Average input signal nan', sent result 31718[0m
+[0;32mI (17972) MQTT TASK: Message sent: 'Average input signal nan', sent result 11142[0m
+[0;32mI (17980) MQTT TASK: Message sent: 'Average input signal nan', sent result 44852[0m
+[0;32mI (17988) MQTT TASK: Message sent: 'Average input signal nan', sent result 3791[0m
+[0;32mI (17996) MQTT TASK: Message sent: 'Average input signal nan', sent result 3418[0m
+[0;32mI (18004) MQTT TASK: Message sent: 'Average input signal nan', sent result 22986[0m
+[0;32mI (18012) MQTT TASK: Message sent: 'Average input signal nan', sent result 55651[0m
+[0;32mI (18020) MQTT TASK: Message sent: 'Average input signal nan', sent result 23837[0m
+[0;32mI (18027) MQTT TASK: Event received: 5[0m
+[0;32mI (18030) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18035) MQTT TASK: Latency for sending message: 8 ms[0m
+[0;32mI (18043) MQTT TASK: Event received: 5[0m
+[0;32mI (18045) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18050) MQTT TASK: Latency for sending message: 15 ms[0m
+[0;32mI (18059) MQTT TASK: Event received: 5[0m
+[0;32mI (18060) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18065) MQTT TASK: Latency for sending message: 23 ms[0m
+[0;32mI (18074) MQTT TASK: Event received: 5[0m
+[0;32mI (18075) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18080) MQTT TASK: Latency for sending message: 30 ms[0m
+[0;32mI (18089) MQTT TASK: Event received: 5[0m
+[0;32mI (18090) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18095) MQTT TASK: Latency for sending message: 38 ms[0m
+[0;32mI (18104) MQTT TASK: Event received: 5[0m
+[0;32mI (18105) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18110) MQTT TASK: Latency for sending message: 45 ms[0m
+[0;32mI (18119) MQTT TASK: Event received: 5[0m
+[0;32mI (18120) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18125) MQTT TASK: Latency for sending message: 0 ms[0m
+[0;32mI (18136) MQTT TASK: Message sent: 'Average input signal nan', sent result 6312[0m
+[0;32mI (18138) MQTT TASK: Event received: 5[0m
+[0;32mI (18143) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18148) MQTT TASK: Latency for sending message: 11 ms[0m
+[0;32mI (18156) MQTT TASK: Event received: 5[0m
+[0;32mI (18158) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18163) MQTT TASK: Latency for sending message: 19 ms[0m
+[0;32mI (18171) MQTT TASK: Event received: 5[0m
+[0;32mI (18173) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18178) MQTT TASK: Latency for sending message: 26 ms[0m
+[0;32mI (18186) MQTT TASK: Event received: 5[0m
+[0;32mI (18188) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18193) MQTT TASK: Latency for sending message: 1 ms[0m
+[0;32mI (18205) MQTT TASK: Event received: 5[0m
+[0;32mI (18206) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18208) MQTT TASK: Latency for sending message: 9 ms[0m
+[0;32mI (18216) MQTT TASK: Event received: 5[0m
+[0;32mI (18218) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18223) MQTT TASK: Latency for sending message: 16 ms[0m
+[0;32mI (18231) MQTT TASK: Event received: 5[0m
+[0;32mI (18233) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18238) MQTT TASK: Latency for sending message: 24 ms[0m
+[0;32mI (18245) MQTT TASK: Message sent: 'Average input signal nan', sent result 57700[0m
+[0;32mI (18254) MQTT TASK: Message sent: 'Average input signal nan', sent result 14567[0m
+[0;32mI (18263) MQTT TASK: Message sent: 'Average input signal nan', sent result 61586[0m
+[0;32mI (18270) MQTT TASK: Message sent: 'Average input signal nan', sent result 65467[0m
+[0;32mI (18278) MQTT TASK: Message sent: 'Average input signal nan', sent result 51309[0m
+[0;32mI (18286) MQTT TASK: Message sent: 'Average input signal nan', sent result 46047[0m
+[0;32mI (18294) MQTT TASK: Message sent: 'Average input signal nan', sent result 2438[0m
+[0;32mI (18302) MQTT TASK: Message sent: 'Average input signal nan', sent result 38557[0m
+[0;32mI (18310) MQTT TASK: Message sent: 'Average input signal nan', sent result 53722[0m
+[0;32mI (18318) MQTT TASK: Message sent: 'Average input signal nan', sent result 39779[0m
+[0;32mI (18327) MQTT TASK: Message sent: 'Average input signal nan', sent result 61981[0m
+[0;32mI (18336) MQTT TASK: Message sent: 'Average input signal nan', sent result 36289[0m
+[0;32mI (18343) MQTT TASK: Message sent: 'Average input signal nan', sent result 53866[0m
+[0;32mI (18351) MQTT TASK: Message sent: 'Average input signal nan', sent result 29576[0m
+[0;32mI (18359) MQTT TASK: Message sent: 'Average input signal nan', sent result 58733[0m
+[0;32mI (18367) MQTT TASK: Message sent: 'Average input signal nan', sent result 2997[0m
+[0;32mI (18375) MQTT TASK: Message sent: 'Average input signal nan', sent result 20763[0m
+[0;32mI (18383) MQTT TASK: Message sent: 'Average input signal nan', sent result 8785[0m
+[0;32mI (18391) MQTT TASK: Message sent: 'Average input signal nan', sent result 13605[0m
+[0;32mI (18399) MQTT TASK: Message sent: 'Average input signal nan', sent result 15506[0m
+[0;32mI (18407) MQTT TASK: Message sent: 'Average input signal nan', sent result 26780[0m
+[0;32mI (18416) MQTT TASK: Message sent: 'Average input signal nan', sent result 52142[0m
+[0;32mI (18423) MQTT TASK: Message sent: 'Average input signal nan', sent result 47749[0m
+[0;32mI (18431) MQTT TASK: Message sent: 'Average input signal nan', sent result 59137[0m
+[0;32mI (18439) MQTT TASK: Message sent: 'Average input signal nan', sent result 65442[0m
+[0;32mI (18447) MQTT TASK: Message sent: 'Average input signal nan', sent result 3141[0m
+[0;32mI (18455) MQTT TASK: Message sent: 'Average input signal nan', sent result 20354[0m
+[0;32mI (18466) MQTT TASK: Message sent: 'Average input signal nan', sent result 6032[0m
+[0;32mI (18472) MQTT TASK: Event received: 5[0m
+[0;32mI (18474) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18478) MQTT TASK: Latency for sending message: 3 ms[0m
+[0;32mI (18489) MQTT TASK: Event received: 5[0m
+[0;32mI (18490) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18493) MQTT TASK: Latency for sending message: 10 ms[0m
+[0;32mI (18502) MQTT TASK: Event received: 5[0m
+[0;32mI (18504) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18508) MQTT TASK: Latency for sending message: 18 ms[0m
+[0;32mI (18517) MQTT TASK: Event received: 5[0m
+[0;32mI (18519) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18521) MQTT TASK: Message sent: 'Average input signal nan', sent result 39531[0m
+[0;32mI (18523) MQTT TASK: Latency for sending message: 25 ms[0m
+[0;32mI (18540) MQTT TASK: Event received: 5[0m
+[0;32mI (18542) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18546) MQTT TASK: Latency for sending message: 3 ms[0m
+[0;32mI (18557) MQTT TASK: Event received: 5[0m
+[0;32mI (18558) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18561) MQTT TASK: Latency for sending message: 11 ms[0m
+[0;32mI (18570) MQTT TASK: Event received: 5[0m
+[0;32mI (18572) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18574) MQTT TASK: Message sent: 'Average input signal nan', sent result 8802[0m
+[0;32mI (18577) MQTT TASK: Latency for sending message: 18 ms[0m
+[0;32mI (18593) MQTT TASK: Event received: 5[0m
+[0;32mI (18595) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18599) MQTT TASK: Latency for sending message: 30 ms[0m
+[0;32mI (18608) MQTT TASK: Event received: 5[0m
+[0;32mI (18610) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18614) MQTT TASK: Latency for sending message: 37 ms[0m
+[0;32mI (18623) MQTT TASK: Event received: 5[0m
+[0;32mI (18625) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18630) MQTT TASK: Latency for sending message: 45 ms[0m
+[0;32mI (18641) MQTT TASK: Event received: 5[0m
+[0;32mI (18641) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18644) MQTT TASK: Latency for sending message: 4 ms[0m
+[0;32mI (18653) MQTT TASK: Event received: 5[0m
+[0;32mI (18655) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18659) MQTT TASK: Latency for sending message: 11 ms[0m
+[0;32mI (18668) MQTT TASK: Event received: 5[0m
+[0;32mI (18670) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18674) MQTT TASK: Latency for sending message: 19 ms[0m
+[0;32mI (18683) MQTT TASK: Event received: 5[0m
+[0;32mI (18685) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18689) MQTT TASK: Latency for sending message: 26 ms[0m
+[0;32mI (18694) MQTT TASK: Message sent: 'Average input signal nan', sent result 20031[0m
+[0;32mI (18698) MQTT TASK: Event received: 5[0m
+[0;32mI (18708) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18713) MQTT TASK: Latency for sending message: 38 ms[0m
+[0;32mI (18721) MQTT TASK: Event received: 5[0m
+[0;32mI (18723) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18728) MQTT TASK: Latency for sending message: 3 ms[0m
+[0;32mI (18739) MQTT TASK: Event received: 5[0m
+[0;32mI (18739) MQTT TASK: Message sent: 'Average input signal nan', sent result 17249[0m
+[0;32mI (18740) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18751) MQTT TASK: Latency for sending message: 15 ms[0m
+[0;32mI (18759) MQTT TASK: Event received: 5[0m
+[0;32mI (18761) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18766) MQTT TASK: Latency for sending message: 3 ms[0m
+[0;32mI (18776) MQTT TASK: Event received: 5[0m
+[0;32mI (18777) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18780) MQTT TASK: Latency for sending message: 11 ms[0m
+[0;32mI (18789) MQTT TASK: Event received: 5[0m
+[0;32mI (18791) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18796) MQTT TASK: Latency for sending message: 18 ms[0m
+[0;32mI (18804) MQTT TASK: Event received: 5[0m
+[0;32mI (18806) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18811) MQTT TASK: Latency for sending message: 26 ms[0m
+[0;32mI (18818) MQTT TASK: Message sent: 'Average input signal nan', sent result 53067[0m
+[0;32mI (18819) MQTT TASK: Event received: 5[0m
+[0;32mI (18829) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18834) MQTT TASK: Latency for sending message: 37 ms[0m
+[0;32mI (18843) MQTT TASK: Event received: 5[0m
+[0;32mI (18844) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18849) MQTT TASK: Latency for sending message: 45 ms[0m
+[0;32mI (18857) MQTT TASK: Event received: 5[0m
+[0;32mI (18859) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18864) MQTT TASK: Latency for sending message: 52 ms[0m
+[0;32mI (18872) MQTT TASK: Event received: 5[0m
+[0;32mI (18874) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18879) MQTT TASK: Latency for sending message: 3 ms[0m
+[0;32mI (18889) MQTT TASK: Event received: 5[0m
+[0;32mI (18890) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18894) MQTT TASK: Latency for sending message: 11 ms[0m
+[0;32mI (18901) MQTT TASK: Message sent: 'Average input signal nan', sent result 48421[0m
+[0;32mI (18902) MQTT TASK: Event received: 5[0m
+[0;32mI (18912) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18917) MQTT TASK: Latency for sending message: 22 ms[0m
+[0;32mI (18925) MQTT TASK: Event received: 5[0m
+[0;32mI (18927) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18932) MQTT TASK: Latency for sending message: 30 ms[0m
+[0;32mI (18942) MQTT TASK: Message sent: 'Average input signal nan', sent result 54924[0m
+[0;32mI (18943) MQTT TASK: Event received: 5[0m
+[0;32mI (18950) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18955) MQTT TASK: Latency for sending message: 8 ms[0m
+[0;32mI (18963) MQTT TASK: Event received: 5[0m
+[0;32mI (18965) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18970) MQTT TASK: Latency for sending message: 16 ms[0m
+[0;32mI (18978) MQTT TASK: Event received: 5[0m
+[0;32mI (18980) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18985) MQTT TASK: Latency for sending message: 23 ms[0m
+[0;32mI (18993) MQTT TASK: Message sent: 'Average input signal nan', sent result 62665[0m
+[0;32mI (19001) MQTT TASK: Message sent: 'Average input signal nan', sent result 823[0m
+[0;32mI (19009) MQTT TASK: Message sent: 'Average input signal nan', sent result 60849[0m
+[0;32mI (19017) MQTT TASK: Message sent: 'Average input signal nan', sent result 59370[0m
+[0;32mI (19025) MQTT TASK: Message sent: 'Average input signal nan', sent result 47743[0m
+[0;32mI (19033) MQTT TASK: Message sent: 'Average input signal nan', sent result 50526[0m
+[0;32mI (19042) MQTT TASK: Message sent: 'Average input signal nan', sent result 38396[0m
+[0;32mI (19053) MQTT TASK: Event received: 5[0m

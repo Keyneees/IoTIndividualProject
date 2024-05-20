@@ -67,7 +67,7 @@ static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_
             secdiff=end.tv_sec-start.tv_sec;
             nsecdiff=end.tv_nsec-start.tv_nsec;
             latency=secdiff*1000+nsecdiff/1000000;
-            ESP_LOGI(MQTT, "Latency for sending message: %ld ms", latency);
+            ESP_LOGI(MQTT, "Latency for sending message: %ld ms", latency/2);
             return;
             break;
         default:

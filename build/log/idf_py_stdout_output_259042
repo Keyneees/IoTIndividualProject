@@ -1,0 +1,180 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 18 2024 18:26:14[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=2d080h (184448) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=0003d0a8 vaddr=3fc98600 size=02f70h ( 12144) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=9d964h (645476) map[0m
+[0;32mI (254) esp_image: segment 3: paddr=000dd98c vaddr=3fc9b570 size=01fb0h (  8112) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000df944 vaddr=40374000 size=14560h ( 83296) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Multicore app[0m
+[0;32mI (308) cpu_start: Pro cpu start user code[0m
+[0;32mI (308) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (308) cpu_start: Application information:[0m
+[0;32mI (311) cpu_start: Project name:     individaul_project[0m
+[0;32mI (317) cpu_start: App version:      92bf700-dirty[0m
+[0;32mI (323) cpu_start: Compile time:     May 20 2024 18:02:58[0m
+[0;32mI (329) cpu_start: ELF file SHA256:  4a9a7d2b9...[0m
+[0;32mI (334) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (339) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (344) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (349) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (354) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 3FCA5E28 len 000438E8 (270 KiB): RAM[0m
+[0;32mI (367) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (373) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: gd[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;33mW (394) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (407) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (415) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (422) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (429) main_task: Started on CPU0[0m
+[0;32mI (433) main_task: Calling app_main()[0m
+[0;32mI (1462) INPUT TASK: Values save[0m
+Frequency recustructed 10.000000
+Optimistic sample frequency 20.000000
+[0;32mI (1478) view: Data min[88] = -7.120189, Data max[1] = 89.586021[0m
+ ________________________________________________________________________________________________________________________________
+0|                                                                                                                               |
+1|                                                                                                                               |
+2|                                                                                                                               |
+3| |                                                                                                                             |
+4| |                                                                                                                             |
+5| || |                                                                                                                          |
+6|  || ||        | |||    | || | |||||    |    ||     ||  || |     |    | |  |    ||||       || || |   |||  || | || || | | |   | |
+7 | |    ||||||||||  ||||| | || |||| ||||| ||||  |||||||||  |||||||||||| | || ||||   |||||||||||  ||||||| ||| | ||||||| | ||||| ||
+8 |       |  ||        | |    | |       ||  ||   ||||         | |          |  |  |    ||       |     |        | | |   |      ||  |
+9                                                                                                                                |
+ 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567
+[0;32mI (1616) view: Plot: Length=512, min=0.000000, max=100.000000[0m
+[0;32mI (1649) pp: pp rom version: e7ae62f[0m
+[0;32mI (1650) net80211: net80211 rom version: e7ae62f[0m
+I (1651) wifi:wifi driver task: 3fcb61b8, prio:23, stack:6656, core=0
+I (1668) wifi:wifi firmware version: a9f5b59
+I (1668) wifi:wifi certification version: v7.0
+I (1669) wifi:config NVS flash: enabled
+I (1669) wifi:config nano formating: disabled
+I (1673) wifi:Init data frame dynamic rx buffer num: 32
+I (1678) wifi:Init static rx mgmt buffer num: 5
+I (1682) wifi:Init management short buffer num: 32
+I (1687) wifi:Init dynamic tx buffer num: 32
+I (1691) wifi:Init static tx FG buffer num: 2
+I (1695) wifi:Init static rx buffer size: 1600
+I (1699) wifi:Init static rx buffer num: 10
+I (1703) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1707) wifi_init: rx ba win: 6[0m
+[0;32mI (1711) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1715) wifi_init: udp mbox: 6[0m
+[0;32mI (1719) wifi_init: tcp mbox: 6[0m
+[0;32mI (1722) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1727) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1731) wifi_init: tcp mss: 1440[0m
+[0;32mI (1735) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1739) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1747) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1789) wifi:mode : sta (48:27:e2:e1:e0:f8)
+I (1789) wifi:enable tsf
+[0;32mI (1790) MQTT TASK: Wifi event[0m
+[0;32mI (1790) MQTT TASK: Wifi event default[0m
+[0;32mI (1794) MQTT TASK: Wifi event[0m
+[0;32mI (1798) MQTT TASK: Wifi start[0m
+[0;32mI (1801) MQTT TASK: Event received: 7[0m
+[0;32mI (1804) MQTT TASK: DEFUALT[0m
+[0;31mE (1808) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1821) esp-tls: Failed to open new connection[0m
+[0;31mE (1826) transport_base: Failed to open a new connection[0m
+[0;31mE (1832) mqtt_client: Error transport connect[0m
+[0;32mI (1837) MQTT TASK: Event received: 0[0m
+[0;32mI (1841) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (1846) MQTT TASK: Event received: 2[0m
+[0;32mI (1850) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+I (1852) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (1861) wifi:state: init -> auth (b0)
+[0;32mI (1865) MQTT TASK: Wifi event[0m
+[0;32mI (1868) MQTT TASK: Wifi event default[0m
+I (1871) wifi:state: auth -> assoc (0)
+I (1880) wifi:state: assoc -> run (10)
+W (1881) wifi:[ADDBA]rx delba, code:1, delete tid:0
+I (1894) wifi:connected with TIM-30577277, aid = 12, channel 11, BW20, bssid = d6:b7:09:09:cb:f6
+I (1895) wifi:security: WPA2-PSK, phy: bgn, rssi: -90
+I (1901) wifi:pm start, type: 1
+
+I (1901) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1908) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+[0;32mI (1918) MQTT TASK: Wifi event[0m
+[0;32mI (1920) MQTT TASK: Wifi event default[0m
+I (1953) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4004) wifi:<ba-add>idx:0 (ifx:0, d6:b7:09:09:cb:f6), tid:0, ssn:0, winSize:64
+[0;32mI (4919) esp_netif_handlers: sta ip: 192.168.1.7, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (11855) MQTT TASK: Event received: 7[0m
+[0;32mI (11855) MQTT TASK: DEFUALT[0m
+[0;32mI (12522) MQTT TASK: Event received: 1[0m
+[0;32mI (12522) MQTT TASK: MQTT_EVENT_CONNECTED[0m
+[0;32mI (16855) MQTT TASK: Message sent: 'Average input signal 1884.002930', sent result 26286[0m
+[0;32mI (16909) MQTT TASK: Event received: 5[0m
+[0;32mI (16911) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (16911) MQTT TASK: Latency for sending message: 58 ms[0m
+[0;32mI (19916) INPUT TASK: Values save[0m
+[0;32mI (19920) MQTT TASK: Message sent: 'Average input signal 34028.234375', sent result 59759[0m
+[0;32mI (19973) MQTT TASK: Event received: 5[0m
+[0;32mI (19974) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (19974) MQTT TASK: Latency for sending message: 57 ms[0m
+[0;32mI (22980) INPUT TASK: Values save[0m
+[0;32mI (22985) MQTT TASK: Message sent: 'Average input signal 1878.866699', sent result 49707[0m
+[0;32mI (23038) MQTT TASK: Event received: 5[0m
+[0;32mI (23038) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (23039) MQTT TASK: Latency for sending message: 58 ms[0m
+[0;32mI (26052) INPUT TASK: Values save[0m
+[0;32mI (26056) MQTT TASK: Message sent: 'Average input signal 1873.083374', sent result 1079[0m
+[0;32mI (26123) MQTT TASK: Event received: 5[0m
+[0;32mI (26124) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (26124) MQTT TASK: Latency for sending message: 71 ms[0m
+[0;32mI (29116) INPUT TASK: Values save[0m
+[0;32mI (29120) MQTT TASK: Message sent: 'Average input signal 1877.316650', sent result 62064[0m
+[0;32mI (29174) MQTT TASK: Event received: 5[0m
+[0;32mI (29174) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (29174) MQTT TASK: Latency for sending message: 57 ms[0m
+[0;32mI (32180) INPUT TASK: Values save[0m
+[0;32mI (32185) MQTT TASK: Message sent: 'Average input signal 1880.283325', sent result 6388[0m
+[0;32mI (32237) MQTT TASK: Event received: 5[0m
+[0;32mI (32238) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (32238) MQTT TASK: Latency for sending message: 57 ms[0m
+[0;32mI (35246) INPUT TASK: Values save[0m
+[0;32mI (35251) MQTT TASK: Message sent: 'Average input signal 1874.949951', sent result 3651[0m
+[0;32mI (35304) MQTT TASK: Event received: 5[0m
+[0;32mI (35304) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (35305) MQTT TASK: Latency for sending message: 58 ms[0m
+[0;32mI (38318) INPUT TASK: Values save[0m
+[0;32mI (38322) MQTT TASK: Message sent: 'Average input signal 1872.566650', sent result 49653[0m
+[0;32mI (38379) MQTT TASK: Event received: 5[0m
+[0;32mI (38379) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (38379) MQTT TASK: Latency for sending message: 60 ms[0m
+[0;32mI (41382) INPUT TASK: Values save[0m
+[0;32mI (41386) MQTT TASK: Message sent: 'Average input signal 1879.333374', sent result 49153[0m
+[0;32mI (41439) MQTT TASK: Event received: 5[0m
+[0;32mI (41440) MQTT TASK: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (41440) MQTT TASK: Latency for sending message: 57 ms[0m
