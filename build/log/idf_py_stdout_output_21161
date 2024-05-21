@@ -1,0 +1,899 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 18 2024 18:26:14[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=2d080h (184448) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=0003d0a8 vaddr=3fc98600 size=02f70h ( 12144) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=9d96ch (645484) map[0m
+[0;32mI (254) esp_image: segment 3: paddr=000dd994 vaddr=3fc9b570 size=01fb0h (  8112) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000df94c vaddr=40374000 size=14560h ( 83296) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Multicore app[0m
+[0;32mI (308) cpu_start: Pro cpu start user code[0m
+[0;32mI (308) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (308) cpu_start: Application information:[0m
+[0;32mI (311) cpu_start: Project name:     individaul_project[0m
+[0;32mI (317) cpu_start: App version:      92bf700-dirty[0m
+[0;32mI (323) cpu_start: Compile time:     May 20 2024 18:02:58[0m
+[0;32mI (329) cpu_start: ELF file SHA256:  1c1a5e846...[0m
+[0;32mI (334) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (339) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (344) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (349) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (354) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 3FCA5E28 len 000438E8 (270 KiB): RAM[0m
+[0;32mI (367) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (373) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: gd[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;33mW (394) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (407) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (415) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (422) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (429) main_task: Started on CPU0[0m
+[0;32mI (433) main_task: Calling app_main()[0m
+[0;32mI (1462) INPUT TASK: Values save[0m
+Frequency recustructed 0.000000
+Optimistic sample frequency 0.000000
+[0;32mI (1477) view: Data min[170] = -38.461906, Data max[1] = 85.086090[0m
+ ________________________________________________________________________________________________________________________________
+0                                                                                                                                |
+1|                                                                                                                               |
+2|                                                                                                                               |
+3|                                                                                                                               |
+4|                                                                                                                               |
+5|                                                                                                                               |
+6|                   |                             |                    |    |                                       |           |
+7 ||||||||||||||||||||||||||||||||||||||||  ||||||| ||||||||||||||||||||  |||||||||||||||||||||||||||||||| ||||||||||||||||| |||||
+8     || |    |       |    |     | || |  |||  ||  |    |  ||     |  | |  |||     ||      ||  | |||    |   |||  |     |  | | | || |
+9                                                                                                                                |
+ 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567
+[0;32mI (1616) view: Plot: Length=512, min=0.000000, max=100.000000[0m
+[0;32mI (1649) pp: pp rom version: e7ae62f[0m
+[0;32mI (1649) net80211: net80211 rom version: e7ae62f[0m
+I (1651) wifi:wifi driver task: 3fcb61bc, prio:23, stack:6656, core=0
+I (1668) wifi:wifi firmware version: a9f5b59
+I (1668) wifi:wifi certification version: v7.0
+I (1668) wifi:config NVS flash: enabled
+I (1669) wifi:config nano formating: disabled
+I (1673) wifi:Init data frame dynamic rx buffer num: 32
+I (1678) wifi:Init static rx mgmt buffer num: 5
+I (1682) wifi:Init management short buffer num: 32
+I (1686) wifi:Init dynamic tx buffer num: 32
+I (1690) wifi:Init static tx FG buffer num: 2
+I (1695) wifi:Init static rx buffer size: 1600
+I (1699) wifi:Init static rx buffer num: 10
+I (1703) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1707) wifi_init: rx ba win: 6[0m
+[0;32mI (1710) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1715) wifi_init: udp mbox: 6[0m
+[0;32mI (1718) wifi_init: tcp mbox: 6[0m
+[0;32mI (1722) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1726) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1731) wifi_init: tcp mss: 1440[0m
+[0;32mI (1735) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1739) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1747) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1786) wifi:mode : sta (48:27:e2:e1:e0:f8)
+I (1787) wifi:enable tsf
+[0;32mI (1788) MQTT TASK: Wifi event[0m
+[0;32mI (1788) MQTT TASK: Wifi event default[0m
+[0;32mI (1792) MQTT TASK: Wifi event[0m
+[0;32mI (1796) MQTT TASK: Wifi start[0m
+[0;32mI (1799) MQTT TASK: Event received: 7[0m
+[0;32mI (1802) MQTT TASK: DEFUALT[0m
+[0;31mE (1806) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1819) esp-tls: Failed to open new connection[0m
+[0;31mE (1824) transport_base: Failed to open a new connection[0m
+[0;31mE (1830) mqtt_client: Error transport connect[0m
+[0;32mI (1835) MQTT TASK: Event received: 0[0m
+[0;32mI (1839) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (1843) MQTT TASK: Event received: 2[0m
+[0;32mI (1848) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (4204) MQTT TASK: Wifi event[0m
+[0;32mI (4204) MQTT TASK: Wifi disconnect[0m
+[0;32mI (11852) MQTT TASK: Event received: 7[0m
+[0;32mI (11852) MQTT TASK: DEFUALT[0m
+[0;31mE (11853) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11862) esp-tls: Failed to open new connection[0m
+[0;31mE (11867) transport_base: Failed to open a new connection[0m
+[0;31mE (11873) mqtt_client: Error transport connect[0m
+[0;32mI (11878) MQTT TASK: Event received: 0[0m
+[0;32mI (11883) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (11887) MQTT TASK: Event received: 2[0m
+[0;32mI (11892) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (16799) MQTT TASK: Message sent: 'Average input signal 1122.109375', sent result 22291[0m
+[0;32mI (16800) MQTT TASK: Message sent: 'Average input signal inf', sent result 21604[0m
+[0;32mI (16805) MQTT TASK: Message sent: 'Average input signal nan', sent result 40272[0m
+[0;32mI (16813) MQTT TASK: Message sent: 'Average input signal nan', sent result 61307[0m
+[0;32mI (16821) MQTT TASK: Message sent: 'Average input signal nan', sent result 13142[0m
+[0;32mI (16829) MQTT TASK: Message sent: 'Average input signal nan', sent result 27701[0m
+[0;32mI (16838) MQTT TASK: Message sent: 'Average input signal nan', sent result 10616[0m
+[0;32mI (16846) MQTT TASK: Message sent: 'Average input signal nan', sent result 22157[0m
+[0;32mI (16854) MQTT TASK: Message sent: 'Average input signal nan', sent result 10138[0m
+[0;32mI (16862) MQTT TASK: Message sent: 'Average input signal nan', sent result 56586[0m
+[0;32mI (16870) MQTT TASK: Message sent: 'Average input signal nan', sent result 33474[0m
+[0;32mI (16878) MQTT TASK: Message sent: 'Average input signal nan', sent result 8015[0m
+[0;32mI (16886) MQTT TASK: Message sent: 'Average input signal nan', sent result 51412[0m
+[0;32mI (16894) MQTT TASK: Message sent: 'Average input signal nan', sent result 552[0m
+[0;32mI (16902) MQTT TASK: Message sent: 'Average input signal nan', sent result 56083[0m
+[0;32mI (16910) MQTT TASK: Message sent: 'Average input signal nan', sent result 22155[0m
+[0;32mI (16918) MQTT TASK: Message sent: 'Average input signal nan', sent result 59889[0m
+[0;32mI (16926) MQTT TASK: Message sent: 'Average input signal nan', sent result 39943[0m
+[0;32mI (16934) MQTT TASK: Message sent: 'Average input signal nan', sent result 33032[0m
+[0;32mI (16942) MQTT TASK: Message sent: 'Average input signal nan', sent result 51912[0m
+[0;32mI (16950) MQTT TASK: Message sent: 'Average input signal nan', sent result 17415[0m
+[0;32mI (16958) MQTT TASK: Message sent: 'Average input signal nan', sent result 44228[0m
+[0;32mI (16966) MQTT TASK: Message sent: 'Average input signal nan', sent result 58553[0m
+[0;32mI (16975) MQTT TASK: Message sent: 'Average input signal nan', sent result 42108[0m
+[0;32mI (16983) MQTT TASK: Message sent: 'Average input signal nan', sent result 32456[0m
+[0;32mI (16991) MQTT TASK: Message sent: 'Average input signal nan', sent result 31771[0m
+[0;32mI (16999) MQTT TASK: Message sent: 'Average input signal nan', sent result 12440[0m
+[0;32mI (17007) MQTT TASK: Message sent: 'Average input signal nan', sent result 15585[0m
+[0;32mI (17015) MQTT TASK: Message sent: 'Average input signal nan', sent result 26781[0m
+[0;32mI (17023) MQTT TASK: Message sent: 'Average input signal nan', sent result 2833[0m
+[0;32mI (17031) MQTT TASK: Message sent: 'Average input signal nan', sent result 25258[0m
+[0;32mI (17039) MQTT TASK: Message sent: 'Average input signal nan', sent result 20664[0m
+[0;32mI (17047) MQTT TASK: Message sent: 'Average input signal nan', sent result 62470[0m
+[0;32mI (17055) MQTT TASK: Message sent: 'Average input signal nan', sent result 51664[0m
+[0;32mI (17063) MQTT TASK: Message sent: 'Average input signal nan', sent result 46699[0m
+[0;32mI (17071) MQTT TASK: Message sent: 'Average input signal nan', sent result 4523[0m
+[0;32mI (17079) MQTT TASK: Message sent: 'Average input signal nan', sent result 53197[0m
+[0;32mI (17087) MQTT TASK: Message sent: 'Average input signal nan', sent result 27396[0m
+[0;32mI (17095) MQTT TASK: Message sent: 'Average input signal nan', sent result 58322[0m
+[0;32mI (17104) MQTT TASK: Message sent: 'Average input signal nan', sent result 49389[0m
+[0;32mI (17112) MQTT TASK: Message sent: 'Average input signal nan', sent result 17239[0m
+[0;32mI (17120) MQTT TASK: Message sent: 'Average input signal nan', sent result 22226[0m
+[0;32mI (17128) MQTT TASK: Message sent: 'Average input signal nan', sent result 61672[0m
+[0;32mI (17136) MQTT TASK: Message sent: 'Average input signal nan', sent result 19427[0m
+[0;32mI (17144) MQTT TASK: Message sent: 'Average input signal nan', sent result 42903[0m
+[0;32mI (17152) MQTT TASK: Message sent: 'Average input signal nan', sent result 30193[0m
+[0;32mI (17160) MQTT TASK: Message sent: 'Average input signal nan', sent result 14624[0m
+[0;32mI (17168) MQTT TASK: Message sent: 'Average input signal nan', sent result 16224[0m
+[0;32mI (17176) MQTT TASK: Message sent: 'Average input signal nan', sent result 6735[0m
+[0;32mI (17184) MQTT TASK: Message sent: 'Average input signal nan', sent result 4252[0m
+[0;32mI (17192) MQTT TASK: Message sent: 'Average input signal nan', sent result 34528[0m
+[0;32mI (17200) MQTT TASK: Message sent: 'Average input signal nan', sent result 21291[0m
+[0;32mI (17208) MQTT TASK: Message sent: 'Average input signal nan', sent result 9399[0m
+[0;32mI (17216) MQTT TASK: Message sent: 'Average input signal nan', sent result 7339[0m
+[0;32mI (17224) MQTT TASK: Message sent: 'Average input signal nan', sent result 9745[0m
+[0;32mI (17232) MQTT TASK: Message sent: 'Average input signal nan', sent result 39915[0m
+[0;32mI (17240) MQTT TASK: Message sent: 'Average input signal nan', sent result 62589[0m
+[0;32mI (17248) MQTT TASK: Message sent: 'Average input signal nan', sent result 18687[0m
+[0;32mI (17256) MQTT TASK: Message sent: 'Average input signal nan', sent result 58453[0m
+[0;32mI (17265) MQTT TASK: Message sent: 'Average input signal nan', sent result 54582[0m
+[0;32mI (17273) MQTT TASK: Message sent: 'Average input signal nan', sent result 49274[0m
+[0;32mI (17281) MQTT TASK: Message sent: 'Average input signal nan', sent result 45604[0m
+[0;32mI (17289) MQTT TASK: Message sent: 'Average input signal nan', sent result 43967[0m
+[0;32mI (17297) MQTT TASK: Message sent: 'Average input signal nan', sent result 43584[0m
+[0;32mI (17305) MQTT TASK: Message sent: 'Average input signal nan', sent result 11772[0m
+[0;32mI (17313) MQTT TASK: Message sent: 'Average input signal nan', sent result 16363[0m
+[0;32mI (17321) MQTT TASK: Message sent: 'Average input signal nan', sent result 54395[0m
+[0;32mI (17329) MQTT TASK: Message sent: 'Average input signal nan', sent result 56740[0m
+[0;32mI (17337) MQTT TASK: Message sent: 'Average input signal nan', sent result 4657[0m
+[0;32mI (17345) MQTT TASK: Message sent: 'Average input signal nan', sent result 59772[0m
+[0;32mI (17353) MQTT TASK: Message sent: 'Average input signal nan', sent result 45585[0m
+[0;32mI (17361) MQTT TASK: Message sent: 'Average input signal nan', sent result 2200[0m
+[0;32mI (17369) MQTT TASK: Message sent: 'Average input signal nan', sent result 26840[0m
+[0;32mI (17377) MQTT TASK: Message sent: 'Average input signal nan', sent result 31293[0m
+[0;32mI (17385) MQTT TASK: Message sent: 'Average input signal nan', sent result 27813[0m
+[0;32mI (17394) MQTT TASK: Message sent: 'Average input signal nan', sent result 7383[0m
+[0;32mI (17401) MQTT TASK: Message sent: 'Average input signal nan', sent result 38264[0m
+[0;32mI (17410) MQTT TASK: Message sent: 'Average input signal nan', sent result 27293[0m
+[0;32mI (17418) MQTT TASK: Message sent: 'Average input signal nan', sent result 1935[0m
+[0;32mI (17426) MQTT TASK: Message sent: 'Average input signal nan', sent result 27225[0m
+[0;32mI (17434) MQTT TASK: Message sent: 'Average input signal nan', sent result 49629[0m
+[0;32mI (17442) MQTT TASK: Message sent: 'Average input signal nan', sent result 41858[0m
+[0;32mI (17450) MQTT TASK: Message sent: 'Average input signal nan', sent result 30669[0m
+[0;32mI (17458) MQTT TASK: Message sent: 'Average input signal nan', sent result 44136[0m
+[0;32mI (17466) MQTT TASK: Message sent: 'Average input signal nan', sent result 49599[0m
+[0;32mI (17474) MQTT TASK: Message sent: 'Average input signal nan', sent result 20328[0m
+[0;32mI (17482) MQTT TASK: Message sent: 'Average input signal nan', sent result 29254[0m
+[0;32mI (17490) MQTT TASK: Message sent: 'Average input signal nan', sent result 24693[0m
+[0;32mI (17498) MQTT TASK: Message sent: 'Average input signal nan', sent result 40244[0m
+[0;32mI (17506) MQTT TASK: Message sent: 'Average input signal nan', sent result 28847[0m
+[0;32mI (17514) MQTT TASK: Message sent: 'Average input signal nan', sent result 51589[0m
+[0;32mI (17522) MQTT TASK: Message sent: 'Average input signal nan', sent result 27480[0m
+[0;32mI (17531) MQTT TASK: Message sent: 'Average input signal nan', sent result 59804[0m
+[0;32mI (17539) MQTT TASK: Message sent: 'Average input signal nan', sent result 54140[0m
+[0;32mI (17547) MQTT TASK: Message sent: 'Average input signal nan', sent result 2281[0m
+[0;32mI (17555) MQTT TASK: Message sent: 'Average input signal nan', sent result 6644[0m
+[0;32mI (17563) MQTT TASK: Message sent: 'Average input signal nan', sent result 44101[0m
+[0;32mI (17571) MQTT TASK: Message sent: 'Average input signal nan', sent result 14949[0m
+[0;32mI (17579) MQTT TASK: Message sent: 'Average input signal nan', sent result 63053[0m
+[0;32mI (17587) MQTT TASK: Message sent: 'Average input signal nan', sent result 3648[0m
+[0;32mI (17595) MQTT TASK: Message sent: 'Average input signal nan', sent result 3882[0m
+[0;32mI (17603) MQTT TASK: Message sent: 'Average input signal nan', sent result 16385[0m
+[0;32mI (17611) MQTT TASK: Message sent: 'Average input signal nan', sent result 52876[0m
+[0;32mI (17619) MQTT TASK: Message sent: 'Average input signal nan', sent result 63197[0m
+[0;32mI (17627) MQTT TASK: Message sent: 'Average input signal nan', sent result 5750[0m
+[0;32mI (17635) MQTT TASK: Message sent: 'Average input signal nan', sent result 1922[0m
+[0;32mI (17643) MQTT TASK: Message sent: 'Average input signal nan', sent result 37649[0m
+[0;32mI (17651) MQTT TASK: Message sent: 'Average input signal nan', sent result 25664[0m
+[0;32mI (17659) MQTT TASK: Message sent: 'Average input signal nan', sent result 36005[0m
+[0;32mI (17667) MQTT TASK: Message sent: 'Average input signal nan', sent result 17193[0m
+[0;32mI (17675) MQTT TASK: Message sent: 'Average input signal nan', sent result 60592[0m
+[0;32mI (17683) MQTT TASK: Message sent: 'Average input signal nan', sent result 15087[0m
+[0;32mI (17691) MQTT TASK: Message sent: 'Average input signal nan', sent result 46105[0m
+[0;32mI (17700) MQTT TASK: Message sent: 'Average input signal nan', sent result 15354[0m
+[0;32mI (17708) MQTT TASK: Message sent: 'Average input signal nan', sent result 20123[0m
+[0;32mI (17716) MQTT TASK: Message sent: 'Average input signal nan', sent result 37374[0m
+[0;32mI (17724) MQTT TASK: Message sent: 'Average input signal nan', sent result 58241[0m
+[0;32mI (17732) MQTT TASK: Message sent: 'Average input signal nan', sent result 45022[0m
+[0;32mI (17740) MQTT TASK: Message sent: 'Average input signal nan', sent result 6212[0m
+[0;32mI (17748) MQTT TASK: Message sent: 'Average input signal nan', sent result 23676[0m
+[0;32mI (17756) MQTT TASK: Message sent: 'Average input signal nan', sent result 41787[0m
+[0;32mI (17764) MQTT TASK: Message sent: 'Average input signal nan', sent result 18155[0m
+[0;32mI (17772) MQTT TASK: Message sent: 'Average input signal nan', sent result 6874[0m
+[0;32mI (17780) MQTT TASK: Message sent: 'Average input signal nan', sent result 10386[0m
+[0;32mI (17788) MQTT TASK: Message sent: 'Average input signal nan', sent result 8549[0m
+[0;32mI (17796) MQTT TASK: Message sent: 'Average input signal nan', sent result 41941[0m
+[0;32mI (17804) MQTT TASK: Message sent: 'Average input signal nan', sent result 49122[0m
+[0;32mI (17812) MQTT TASK: Message sent: 'Average input signal nan', sent result 53094[0m
+[0;32mI (17820) MQTT TASK: Message sent: 'Average input signal nan', sent result 37455[0m
+[0;32mI (17828) MQTT TASK: Message sent: 'Average input signal nan', sent result 35408[0m
+[0;32mI (17837) MQTT TASK: Message sent: 'Average input signal nan', sent result 9888[0m
+[0;32mI (17845) MQTT TASK: Message sent: 'Average input signal nan', sent result 32783[0m
+[0;32mI (17853) MQTT TASK: Message sent: 'Average input signal nan', sent result 40963[0m
+[0;32mI (17861) MQTT TASK: Message sent: 'Average input signal nan', sent result 43823[0m
+[0;32mI (17869) MQTT TASK: Message sent: 'Average input signal nan', sent result 51782[0m
+[0;32mI (17877) MQTT TASK: Message sent: 'Average input signal nan', sent result 1050[0m
+[0;32mI (17885) MQTT TASK: Message sent: 'Average input signal nan', sent result 56755[0m
+[0;32mI (17893) MQTT TASK: Message sent: 'Average input signal nan', sent result 2851[0m
+[0;32mI (17901) MQTT TASK: Message sent: 'Average input signal nan', sent result 38881[0m
+[0;32mI (17909) MQTT TASK: Message sent: 'Average input signal nan', sent result 11899[0m
+[0;32mI (17917) MQTT TASK: Message sent: 'Average input signal nan', sent result 14701[0m
+[0;32mI (17925) MQTT TASK: Message sent: 'Average input signal nan', sent result 27234[0m
+[0;32mI (17933) MQTT TASK: Message sent: 'Average input signal nan', sent result 63555[0m
+[0;32mI (17941) MQTT TASK: Message sent: 'Average input signal nan', sent result 217[0m
+[0;32mI (17949) MQTT TASK: Message sent: 'Average input signal nan', sent result 33585[0m
+[0;32mI (17957) MQTT TASK: Message sent: 'Average input signal nan', sent result 32691[0m
+[0;32mI (17965) MQTT TASK: Message sent: 'Average input signal nan', sent result 14881[0m
+[0;32mI (17973) MQTT TASK: Message sent: 'Average input signal nan', sent result 61219[0m
+[0;32mI (17981) MQTT TASK: Message sent: 'Average input signal nan', sent result 61864[0m
+[0;32mI (17989) MQTT TASK: Message sent: 'Average input signal nan', sent result 33148[0m
+[0;32mI (17998) MQTT TASK: Message sent: 'Average input signal nan', sent result 40305[0m
+[0;32mI (18006) MQTT TASK: Message sent: 'Average input signal nan', sent result 40910[0m
+[0;32mI (18014) MQTT TASK: Message sent: 'Average input signal nan', sent result 10589[0m
+[0;32mI (18022) MQTT TASK: Message sent: 'Average input signal nan', sent result 52057[0m
+[0;32mI (18030) MQTT TASK: Message sent: 'Average input signal nan', sent result 50450[0m
+[0;32mI (18038) MQTT TASK: Message sent: 'Average input signal nan', sent result 12730[0m
+[0;32mI (18046) MQTT TASK: Message sent: 'Average input signal nan', sent result 47176[0m
+[0;32mI (18054) MQTT TASK: Message sent: 'Average input signal nan', sent result 39016[0m
+[0;32mI (18062) MQTT TASK: Message sent: 'Average input signal nan', sent result 33199[0m
+[0;32mI (18070) MQTT TASK: Message sent: 'Average input signal nan', sent result 50803[0m
+[0;32mI (18078) MQTT TASK: Message sent: 'Average input signal nan', sent result 39016[0m
+[0;32mI (18086) MQTT TASK: Message sent: 'Average input signal nan', sent result 28654[0m
+[0;32mI (18094) MQTT TASK: Message sent: 'Average input signal nan', sent result 17203[0m
+[0;32mI (18102) MQTT TASK: Message sent: 'Average input signal nan', sent result 33786[0m
+[0;32mI (18111) MQTT TASK: Message sent: 'Average input signal nan', sent result 1447[0m
+[0;32mI (18119) MQTT TASK: Message sent: 'Average input signal nan', sent result 65092[0m
+[0;32mI (18127) MQTT TASK: Message sent: 'Average input signal nan', sent result 10678[0m
+[0;32mI (18135) MQTT TASK: Message sent: 'Average input signal nan', sent result 9038[0m
+[0;32mI (18143) MQTT TASK: Message sent: 'Average input signal nan', sent result 37426[0m
+[0;32mI (18151) MQTT TASK: Message sent: 'Average input signal nan', sent result 50946[0m
+[0;32mI (18159) MQTT TASK: Message sent: 'Average input signal nan', sent result 15060[0m
+[0;32mI (18167) MQTT TASK: Message sent: 'Average input signal nan', sent result 53384[0m
+[0;32mI (18175) MQTT TASK: Message sent: 'Average input signal nan', sent result 21122[0m
+[0;32mI (18183) MQTT TASK: Message sent: 'Average input signal nan', sent result 4548[0m
+[0;32mI (18191) MQTT TASK: Message sent: 'Average input signal nan', sent result 253[0m
+[0;32mI (18199) MQTT TASK: Message sent: 'Average input signal nan', sent result 39791[0m
+[0;32mI (18207) MQTT TASK: Message sent: 'Average input signal nan', sent result 57763[0m
+[0;32mI (18215) MQTT TASK: Message sent: 'Average input signal nan', sent result 11955[0m
+[0;32mI (18223) MQTT TASK: Message sent: 'Average input signal nan', sent result 52885[0m
+[0;32mI (18231) MQTT TASK: Message sent: 'Average input signal nan', sent result 50908[0m
+[0;32mI (18239) MQTT TASK: Message sent: 'Average input signal nan', sent result 5960[0m
+[0;32mI (18247) MQTT TASK: Message sent: 'Average input signal nan', sent result 5228[0m
+[0;32mI (18255) MQTT TASK: Message sent: 'Average input signal nan', sent result 46695[0m
+[0;32mI (18263) MQTT TASK: Message sent: 'Average input signal nan', sent result 4142[0m
+[0;32mI (18271) MQTT TASK: Message sent: 'Average input signal nan', sent result 57186[0m
+[0;32mI (18279) MQTT TASK: Message sent: 'Average input signal nan', sent result 64204[0m
+[0;32mI (18287) MQTT TASK: Message sent: 'Average input signal nan', sent result 31024[0m
+[0;32mI (18296) MQTT TASK: Message sent: 'Average input signal nan', sent result 37554[0m
+[0;32mI (18304) MQTT TASK: Message sent: 'Average input signal nan', sent result 29571[0m
+[0;32mI (18312) MQTT TASK: Message sent: 'Average input signal nan', sent result 21891[0m
+[0;32mI (18320) MQTT TASK: Message sent: 'Average input signal nan', sent result 36585[0m
+[0;32mI (18328) MQTT TASK: Message sent: 'Average input signal nan', sent result 44369[0m
+[0;32mI (18336) MQTT TASK: Message sent: 'Average input signal nan', sent result 49131[0m
+[0;32mI (18344) MQTT TASK: Message sent: 'Average input signal nan', sent result 32366[0m
+[0;32mI (18352) MQTT TASK: Message sent: 'Average input signal nan', sent result 55687[0m
+[0;32mI (18360) MQTT TASK: Message sent: 'Average input signal nan', sent result 53791[0m
+[0;32mI (18368) MQTT TASK: Message sent: 'Average input signal nan', sent result 23927[0m
+[0;32mI (18376) MQTT TASK: Message sent: 'Average input signal nan', sent result 33957[0m
+[0;32mI (18384) MQTT TASK: Message sent: 'Average input signal nan', sent result 50017[0m
+[0;32mI (18392) MQTT TASK: Message sent: 'Average input signal nan', sent result 20243[0m
+[0;32mI (18400) MQTT TASK: Message sent: 'Average input signal nan', sent result 23593[0m
+[0;32mI (18409) MQTT TASK: Message sent: 'Average input signal nan', sent result 14827[0m
+[0;32mI (18417) MQTT TASK: Message sent: 'Average input signal nan', sent result 51192[0m
+[0;32mI (18425) MQTT TASK: Message sent: 'Average input signal nan', sent result 60512[0m
+[0;32mI (18433) MQTT TASK: Message sent: 'Average input signal nan', sent result 50039[0m
+[0;32mI (18441) MQTT TASK: Message sent: 'Average input signal nan', sent result 40193[0m
+[0;32mI (18449) MQTT TASK: Message sent: 'Average input signal nan', sent result 747[0m
+[0;32mI (18457) MQTT TASK: Message sent: 'Average input signal nan', sent result 16592[0m
+[0;32mI (18465) MQTT TASK: Message sent: 'Average input signal nan', sent result 42892[0m
+[0;32mI (18473) MQTT TASK: Message sent: 'Average input signal nan', sent result 45313[0m
+[0;32mI (18481) MQTT TASK: Message sent: 'Average input signal nan', sent result 3412[0m
+[0;32mI (18489) MQTT TASK: Message sent: 'Average input signal nan', sent result 38497[0m
+[0;32mI (18497) MQTT TASK: Message sent: 'Average input signal nan', sent result 20513[0m
+[0;32mI (18505) MQTT TASK: Message sent: 'Average input signal nan', sent result 53626[0m
+[0;32mI (18513) MQTT TASK: Message sent: 'Average input signal nan', sent result 39071[0m
+[0;32mI (18521) MQTT TASK: Message sent: 'Average input signal nan', sent result 4226[0m
+[0;32mI (18529) MQTT TASK: Message sent: 'Average input signal nan', sent result 8900[0m
+[0;32mI (18537) MQTT TASK: Message sent: 'Average input signal nan', sent result 33007[0m
+[0;32mI (18545) MQTT TASK: Message sent: 'Average input signal nan', sent result 45682[0m
+[0;32mI (18553) MQTT TASK: Message sent: 'Average input signal nan', sent result 13683[0m
+[0;32mI (18561) MQTT TASK: Message sent: 'Average input signal nan', sent result 50108[0m
+[0;32mI (18570) MQTT TASK: Message sent: 'Average input signal nan', sent result 64913[0m
+[0;32mI (18578) MQTT TASK: Message sent: 'Average input signal nan', sent result 31681[0m
+[0;32mI (18586) MQTT TASK: Message sent: 'Average input signal nan', sent result 29242[0m
+[0;32mI (18594) MQTT TASK: Message sent: 'Average input signal nan', sent result 62313[0m
+[0;32mI (18602) MQTT TASK: Message sent: 'Average input signal nan', sent result 40550[0m
+[0;32mI (18610) MQTT TASK: Message sent: 'Average input signal nan', sent result 62225[0m
+[0;32mI (18618) MQTT TASK: Message sent: 'Average input signal nan', sent result 14336[0m
+[0;32mI (18626) MQTT TASK: Message sent: 'Average input signal nan', sent result 63167[0m
+[0;32mI (18634) MQTT TASK: Message sent: 'Average input signal nan', sent result 54789[0m
+[0;32mI (18642) MQTT TASK: Message sent: 'Average input signal nan', sent result 45262[0m
+[0;32mI (18650) MQTT TASK: Message sent: 'Average input signal nan', sent result 39371[0m
+[0;32mI (18658) MQTT TASK: Message sent: 'Average input signal nan', sent result 22282[0m
+[0;32mI (18666) MQTT TASK: Message sent: 'Average input signal nan', sent result 25112[0m
+[0;32mI (18674) MQTT TASK: Message sent: 'Average input signal nan', sent result 16512[0m
+[0;32mI (18683) MQTT TASK: Message sent: 'Average input signal nan', sent result 25656[0m
+[0;32mI (18691) MQTT TASK: Message sent: 'Average input signal nan', sent result 44961[0m
+[0;32mI (18699) MQTT TASK: Message sent: 'Average input signal nan', sent result 49354[0m
+[0;32mI (18707) MQTT TASK: Message sent: 'Average input signal nan', sent result 36901[0m
+[0;32mI (18715) MQTT TASK: Message sent: 'Average input signal nan', sent result 20715[0m
+[0;32mI (18723) MQTT TASK: Message sent: 'Average input signal nan', sent result 9567[0m
+[0;32mI (18731) MQTT TASK: Message sent: 'Average input signal nan', sent result 60456[0m
+[0;32mI (18739) MQTT TASK: Message sent: 'Average input signal nan', sent result 14136[0m
+[0;32mI (18747) MQTT TASK: Message sent: 'Average input signal nan', sent result 29105[0m
+[0;32mI (18755) MQTT TASK: Message sent: 'Average input signal nan', sent result 7923[0m
+[0;32mI (18763) MQTT TASK: Message sent: 'Average input signal nan', sent result 3292[0m
+[0;32mI (18771) MQTT TASK: Message sent: 'Average input signal nan', sent result 59455[0m
+[0;32mI (18779) MQTT TASK: Message sent: 'Average input signal nan', sent result 50190[0m
+[0;32mI (18787) MQTT TASK: Message sent: 'Average input signal nan', sent result 46338[0m
+[0;32mI (18795) MQTT TASK: Message sent: 'Average input signal nan', sent result 21873[0m
+[0;32mI (18803) MQTT TASK: Message sent: 'Average input signal nan', sent result 50731[0m
+[0;32mI (18811) MQTT TASK: Message sent: 'Average input signal nan', sent result 33012[0m
+[0;32mI (18820) MQTT TASK: Message sent: 'Average input signal nan', sent result 8899[0m
+[0;32mI (18827) MQTT TASK: Message sent: 'Average input signal nan', sent result 29235[0m
+[0;32mI (18836) MQTT TASK: Message sent: 'Average input signal nan', sent result 42511[0m
+[0;32mI (18844) MQTT TASK: Message sent: 'Average input signal nan', sent result 53364[0m
+[0;32mI (18852) MQTT TASK: Message sent: 'Average input signal nan', sent result 55394[0m
+[0;32mI (18860) MQTT TASK: Message sent: 'Average input signal nan', sent result 23394[0m
+[0;32mI (18868) MQTT TASK: Message sent: 'Average input signal nan', sent result 2648[0m
+[0;32mI (18876) MQTT TASK: Message sent: 'Average input signal nan', sent result 60879[0m
+[0;32mI (18884) MQTT TASK: Message sent: 'Average input signal nan', sent result 51498[0m
+[0;32mI (18892) MQTT TASK: Message sent: 'Average input signal nan', sent result 41879[0m
+[0;32mI (18900) MQTT TASK: Message sent: 'Average input signal nan', sent result 20704[0m
+[0;32mI (18908) MQTT TASK: Message sent: 'Average input signal nan', sent result 47469[0m
+[0;32mI (18916) MQTT TASK: Message sent: 'Average input signal nan', sent result 10396[0m
+[0;32mI (18924) MQTT TASK: Message sent: 'Average input signal nan', sent result 22684[0m
+[0;32mI (18932) MQTT TASK: Message sent: 'Average input signal nan', sent result 20692[0m
+[0;32mI (18940) MQTT TASK: Message sent: 'Average input signal nan', sent result 60408[0m
+[0;32mI (18948) MQTT TASK: Message sent: 'Average input signal nan', sent result 10698[0m
+[0;32mI (18957) MQTT TASK: Message sent: 'Average input signal nan', sent result 61321[0m
+[0;32mI (18965) MQTT TASK: Message sent: 'Average input signal nan', sent result 38133[0m
+[0;32mI (18973) MQTT TASK: Message sent: 'Average input signal nan', sent result 55368[0m
+[0;32mI (18981) MQTT TASK: Message sent: 'Average input signal nan', sent result 45734[0m
+[0;32mI (18989) MQTT TASK: Message sent: 'Average input signal nan', sent result 19831[0m
+[0;32mI (18997) MQTT TASK: Message sent: 'Average input signal nan', sent result 18146[0m
+[0;32mI (19005) MQTT TASK: Message sent: 'Average input signal nan', sent result 10423[0m
+[0;32mI (19013) MQTT TASK: Message sent: 'Average input signal nan', sent result 27238[0m
+[0;32mI (19021) MQTT TASK: Message sent: 'Average input signal nan', sent result 16824[0m
+[0;32mI (19029) MQTT TASK: Message sent: 'Average input signal nan', sent result 2011[0m
+[0;32mI (19037) MQTT TASK: Message sent: 'Average input signal nan', sent result 23959[0m
+[0;32mI (19045) MQTT TASK: Message sent: 'Average input signal nan', sent result 20886[0m
+[0;32mI (19053) MQTT TASK: Message sent: 'Average input signal nan', sent result 15114[0m
+[0;32mI (19061) MQTT TASK: Message sent: 'Average input signal nan', sent result 37145[0m
+[0;32mI (19069) MQTT TASK: Message sent: 'Average input signal nan', sent result 49375[0m
+[0;32mI (19078) MQTT TASK: Message sent: 'Average input signal nan', sent result 61913[0m
+[0;32mI (19086) MQTT TASK: Message sent: 'Average input signal nan', sent result 4253[0m
+[0;32mI (19094) MQTT TASK: Message sent: 'Average input signal nan', sent result 33498[0m
+[0;32mI (19102) MQTT TASK: Message sent: 'Average input signal nan', sent result 35596[0m
+[0;32mI (19110) MQTT TASK: Message sent: 'Average input signal nan', sent result 13414[0m
+[0;32mI (19118) MQTT TASK: Message sent: 'Average input signal nan', sent result 59306[0m
+[0;32mI (19126) MQTT TASK: Message sent: 'Average input signal nan', sent result 33155[0m
+[0;32mI (19134) MQTT TASK: Message sent: 'Average input signal nan', sent result 5642[0m
+[0;32mI (19142) MQTT TASK: Message sent: 'Average input signal nan', sent result 2942[0m
+[0;32mI (19150) MQTT TASK: Message sent: 'Average input signal nan', sent result 47875[0m
+[0;32mI (19158) MQTT TASK: Message sent: 'Average input signal nan', sent result 34519[0m
+[0;32mI (19166) MQTT TASK: Message sent: 'Average input signal nan', sent result 43803[0m
+[0;32mI (19174) MQTT TASK: Message sent: 'Average input signal nan', sent result 45027[0m
+[0;32mI (19182) MQTT TASK: Message sent: 'Average input signal nan', sent result 60246[0m
+[0;32mI (19190) MQTT TASK: Message sent: 'Average input signal nan', sent result 60578[0m
+[0;32mI (19198) MQTT TASK: Message sent: 'Average input signal nan', sent result 49630[0m
+[0;32mI (19206) MQTT TASK: Message sent: 'Average input signal nan', sent result 1814[0m
+[0;32mI (19214) MQTT TASK: Message sent: 'Average input signal nan', sent result 35370[0m
+[0;32mI (19223) MQTT TASK: Message sent: 'Average input signal nan', sent result 62479[0m
+[0;32mI (19231) MQTT TASK: Message sent: 'Average input signal nan', sent result 18333[0m
+[0;32mI (19239) MQTT TASK: Message sent: 'Average input signal nan', sent result 45285[0m
+[0;32mI (19247) MQTT TASK: Message sent: 'Average input signal nan', sent result 7058[0m
+[0;32mI (19255) MQTT TASK: Message sent: 'Average input signal nan', sent result 56259[0m
+[0;32mI (19263) MQTT TASK: Message sent: 'Average input signal nan', sent result 17200[0m
+[0;32mI (19271) MQTT TASK: Message sent: 'Average input signal nan', sent result 43205[0m
+[0;32mI (19279) MQTT TASK: Message sent: 'Average input signal nan', sent result 3993[0m
+[0;32mI (19287) MQTT TASK: Message sent: 'Average input signal nan', sent result 11218[0m
+[0;32mI (19295) MQTT TASK: Message sent: 'Average input signal nan', sent result 50219[0m
+[0;32mI (19303) MQTT TASK: Message sent: 'Average input signal nan', sent result 20735[0m
+[0;32mI (19311) MQTT TASK: Message sent: 'Average input signal nan', sent result 52762[0m
+[0;32mI (19319) MQTT TASK: Message sent: 'Average input signal nan', sent result 29943[0m
+[0;32mI (19327) MQTT TASK: Message sent: 'Average input signal nan', sent result 17550[0m
+[0;32mI (19335) MQTT TASK: Message sent: 'Average input signal nan', sent result 6592[0m
+[0;32mI (19343) MQTT TASK: Message sent: 'Average input signal nan', sent result 1089[0m
+[0;32mI (19351) MQTT TASK: Message sent: 'Average input signal nan', sent result 24896[0m
+[0;32mI (19359) MQTT TASK: Message sent: 'Average input signal nan', sent result 43310[0m
+[0;32mI (19367) MQTT TASK: Message sent: 'Average input signal nan', sent result 29120[0m
+[0;32mI (19376) MQTT TASK: Message sent: 'Average input signal nan', sent result 7384[0m
+[0;32mI (19384) MQTT TASK: Message sent: 'Average input signal nan', sent result 1955[0m
+[0;32mI (19392) MQTT TASK: Message sent: 'Average input signal nan', sent result 21406[0m
+[0;32mI (19400) MQTT TASK: Message sent: 'Average input signal nan', sent result 15885[0m
+[0;32mI (19408) MQTT TASK: Message sent: 'Average input signal nan', sent result 58441[0m
+[0;32mI (19416) MQTT TASK: Message sent: 'Average input signal nan', sent result 45514[0m
+[0;32mI (19424) MQTT TASK: Message sent: 'Average input signal nan', sent result 13098[0m
+[0;32mI (19432) MQTT TASK: Message sent: 'Average input signal nan', sent result 11576[0m
+[0;32mI (19440) MQTT TASK: Message sent: 'Average input signal nan', sent result 40560[0m
+[0;32mI (19448) MQTT TASK: Message sent: 'Average input signal nan', sent result 27271[0m
+[0;32mI (19456) MQTT TASK: Message sent: 'Average input signal nan', sent result 24553[0m
+[0;32mI (19464) MQTT TASK: Message sent: 'Average input signal nan', sent result 12727[0m
+[0;32mI (19472) MQTT TASK: Message sent: 'Average input signal nan', sent result 62024[0m
+[0;32mI (19480) MQTT TASK: Message sent: 'Average input signal nan', sent result 10347[0m
+[0;32mI (19488) MQTT TASK: Message sent: 'Average input signal nan', sent result 40595[0m
+[0;32mI (19496) MQTT TASK: Message sent: 'Average input signal nan', sent result 19925[0m
+[0;32mI (19505) MQTT TASK: Message sent: 'Average input signal nan', sent result 15777[0m
+[0;32mI (19513) MQTT TASK: Message sent: 'Average input signal nan', sent result 41494[0m
+[0;32mI (19521) MQTT TASK: Message sent: 'Average input signal nan', sent result 61150[0m
+[0;32mI (19529) MQTT TASK: Message sent: 'Average input signal nan', sent result 6377[0m
+[0;32mI (19537) MQTT TASK: Message sent: 'Average input signal nan', sent result 13421[0m
+[0;32mI (19545) MQTT TASK: Message sent: 'Average input signal nan', sent result 47236[0m
+[0;32mI (19553) MQTT TASK: Message sent: 'Average input signal nan', sent result 8577[0m
+[0;32mI (19561) MQTT TASK: Message sent: 'Average input signal nan', sent result 22992[0m
+[0;32mI (19569) MQTT TASK: Message sent: 'Average input signal nan', sent result 50226[0m
+[0;32mI (19577) MQTT TASK: Message sent: 'Average input signal nan', sent result 51715[0m
+[0;32mI (19585) MQTT TASK: Message sent: 'Average input signal nan', sent result 42240[0m
+[0;32mI (19593) MQTT TASK: Message sent: 'Average input signal nan', sent result 6656[0m
+[0;32mI (19601) MQTT TASK: Message sent: 'Average input signal nan', sent result 2296[0m
+[0;32mI (19609) MQTT TASK: Message sent: 'Average input signal nan', sent result 63515[0m
+[0;32mI (19617) MQTT TASK: Message sent: 'Average input signal nan', sent result 3498[0m
+[0;32mI (19625) MQTT TASK: Message sent: 'Average input signal nan', sent result 36410[0m
+[0;32mI (19633) MQTT TASK: Message sent: 'Average input signal nan', sent result 25535[0m
+[0;32mI (19641) MQTT TASK: Message sent: 'Average input signal nan', sent result 62662[0m
+[0;32mI (19649) MQTT TASK: Message sent: 'Average input signal nan', sent result 5508[0m
+[0;32mI (19657) MQTT TASK: Message sent: 'Average input signal nan', sent result 1241[0m
+[0;32mI (19665) MQTT TASK: Message sent: 'Average input signal nan', sent result 34476[0m
+[0;32mI (19673) MQTT TASK: Message sent: 'Average input signal nan', sent result 15723[0m
+[0;32mI (19682) MQTT TASK: Message sent: 'Average input signal nan', sent result 64405[0m
+[0;32mI (19690) MQTT TASK: Message sent: 'Average input signal nan', sent result 37653[0m
+[0;32mI (19698) MQTT TASK: Message sent: 'Average input signal nan', sent result 50971[0m
+[0;32mI (19706) MQTT TASK: Message sent: 'Average input signal nan', sent result 38493[0m
+[0;32mI (19714) MQTT TASK: Message sent: 'Average input signal nan', sent result 54974[0m
+[0;32mI (19722) MQTT TASK: Message sent: 'Average input signal nan', sent result 41071[0m
+[0;32mI (19730) MQTT TASK: Message sent: 'Average input signal nan', sent result 2330[0m
+[0;32mI (19738) MQTT TASK: Message sent: 'Average input signal nan', sent result 56211[0m
+[0;32mI (19746) MQTT TASK: Message sent: 'Average input signal nan', sent result 29130[0m
+[0;32mI (19754) MQTT TASK: Message sent: 'Average input signal nan', sent result 32997[0m
+[0;32mI (19762) MQTT TASK: Message sent: 'Average input signal nan', sent result 6329[0m
+[0;32mI (19770) MQTT TASK: Message sent: 'Average input signal nan', sent result 22274[0m
+[0;32mI (19778) MQTT TASK: Message sent: 'Average input signal nan', sent result 65315[0m
+[0;32mI (19786) MQTT TASK: Message sent: 'Average input signal nan', sent result 22906[0m
+[0;32mI (19794) MQTT TASK: Message sent: 'Average input signal nan', sent result 32028[0m
+[0;32mI (19802) MQTT TASK: Message sent: 'Average input signal nan', sent result 15863[0m
+[0;32mI (19810) MQTT TASK: Message sent: 'Average input signal nan', sent result 33023[0m
+[0;32mI (19819) MQTT TASK: Message sent: 'Average input signal nan', sent result 5914[0m
+[0;32mI (19827) MQTT TASK: Message sent: 'Average input signal nan', sent result 56599[0m
+[0;32mI (19835) MQTT TASK: Message sent: 'Average input signal nan', sent result 37567[0m
+[0;32mI (19843) MQTT TASK: Message sent: 'Average input signal nan', sent result 44274[0m
+[0;32mI (19851) MQTT TASK: Message sent: 'Average input signal nan', sent result 45585[0m
+[0;32mI (19859) MQTT TASK: Message sent: 'Average input signal nan', sent result 30963[0m
+[0;32mI (19867) MQTT TASK: Message sent: 'Average input signal nan', sent result 1767[0m
+[0;32mI (19875) MQTT TASK: Message sent: 'Average input signal nan', sent result 41085[0m
+[0;32mI (19883) MQTT TASK: Message sent: 'Average input signal nan', sent result 9628[0m
+[0;32mI (19891) MQTT TASK: Message sent: 'Average input signal nan', sent result 45910[0m
+[0;32mI (19899) MQTT TASK: Message sent: 'Average input signal nan', sent result 28908[0m
+[0;32mI (19907) MQTT TASK: Message sent: 'Average input signal nan', sent result 53275[0m
+[0;32mI (19915) MQTT TASK: Message sent: 'Average input signal nan', sent result 58802[0m
+[0;32mI (19923) MQTT TASK: Message sent: 'Average input signal nan', sent result 26438[0m
+[0;32mI (19931) MQTT TASK: Message sent: 'Average input signal nan', sent result 21519[0m
+[0;32mI (19939) MQTT TASK: Message sent: 'Average input signal nan', sent result 47062[0m
+[0;32mI (19947) MQTT TASK: Message sent: 'Average input signal nan', sent result 57051[0m
+[0;32mI (19956) MQTT TASK: Message sent: 'Average input signal nan', sent result 17637[0m
+[0;32mI (19964) MQTT TASK: Message sent: 'Average input signal nan', sent result 26201[0m
+[0;32mI (19972) MQTT TASK: Message sent: 'Average input signal nan', sent result 37097[0m
+[0;32mI (19980) MQTT TASK: Message sent: 'Average input signal nan', sent result 4072[0m
+[0;32mI (19988) MQTT TASK: Message sent: 'Average input signal nan', sent result 31114[0m
+[0;32mI (19996) MQTT TASK: Message sent: 'Average input signal nan', sent result 65432[0m
+[0;32mI (20004) MQTT TASK: Message sent: 'Average input signal nan', sent result 10061[0m
+[0;32mI (20012) MQTT TASK: Message sent: 'Average input signal nan', sent result 21761[0m
+[0;32mI (20020) MQTT TASK: Message sent: 'Average input signal nan', sent result 9716[0m
+[0;32mI (20028) MQTT TASK: Message sent: 'Average input signal nan', sent result 6016[0m
+[0;32mI (20036) MQTT TASK: Message sent: 'Average input signal nan', sent result 52983[0m
+[0;32mI (20044) MQTT TASK: Message sent: 'Average input signal nan', sent result 38998[0m
+[0;32mI (20052) MQTT TASK: Message sent: 'Average input signal nan', sent result 5210[0m
+[0;32mI (20060) MQTT TASK: Message sent: 'Average input signal nan', sent result 25283[0m
+[0;32mI (20068) MQTT TASK: Message sent: 'Average input signal nan', sent result 2444[0m
+[0;32mI (20076) MQTT TASK: Message sent: 'Average input signal nan', sent result 55158[0m
+[0;32mI (20084) MQTT TASK: Message sent: 'Average input signal nan', sent result 18498[0m
+[0;32mI (20092) MQTT TASK: Message sent: 'Average input signal nan', sent result 21545[0m
+[0;32mI (20100) MQTT TASK: Message sent: 'Average input signal nan', sent result 37960[0m
+[0;32mI (20108) MQTT TASK: Message sent: 'Average input signal nan', sent result 58274[0m
+[0;32mI (20117) MQTT TASK: Message sent: 'Average input signal nan', sent result 4187[0m
+[0;32mI (20125) MQTT TASK: Message sent: 'Average input signal nan', sent result 4442[0m
+[0;32mI (20133) MQTT TASK: Message sent: 'Average input signal nan', sent result 37156[0m
+[0;32mI (20141) MQTT TASK: Message sent: 'Average input signal nan', sent result 14815[0m
+[0;32mI (20149) MQTT TASK: Message sent: 'Average input signal nan', sent result 7833[0m
+[0;32mI (20157) MQTT TASK: Message sent: 'Average input signal nan', sent result 8198[0m
+[0;32mI (20165) MQTT TASK: Message sent: 'Average input signal nan', sent result 16154[0m
+[0;32mI (20173) MQTT TASK: Message sent: 'Average input signal nan', sent result 56394[0m
+[0;32mI (20181) MQTT TASK: Message sent: 'Average input signal nan', sent result 28113[0m
+[0;32mI (20189) MQTT TASK: Message sent: 'Average input signal nan', sent result 15828[0m
+[0;32mI (20197) MQTT TASK: Message sent: 'Average input signal nan', sent result 50776[0m
+[0;32mI (20205) MQTT TASK: Message sent: 'Average input signal nan', sent result 37325[0m
+[0;32mI (20213) MQTT TASK: Message sent: 'Average input signal nan', sent result 24132[0m
+[0;32mI (20221) MQTT TASK: Message sent: 'Average input signal nan', sent result 9472[0m
+[0;32mI (20229) MQTT TASK: Message sent: 'Average input signal nan', sent result 47540[0m
+[0;32mI (20237) MQTT TASK: Message sent: 'Average input signal nan', sent result 48673[0m
+[0;32mI (20245) MQTT TASK: Message sent: 'Average input signal nan', sent result 7616[0m
+[0;32mI (20253) MQTT TASK: Message sent: 'Average input signal nan', sent result 48589[0m
+[0;32mI (20261) MQTT TASK: Message sent: 'Average input signal nan', sent result 48730[0m
+[0;32mI (20269) MQTT TASK: Message sent: 'Average input signal nan', sent result 58789[0m
+[0;32mI (20277) MQTT TASK: Message sent: 'Average input signal nan', sent result 65376[0m
+[0;32mI (20286) MQTT TASK: Message sent: 'Average input signal nan', sent result 29483[0m
+[0;32mI (20294) MQTT TASK: Message sent: 'Average input signal nan', sent result 36649[0m
+[0;32mI (20302) MQTT TASK: Message sent: 'Average input signal nan', sent result 41527[0m
+[0;32mI (20310) MQTT TASK: Message sent: 'Average input signal nan', sent result 25586[0m
+[0;32mI (20318) MQTT TASK: Message sent: 'Average input signal nan', sent result 27338[0m
+[0;32mI (20326) MQTT TASK: Message sent: 'Average input signal nan', sent result 57089[0m
+[0;32mI (20334) MQTT TASK: Message sent: 'Average input signal nan', sent result 54596[0m
+[0;32mI (20342) MQTT TASK: Message sent: 'Average input signal nan', sent result 10256[0m
+[0;32mI (20350) MQTT TASK: Message sent: 'Average input signal nan', sent result 16620[0m
+[0;32mI (20358) MQTT TASK: Message sent: 'Average input signal nan', sent result 198[0m
+[0;32mI (20366) MQTT TASK: Message sent: 'Average input signal nan', sent result 19519[0m
+[0;32mI (20374) MQTT TASK: Message sent: 'Average input signal nan', sent result 35743[0m
+[0;32mI (20382) MQTT TASK: Message sent: 'Average input signal nan', sent result 18892[0m
+[0;32mI (20390) MQTT TASK: Message sent: 'Average input signal nan', sent result 6279[0m
+[0;32mI (20398) MQTT TASK: Message sent: 'Average input signal nan', sent result 10821[0m
+[0;32mI (20406) MQTT TASK: Message sent: 'Average input signal nan', sent result 58537[0m
+[0;32mI (20414) MQTT TASK: Message sent: 'Average input signal nan', sent result 12530[0m
+[0;32mI (20423) MQTT TASK: Message sent: 'Average input signal nan', sent result 15870[0m
+[0;32mI (20431) MQTT TASK: Message sent: 'Average input signal nan', sent result 38312[0m
+[0;32mI (20439) MQTT TASK: Message sent: 'Average input signal nan', sent result 58142[0m
+[0;32mI (20447) MQTT TASK: Message sent: 'Average input signal nan', sent result 56358[0m
+[0;32mI (20455) MQTT TASK: Message sent: 'Average input signal nan', sent result 42815[0m
+[0;32mI (20463) MQTT TASK: Message sent: 'Average input signal nan', sent result 30335[0m
+[0;32mI (20471) MQTT TASK: Message sent: 'Average input signal nan', sent result 54628[0m
+[0;32mI (20479) MQTT TASK: Message sent: 'Average input signal nan', sent result 61847[0m
+[0;32mI (20487) MQTT TASK: Message sent: 'Average input signal nan', sent result 23197[0m
+[0;32mI (20495) MQTT TASK: Message sent: 'Average input signal nan', sent result 15895[0m
+[0;32mI (20503) MQTT TASK: Message sent: 'Average input signal nan', sent result 42375[0m
+[0;32mI (20511) MQTT TASK: Message sent: 'Average input signal nan', sent result 21807[0m
+[0;32mI (20519) MQTT TASK: Message sent: 'Average input signal nan', sent result 9506[0m
+[0;32mI (20527) MQTT TASK: Message sent: 'Average input signal nan', sent result 56147[0m
+[0;32mI (20535) MQTT TASK: Message sent: 'Average input signal nan', sent result 48090[0m
+[0;32mI (20544) MQTT TASK: Message sent: 'Average input signal nan', sent result 26995[0m
+[0;32mI (20552) MQTT TASK: Message sent: 'Average input signal nan', sent result 2096[0m
+[0;32mI (20560) MQTT TASK: Message sent: 'Average input signal nan', sent result 53942[0m
+[0;32mI (20568) MQTT TASK: Message sent: 'Average input signal nan', sent result 45005[0m
+[0;32mI (20576) MQTT TASK: Message sent: 'Average input signal nan', sent result 8941[0m
+[0;32mI (20584) MQTT TASK: Message sent: 'Average input signal nan', sent result 34243[0m
+[0;32mI (20592) MQTT TASK: Message sent: 'Average input signal nan', sent result 31536[0m
+[0;32mI (20600) MQTT TASK: Message sent: 'Average input signal nan', sent result 17040[0m
+[0;32mI (20608) MQTT TASK: Message sent: 'Average input signal nan', sent result 21863[0m
+[0;32mI (20616) MQTT TASK: Message sent: 'Average input signal nan', sent result 44696[0m
+[0;32mI (20624) MQTT TASK: Message sent: 'Average input signal nan', sent result 17263[0m
+[0;32mI (20632) MQTT TASK: Message sent: 'Average input signal nan', sent result 30583[0m
+[0;32mI (20640) MQTT TASK: Message sent: 'Average input signal nan', sent result 29740[0m
+[0;32mI (20648) MQTT TASK: Message sent: 'Average input signal nan', sent result 6175[0m
+[0;32mI (20656) MQTT TASK: Message sent: 'Average input signal nan', sent result 31646[0m
+[0;32mI (20664) MQTT TASK: Message sent: 'Average input signal nan', sent result 35857[0m
+[0;32mI (20672) MQTT TASK: Message sent: 'Average input signal nan', sent result 8480[0m
+[0;32mI (20680) MQTT TASK: Message sent: 'Average input signal nan', sent result 58751[0m
+[0;32mI (20688) MQTT TASK: Message sent: 'Average input signal nan', sent result 57336[0m
+[0;32mI (20697) MQTT TASK: Message sent: 'Average input signal nan', sent result 51416[0m
+[0;32mI (20705) MQTT TASK: Message sent: 'Average input signal nan', sent result 36502[0m
+[0;32mI (20713) MQTT TASK: Message sent: 'Average input signal nan', sent result 58517[0m
+[0;32mI (20721) MQTT TASK: Message sent: 'Average input signal nan', sent result 26076[0m
+[0;32mI (20729) MQTT TASK: Message sent: 'Average input signal nan', sent result 18321[0m
+[0;32mI (20737) MQTT TASK: Message sent: 'Average input signal nan', sent result 26074[0m
+[0;32mI (20745) MQTT TASK: Message sent: 'Average input signal nan', sent result 10444[0m
+[0;32mI (20753) MQTT TASK: Message sent: 'Average input signal nan', sent result 1374[0m
+[0;32mI (20761) MQTT TASK: Message sent: 'Average input signal nan', sent result 3479[0m
+[0;32mI (20769) MQTT TASK: Message sent: 'Average input signal nan', sent result 57685[0m
+[0;32mI (20777) MQTT TASK: Message sent: 'Average input signal nan', sent result 46522[0m
+[0;32mI (20785) MQTT TASK: Message sent: 'Average input signal nan', sent result 26230[0m
+[0;32mI (20793) MQTT TASK: Message sent: 'Average input signal nan', sent result 7634[0m
+[0;32mI (20801) MQTT TASK: Message sent: 'Average input signal nan', sent result 42273[0m
+[0;32mI (20809) MQTT TASK: Message sent: 'Average input signal nan', sent result 60681[0m
+[0;32mI (20817) MQTT TASK: Message sent: 'Average input signal nan', sent result 38159[0m
+[0;32mI (20825) MQTT TASK: Message sent: 'Average input signal nan', sent result 6980[0m
+[0;32mI (20833) MQTT TASK: Message sent: 'Average input signal nan', sent result 27013[0m
+[0;32mI (20841) MQTT TASK: Message sent: 'Average input signal nan', sent result 63292[0m
+[0;32mI (20850) MQTT TASK: Message sent: 'Average input signal nan', sent result 3992[0m
+[0;32mI (20858) MQTT TASK: Message sent: 'Average input signal nan', sent result 64471[0m
+[0;32mI (20866) MQTT TASK: Message sent: 'Average input signal nan', sent result 30570[0m
+[0;32mI (20874) MQTT TASK: Message sent: 'Average input signal nan', sent result 24569[0m
+[0;32mI (20882) MQTT TASK: Message sent: 'Average input signal nan', sent result 8304[0m
+[0;32mI (20890) MQTT TASK: Message sent: 'Average input signal nan', sent result 19750[0m
+[0;32mI (20898) MQTT TASK: Message sent: 'Average input signal nan', sent result 38726[0m
+[0;32mI (20906) MQTT TASK: Message sent: 'Average input signal nan', sent result 10508[0m
+[0;32mI (20914) MQTT TASK: Message sent: 'Average input signal nan', sent result 52970[0m
+[0;32mI (20922) MQTT TASK: Message sent: 'Average input signal nan', sent result 52708[0m
+[0;32mI (20930) MQTT TASK: Message sent: 'Average input signal nan', sent result 40334[0m
+[0;32mI (20938) MQTT TASK: Message sent: 'Average input signal nan', sent result 28916[0m
+[0;32mI (20946) MQTT TASK: Message sent: 'Average input signal nan', sent result 28500[0m
+[0;32mI (20954) MQTT TASK: Message sent: 'Average input signal nan', sent result 27427[0m
+[0;32mI (20962) MQTT TASK: Message sent: 'Average input signal nan', sent result 54664[0m
+[0;32mI (20970) MQTT TASK: Message sent: 'Average input signal nan', sent result 36619[0m
+[0;32mI (20979) MQTT TASK: Message sent: 'Average input signal nan', sent result 30366[0m
+[0;32mI (20987) MQTT TASK: Message sent: 'Average input signal nan', sent result 33183[0m
+[0;32mI (20995) MQTT TASK: Message sent: 'Average input signal nan', sent result 13732[0m
+[0;32mI (21003) MQTT TASK: Message sent: 'Average input signal nan', sent result 8656[0m
+[0;32mI (21011) MQTT TASK: Message sent: 'Average input signal nan', sent result 44720[0m
+[0;32mI (21019) MQTT TASK: Message sent: 'Average input signal nan', sent result 45672[0m
+[0;32mI (21027) MQTT TASK: Message sent: 'Average input signal nan', sent result 52873[0m
+[0;32mI (21035) MQTT TASK: Message sent: 'Average input signal nan', sent result 50944[0m
+[0;32mI (21043) MQTT TASK: Message sent: 'Average input signal nan', sent result 29103[0m
+[0;32mI (21051) MQTT TASK: Message sent: 'Average input signal nan', sent result 8127[0m
+[0;32mI (21059) MQTT TASK: Message sent: 'Average input signal nan', sent result 54902[0m
+[0;32mI (21067) MQTT TASK: Message sent: 'Average input signal nan', sent result 40005[0m
+[0;32mI (21075) MQTT TASK: Message sent: 'Average input signal nan', sent result 6844[0m
+[0;32mI (21083) MQTT TASK: Message sent: 'Average input signal nan', sent result 27470[0m
+[0;32mI (21091) MQTT TASK: Message sent: 'Average input signal nan', sent result 57471[0m
+[0;32mI (21099) MQTT TASK: Message sent: 'Average input signal nan', sent result 49876[0m
+[0;32mI (21107) MQTT TASK: Message sent: 'Average input signal nan', sent result 62794[0m
+[0;32mI (21116) MQTT TASK: Message sent: 'Average input signal nan', sent result 34842[0m
+[0;32mI (21124) MQTT TASK: Message sent: 'Average input signal nan', sent result 56892[0m
+[0;32mI (21132) MQTT TASK: Message sent: 'Average input signal nan', sent result 61531[0m
+[0;32mI (21140) MQTT TASK: Message sent: 'Average input signal nan', sent result 11878[0m
+[0;32mI (21148) MQTT TASK: Message sent: 'Average input signal nan', sent result 10498[0m
+[0;32mI (21156) MQTT TASK: Message sent: 'Average input signal nan', sent result 3254[0m
+[0;32mI (21164) MQTT TASK: Message sent: 'Average input signal nan', sent result 48689[0m
+[0;32mI (21172) MQTT TASK: Message sent: 'Average input signal nan', sent result 54738[0m
+[0;32mI (21180) MQTT TASK: Message sent: 'Average input signal nan', sent result 16523[0m
+[0;32mI (21188) MQTT TASK: Message sent: 'Average input signal nan', sent result 30903[0m
+[0;32mI (21196) MQTT TASK: Message sent: 'Average input signal nan', sent result 39295[0m
+[0;32mI (21204) MQTT TASK: Message sent: 'Average input signal nan', sent result 38063[0m
+[0;32mI (21212) MQTT TASK: Message sent: 'Average input signal nan', sent result 35554[0m
+[0;32mI (21220) MQTT TASK: Message sent: 'Average input signal nan', sent result 29812[0m
+[0;32mI (21228) MQTT TASK: Message sent: 'Average input signal nan', sent result 31742[0m
+[0;32mI (21236) MQTT TASK: Message sent: 'Average input signal nan', sent result 1142[0m
+[0;32mI (21244) MQTT TASK: Message sent: 'Average input signal nan', sent result 58285[0m
+[0;32mI (21253) MQTT TASK: Message sent: 'Average input signal nan', sent result 182[0m
+[0;32mI (21260) MQTT TASK: Message sent: 'Average input signal nan', sent result 1822[0m
+[0;32mI (21268) MQTT TASK: Message sent: 'Average input signal nan', sent result 36169[0m
+[0;32mI (21277) MQTT TASK: Message sent: 'Average input signal nan', sent result 14201[0m
+[0;32mI (21285) MQTT TASK: Message sent: 'Average input signal nan', sent result 29081[0m
+[0;32mI (21293) MQTT TASK: Message sent: 'Average input signal nan', sent result 30705[0m
+[0;32mI (21301) MQTT TASK: Message sent: 'Average input signal nan', sent result 62852[0m
+[0;32mI (21309) MQTT TASK: Message sent: 'Average input signal nan', sent result 35012[0m
+[0;32mI (21317) MQTT TASK: Message sent: 'Average input signal nan', sent result 49433[0m
+[0;32mI (21325) MQTT TASK: Message sent: 'Average input signal nan', sent result 31508[0m
+[0;32mI (21333) MQTT TASK: Message sent: 'Average input signal nan', sent result 63129[0m
+[0;32mI (21341) MQTT TASK: Message sent: 'Average input signal nan', sent result 23896[0m
+[0;32mI (21349) MQTT TASK: Message sent: 'Average input signal nan', sent result 56772[0m
+[0;32mI (21357) MQTT TASK: Message sent: 'Average input signal nan', sent result 37274[0m
+[0;32mI (21365) MQTT TASK: Message sent: 'Average input signal nan', sent result 16825[0m
+[0;32mI (21373) MQTT TASK: Message sent: 'Average input signal nan', sent result 22502[0m
+[0;32mI (21381) MQTT TASK: Message sent: 'Average input signal nan', sent result 64820[0m
+[0;32mI (21390) MQTT TASK: Message sent: 'Average input signal nan', sent result 16100[0m
+[0;32mI (21398) MQTT TASK: Message sent: 'Average input signal nan', sent result 34730[0m
+[0;32mI (21406) MQTT TASK: Message sent: 'Average input signal nan', sent result 50407[0m
+[0;32mI (21414) MQTT TASK: Message sent: 'Average input signal nan', sent result 63714[0m
+[0;32mI (21422) MQTT TASK: Message sent: 'Average input signal nan', sent result 51513[0m
+[0;32mI (21430) MQTT TASK: Message sent: 'Average input signal nan', sent result 15943[0m
+[0;32mI (21438) MQTT TASK: Message sent: 'Average input signal nan', sent result 33030[0m
+[0;32mI (21446) MQTT TASK: Message sent: 'Average input signal nan', sent result 12396[0m
+[0;32mI (21454) MQTT TASK: Message sent: 'Average input signal nan', sent result 43111[0m
+[0;32mI (21462) MQTT TASK: Message sent: 'Average input signal nan', sent result 45377[0m
+[0;32mI (21470) MQTT TASK: Message sent: 'Average input signal nan', sent result 15861[0m
+[0;32mI (21478) MQTT TASK: Message sent: 'Average input signal nan', sent result 34203[0m
+[0;32mI (21486) MQTT TASK: Message sent: 'Average input signal nan', sent result 57702[0m
+[0;32mI (21494) MQTT TASK: Message sent: 'Average input signal nan', sent result 47913[0m
+[0;32mI (21503) MQTT TASK: Message sent: 'Average input signal nan', sent result 42725[0m
+[0;32mI (21511) MQTT TASK: Message sent: 'Average input signal nan', sent result 62660[0m
+[0;32mI (21519) MQTT TASK: Message sent: 'Average input signal nan', sent result 38152[0m
+[0;32mI (21527) MQTT TASK: Message sent: 'Average input signal nan', sent result 23130[0m
+[0;32mI (21535) MQTT TASK: Message sent: 'Average input signal nan', sent result 44845[0m
+[0;32mI (21543) MQTT TASK: Message sent: 'Average input signal nan', sent result 8048[0m
+[0;32mI (21551) MQTT TASK: Message sent: 'Average input signal nan', sent result 65387[0m
+[0;32mI (21559) MQTT TASK: Message sent: 'Average input signal nan', sent result 42853[0m
+[0;32mI (21567) MQTT TASK: Message sent: 'Average input signal nan', sent result 22029[0m
+[0;32mI (21575) MQTT TASK: Message sent: 'Average input signal nan', sent result 1167[0m
+[0;32mI (21583) MQTT TASK: Message sent: 'Average input signal nan', sent result 16865[0m
+[0;32mI (21591) MQTT TASK: Message sent: 'Average input signal nan', sent result 64160[0m
+[0;32mI (21599) MQTT TASK: Message sent: 'Average input signal nan', sent result 17249[0m
+[0;32mI (21607) MQTT TASK: Message sent: 'Average input signal nan', sent result 52261[0m
+[0;32mI (21615) MQTT TASK: Message sent: 'Average input signal nan', sent result 32559[0m
+[0;32mI (21623) MQTT TASK: Message sent: 'Average input signal nan', sent result 48766[0m
+[0;32mI (21632) MQTT TASK: Message sent: 'Average input signal nan', sent result 62109[0m
+[0;32mI (21640) MQTT TASK: Message sent: 'Average input signal nan', sent result 49137[0m
+[0;32mI (21648) MQTT TASK: Message sent: 'Average input signal nan', sent result 19356[0m
+[0;32mI (21656) MQTT TASK: Message sent: 'Average input signal nan', sent result 48941[0m
+[0;32mI (21664) MQTT TASK: Message sent: 'Average input signal nan', sent result 6338[0m
+[0;32mI (21672) MQTT TASK: Message sent: 'Average input signal nan', sent result 59265[0m
+[0;32mI (21680) MQTT TASK: Message sent: 'Average input signal nan', sent result 63187[0m
+[0;32mI (21688) MQTT TASK: Message sent: 'Average input signal nan', sent result 11977[0m
+[0;32mI (21696) MQTT TASK: Message sent: 'Average input signal nan', sent result 28842[0m
+[0;32mI (21704) MQTT TASK: Message sent: 'Average input signal nan', sent result 14147[0m
+[0;32mI (21712) MQTT TASK: Message sent: 'Average input signal nan', sent result 51903[0m
+[0;32mI (21720) MQTT TASK: Message sent: 'Average input signal nan', sent result 50856[0m
+[0;32mI (21728) MQTT TASK: Message sent: 'Average input signal nan', sent result 24862[0m
+[0;32mI (21736) MQTT TASK: Message sent: 'Average input signal nan', sent result 31230[0m
+[0;32mI (21744) MQTT TASK: Message sent: 'Average input signal nan', sent result 62760[0m
+[0;32mI (21753) MQTT TASK: Message sent: 'Average input signal nan', sent result 57350[0m
+[0;32mI (21761) MQTT TASK: Message sent: 'Average input signal nan', sent result 5780[0m
+[0;32mI (21769) MQTT TASK: Message sent: 'Average input signal nan', sent result 44735[0m
+[0;32mI (21777) MQTT TASK: Message sent: 'Average input signal nan', sent result 40141[0m
+[0;32mI (21785) MQTT TASK: Message sent: 'Average input signal nan', sent result 48886[0m
+[0;32mI (21793) MQTT TASK: Message sent: 'Average input sign[0;31mE (21798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (21798) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (21798) task_wdt: Tasks currently running:[0m
+[0;31mE (21798) task_wdt: CPU 0: main[0m
+[0;31mE (21798) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (21798) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x42010C67:0x3FC9AF60 0x42011084:0x3FC9AF80 0x4037766D:0x3FC9AFB0 0x42008EDA:0x3FCA9620 0x42009DDB:0x3FCA9650 0x42008909:0x3FCA9670 0x42007FEE:0x3FCA9690 0x4208660E:0x3FCA96B0 0x42085A7D:0x3FCA96D0 0x42085ADA:0x3FCA96F0 0x42086119:0x3FCA9720 0x4208DCDF:0x3FCA9750 0x4208D6A2:0x3FCA9770 0x42086685:0x3FCA9A90 0x4209D901:0x3FCA9AC0 0x4038329D:0x3FCA9AF0 0x4200A0E5:0x3FCA9B40 0x4200A0F1:0x3FCA9BB0 0x4200A755:0x3FCA9BD0 0x4209C96B:0x3FCA9BF0 0x4037CBF9:0x3FCA9C20
+
+al nan', sent result 6134[0m
+[0;32mI (21876) MQTT TASK: Message sent: 'Average input signal nan', sent result 29101[0m
+[0;32mI (21884) MQTT TASK: Message sent: 'Average input signal nan', sent result 52000[0m
+[0;32mI (21892) MQTT TASK: Message sent: 'Average input signal nan', sent result 52375[0m
+[0;32mI (21896) MQTT TASK: Event received: 7[0m
+[0;32mI (21904) MQTT TASK: DEFUALT[0m
+[0;31mE (21909) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (21921) esp-tls: Failed to open new connection[0m
+[0;31mE (21926) transport_base: Failed to open a new connection[0m
+[0;31mE (21933) mqtt_client: Error transport connect[0m
+[0;32mI (21938) MQTT TASK: Event received: 0[0m
+[0;32mI (21942) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (21946) MQTT TASK: Event received: 2[0m
+[0;32mI (21951) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (21956) MQTT TASK: Message sent: 'Average input signal nan', sent result 14585[0m
+[0;32mI (21964) MQTT TASK: Message sent: 'Average input signal nan', sent result 12411[0m
+[0;32mI (21972) MQTT TASK: Message sent: 'Average input signal nan', sent result 17787[0m
+[0;32mI (21980) MQTT TASK: Message sent: 'Average input signal nan', sent result 31861[0m
+[0;32mI (21988) MQTT TASK: Message sent: 'Average input signal nan', sent result 36640[0m
+[0;32mI (21996) MQTT TASK: Message sent: 'Average input signal nan', sent result 38231[0m
+[0;32mI (22004) MQTT TASK: Message sent: 'Average input signal nan', sent result 52453[0m
+[0;32mI (22012) MQTT TASK: Message sent: 'Average input signal nan', sent result 29348[0m
+[0;32mI (22020) MQTT TASK: Message sent: 'Average input signal nan', sent result 2131[0m
+[0;32mI (22028) MQTT TASK: Message sent: 'Average input signal nan', sent result 60005[0m
+[0;32mI (22036) MQTT TASK: Message sent: 'Average input signal nan', sent result 60935[0m
+[0;32mI (22044) MQTT TASK: Message sent: 'Average input signal nan', sent result 44850[0m
+[0;32mI (22053) MQTT TASK: Message sent: 'Average input signal nan', sent result 35786[0m
+[0;32mI (22061) MQTT TASK: Message sent: 'Average input signal nan', sent result 26111[0m
+[0;32mI (22069) MQTT TASK: Message sent: 'Average input signal nan', sent result 17344[0m
+[0;32mI (22077) MQTT TASK: Message sent: 'Average input signal nan', sent result 6050[0m
+[0;32mI (22085) MQTT TASK: Message sent: 'Average input signal nan', sent result 6147[0m
+[0;32mI (22093) MQTT TASK: Message sent: 'Average input signal nan', sent result 31583[0m
+[0;32mI (22101) MQTT TASK: Message sent: 'Average input signal nan', sent result 21924[0m
+[0;32mI (22109) MQTT TASK: Message sent: 'Average input signal nan', sent result 53614[0m
+[0;32mI (22117) MQTT TASK: Message sent: 'Average input signal nan', sent result 58629[0m
+[0;32mI (22125) MQTT TASK: Message sent: 'Average input signal nan', sent result 19214[0m
+[0;32mI (22133) MQTT TASK: Message sent: 'Average input signal nan', sent result 34006[0m
+[0;32mI (22141) MQTT TASK: Message sent: 'Average input signal nan', sent result 21593[0m
+[0;32mI (22149) MQTT TASK: Message sent: 'Average input signal nan', sent result 24581[0m
+[0;32mI (22157) MQTT TASK: Message sent: 'Average input signal nan', sent result 63745[0m
+[0;32mI (22165) MQTT TASK: Message sent: 'Average input signal nan', sent result 57286[0m
+[0;32mI (22173) MQTT TASK: Message sent: 'Average input signal nan', sent result 41910[0m
+[0;32mI (22182) MQTT TASK: Message sent: 'Average input signal nan', sent result 41153[0m
+[0;32mI (22190) MQTT TASK: Message sent: 'Average input signal nan', sent result 36895[0m
+[0;32mI (22198) MQTT TASK: Message sent: 'Average input signal nan', sent result 18745[0m
+[0;32mI (22206) MQTT TASK: Message sent: 'Average input signal nan', sent result 35567[0m
+[0;32mI (22214) MQTT TASK: Message sent: 'Average input signal nan', sent result 26301[0m
+[0;32mI (22222) MQTT TASK: Message sent: 'Average input signal nan', sent result 42402[0m
+[0;32mI (22230) MQTT TASK: Message sent: 'Average input signal nan', sent result 47489[0m
+[0;32mI (22238) MQTT TASK: Message sent: 'Average input signal nan', sent result 45740[0m
+[0;32mI (22246) MQTT TASK: Message sent: 'Average input signal nan', sent result 44300[0m
+[0;32mI (22254) MQTT TASK: Message sent: 'Average input signal nan', sent result 40746[0m
+[0;32mI (22262) MQTT TASK: Message sent: 'Average input signal nan', sent result 56598[0m
+[0;32mI (22270) MQTT TASK: Message sent: 'Average input signal nan', sent result 11461[0m
+[0;32mI (22278) MQTT TASK: Message sent: 'Average input signal nan', sent result 44024[0m
+[0;32mI (22286) MQTT TASK: Message sent: 'Average input signal nan', sent result 47648[0m
+[0;32mI (22295) MQTT TASK: Message sent: 'Average input signal nan', sent result 31243[0m
+[0;32mI (22303) MQTT TASK: Message sent: 'Average input signal nan', sent result 47812[0m
+[0;32mI (22311) MQTT TASK: Message sent: 'Average input signal nan', sent result 43450[0m
+[0;32mI (22319) MQTT TASK: Message sent: 'Average input signal nan', sent result 31776[0m
+[0;32mI (22327) MQTT TASK: Message sent: 'Average input signal nan', sent result 23377[0m
+[0;32mI (22335) MQTT TASK: Message sent: 'Average input signal nan', sent result 4886[0m
+[0;32mI (22343) MQTT TASK: Message sent: 'Average input signal nan', sent result 47502[0m
+[0;32mI (22351) MQTT TASK: Message sent: 'Average input signal nan', sent result 15900[0m
+[0;32mI (22359) MQTT TASK: Message sent: 'Average input signal nan', sent result 42110[0m
+[0;32mI (22367) MQTT TASK: Message sent: 'Average input signal nan', sent result 24942[0m
+[0;32mI (22375) MQTT TASK: Message sent: 'Average input signal nan', sent result 59932[0m
+[0;32mI (22383) MQTT TASK: Message sent: 'Average input signal nan', sent result 14896[0m
+[0;32mI (22391) MQTT TASK: Message sent: 'Average input signal nan', sent result 8050[0m
+[0;32mI (22399) MQTT TASK: Message sent: 'Average input signal nan', sent result 1550[0m
+[0;32mI (22407) MQTT TASK: Message sent: 'Average input signal nan', sent result 12307[0m
+[0;32mI (22415) MQTT TASK: Message sent: 'Average input signal nan', sent result 17775[0m
+[0;32mI (22423) MQTT TASK: Message sent: 'Average input signal nan', sent result 16242[0m
+[0;32mI (22432) MQTT TASK: Message sent: 'Average input signal nan', sent result 26357[0m
+[0;32mI (22440) MQTT TASK: Message sent: 'Average input signal nan', sent result 62558[0m
+[0;32mI (22448) MQTT TASK: Message sent: 'Average input signal nan', sent result 9732[0m
+[0;32mI (22456) MQTT TASK: Message sent: 'Average input signal nan', sent result 10605[0m
+[0;32mI (22464) MQTT TASK: Message sent: 'Average input signal nan', sent result 52574[0m
+[0;32mI (22472) MQTT TASK: Message sent: 'Average input signal nan', sent result 45823[0m
+[0;32mI (22480) MQTT TASK: Message sent: 'Average input signal nan', sent result 20099[0m
+[0;32mI (22488) MQTT TASK: Message sent: 'Average input signal nan', sent result 47257[0m
+[0;32mI (22496) MQTT TASK: Message sent: 'Average input signal nan', sent result 437[0m
+[0;32mI (22504) MQTT TASK: Message sent: 'Average input signal nan', sent result 1125[0m
+[0;32mI (22512) MQTT TASK: Message sent: 'Average input signal nan', sent result 62159[0m
+[0;32mI (22520) MQTT TASK: Message sent: 'Average input signal nan', sent result 10984[0m
+[0;32mI (22528) MQTT TASK: Message sent: 'Average input signal nan', sent result 60118[0m
+[0;32mI (22536) MQTT TASK: Message sent: 'Average input signal nan', sent result 14599[0m
+[0;32mI (22544) MQTT TASK: Message sent: 'Average input signal nan', sent result 41903[0m
+[0;32mI (22552) MQTT TASK: Message sent: 'Average input signal nan', sent result 7464[0m
+[0;32mI (22560) MQTT TASK: Message sent: 'Average input signal nan', sent result 17916[0m
+[0;32mI (22568) MQTT TASK: Message sent: 'Average input signal nan', sent result 49358[0m
+[0;32mI (22576) MQTT TASK: Message sent: 'Average input signal nan', sent result 47658[0m
+[0;32mI (22584) MQTT TASK: Message sent: 'Average input signal nan', sent result 28174[0m
+[0;32mI (22593) MQTT TASK: Message sent: 'Average input signal nan', sent result 11983[0m
+[0;32mI (22601) MQTT TASK: Message sent: 'Average input signal nan', sent result 65031[0m
+[0;32mI (22609) MQTT TASK: Message sent: 'Average input signal nan', sent result 34564[0m
+[0;32mI (22617) MQTT TASK: Message sent: 'Average input signal nan', sent result 25887[0m
+[0;32mI (22625) MQTT TASK: Message sent: 'Average input signal nan', sent result 48910[0m
+[0;32mI (22633) MQTT TASK: Message sent: 'Average input signal nan', sent result 29816[0m
+[0;32mI (22641) MQTT TASK: Message sent: 'Average input signal nan', sent result 64501[0m
+[0;32mI (22649) MQTT TASK: Message sent: 'Average input signal nan', sent result 29856[0m
+[0;32mI (22657) MQTT TASK: Message sent: 'Average input signal nan', sent result 30606[0m
+[0;32mI (22665) MQTT TASK: Message sent: 'Average input signal nan', sent result 7867[0m
+[0;32mI (22673) MQTT TASK: Message sent: 'Average input signal nan', sent result 12279[0m
+[0;32mI (22681) MQTT TASK: Message sent: 'Average input signal nan', sent result 59849[0m
+[0;32mI (22689) MQTT TASK: Message sent: 'Average input signal nan', sent result 57582[0m
+[0;32mI (22697) MQTT TASK: Message sent: 'Average input signal nan', sent result 54826[0m
+[0;32mI (22705) MQTT TASK: Message sent: 'Average input signal nan', sent result 55850[0m
+[0;32mI (22714) MQTT TASK: Message sent: 'Average input signal nan', sent result 30066[0m
+[0;32mI (22722) MQTT TASK: Message sent: 'Average input signal nan', sent result 56380[0m
+[0;32mI (22730) MQTT TASK: Message sent: 'Average input signal nan', sent result 34280[0m
+[0;32mI (22738) MQTT TASK: Message sent: 'Average input signal nan', sent result 54345[0m
+[0;32mI (22746) MQTT TASK: Message sent: 'Average input signal nan', sent result 53118[0m
+[0;32mI (22754) MQTT TASK: Message sent: 'Average input signal nan', sent result 20737[0m
+[0;32mI (22762) MQTT TASK: Message sent: 'Average input signal nan', sent result 53727[0m
+[0;32mI (22770) MQTT TASK: Message sent: 'Average input signal nan', sent result 15504[0m
+[0;32mI (22778) MQTT TASK: Message sent: 'Average input signal nan', sent result 25217[0m
+[0;32mI (22786) MQTT TASK: Message sent: 'Average input signal nan', sent result 10773[0m
+[0;32mI (22794) MQTT TASK: Message sent: 'Average input signal nan', sent result 16454[0m
+[0;32mI (22802) MQTT TASK: Message sent: 'Average input signal nan', sent result 6322[0m
+[0;32mI (22810) MQTT TASK: Message sent: 'Average input signal nan', sent result 61248[0m
+[0;32mI (22818) MQTT TASK: Message sent: 'Average input signal nan', sent result 11989[0m
+[0;32mI (22826) MQTT TASK: Message sent: 'Average input signal nan', sent result 51708[0m
+[0;32mI (22835) MQTT TASK: Message sent: 'Average input signal nan', sent result 60060[0m
+[0;32mI (22843) MQTT TASK: Message sent: 'Average input signal nan', sent result 51578[0m
+[0;32mI (22851) MQTT TASK: Message sent: 'Average input signal nan', sent result 1462[0m
+[0;32mI (22859) MQTT TASK: Message sent: 'Average input signal nan', sent result 18206[0m
+[0;32mI (22867) MQTT TASK: Message sent: 'Average input signal nan', sent result 44082[0m
+[0;32mI (22875) MQTT TASK: Message sent: 'Average input signal nan', sent result 23584[0m
+[0;32mI (22883) MQTT TASK: Message sent: 'Average input signal nan', sent result 22996[0m
+[0;32mI (22891) MQTT TASK: Message sent: 'Average input signal nan', sent result 4011[0m
+[0;32mI (22899) MQTT TASK: Message sent: 'Average input signal nan', sent result 57566[0m
+[0;32mI (22907) MQTT TASK: Message sent: 'Average input signal nan', sent result 13371[0m
+[0;32mI (22915) MQTT TASK: Message sent: 'Average input signal nan', sent result 17614[0m
+[0;32mI (22923) MQTT TASK: Message sent: 'Average input signal nan', sent result 52501[0m
+[0;32mI (22931) MQTT TASK: Message sent: 'Average input signal nan', sent result 63580[0m
+[0;32mI (22939) MQTT TASK: Message sent: 'Average input signal nan', sent result 20382[0m
+[0;32mI (22947) MQTT TASK: Message sent: 'Average input signal nan', sent result 3034[0m
+[0;32mI (22955) MQTT TASK: Message sent: 'Average input signal nan', sent result 28926[0m
+[0;32mI (22963) MQTT TASK: Message sent: 'Average input signal nan', sent result 43618[0m
+[0;32mI (22972) MQTT TASK: Message sent: 'Average input signal nan', sent result 24034[0m
+[0;32mI (22980) MQTT TASK: Message sent: 'Average input signal nan', sent result 38463[0m

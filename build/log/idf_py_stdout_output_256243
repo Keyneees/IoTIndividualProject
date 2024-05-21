@@ -1,0 +1,404 @@
+[�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 18 2024 18:26:14[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=2d0a0h (184480) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=0003d0c8 vaddr=3fc98600 size=02f50h ( 12112) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=9d98ch (645516) map[0m
+[0;32mI (254) esp_image: segment 3: paddr=000dd9b4 vaddr=3fc9b550 size=01fd0h (  8144) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000df98c vaddr=40374000 size=14560h ( 83296) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Multicore app[0m
+[0;32mI (308) cpu_start: Pro cpu start user code[0m
+[0;32mI (308) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (308) cpu_start: Application information:[0m
+[0;32mI (311) cpu_start: Project name:     individaul_project[0m
+[0;32mI (317) cpu_start: App version:      e1e409a-dirty[0m
+[0;32mI (323) cpu_start: Compile time:     May 21 2024 17:07:31[0m
+[0;32mI (329) cpu_start: ELF file SHA256:  83a71703b...[0m
+[0;32mI (334) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (339) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (344) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (349) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (354) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (361) heap_init: At 3FCA5E28 len 000438E8 (270 KiB): RAM[0m
+[0;32mI (367) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (373) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (386) spi_flash: detected chip: gd[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;33mW (394) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (407) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (415) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (422) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (429) main_task: Started on CPU0[0m
+[0;32mI (433) main_task: Calling app_main()[0m
+[0;32mI (437) INPUT TASK: Input values[0m
+[0;32mI (1479) FFT: Frequency recustructed 441.000000
+[0m
+[0;32mI (1480) FFT: Optimistic sample frequency 882.000000
+[0m
+[0;32mI (1481) view: Data min[50] = -5.307617, Data max[1] = 89.551514[0m
+ ________________________________________________________________________________________________________________________________
+0|                                                                                                                               |
+1|                                                                                                               |               |
+2|                                                                                                               ||              |
+3|                                                                                                               ||              |
+4|                                                                                                                |              |
+5|                             |                                                                                | |              |
+6| || ||||||||||||      |  ||  || | | || |||| |||||| ||| | |||| ||| |||||||| || || |||||  | | | | ||| ||||  |||||  || |||| | |   |
+7 |  | |  | ||| | |||||| ||| |||||||||  |    |  ||  ||  | || |||   ||||| ||||  |  | ||  |||| ||| |   | |  || | |   | |  ||||| || |
+8    |    |  |    |  |                  |    |  |              |            |     |      |       |   |                      |   ||
+9                                                                                                                                |
+ 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567
+[0;32mI (1624) view: Plot: Length=512, min=0.000000, max=100.000000[0m
+[0;32mI (1656) pp: pp rom version: e7ae62f[0m
+[0;32mI (1656) net80211: net80211 rom version: e7ae62f[0m
+I (1658) wifi:wifi driver task: 3fcb623c, prio:23, stack:6656, core=0
+I (1675) wifi:wifi firmware version: a9f5b59
+I (1675) wifi:wifi certification version: v7.0
+I (1676) wifi:config NVS flash: enabled
+I (1676) wifi:config nano formating: disabled
+I (1680) wifi:Init data frame dynamic rx buffer num: 32
+I (1685) wifi:Init static rx mgmt buffer num: 5
+I (1689) wifi:Init management short buffer num: 32
+I (1694) wifi:Init dynamic tx buffer num: 32
+I (1698) wifi:Init static tx FG buffer num: 2
+I (1702) wifi:Init static rx buffer size: 1600
+I (1706) wifi:Init static rx buffer num: 10
+I (1710) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1715) wifi_init: rx ba win: 6[0m
+[0;32mI (1718) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1722) wifi_init: udp mbox: 6[0m
+[0;32mI (1726) wifi_init: tcp mbox: 6[0m
+[0;32mI (1729) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1734) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1738) wifi_init: tcp mss: 1440[0m
+[0;32mI (1742) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1747) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1778) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1814) wifi:mode : sta (48:27:e2:e1:e0:f8)
+I (1815) wifi:enable tsf
+[0;32mI (1815) MQTT TASK: Wifi event[0m
+[0;32mI (1816) MQTT TASK: Wifi event default[0m
+[0;32mI (1819) MQTT TASK: Wifi event[0m
+[0;32mI (1823) MQTT TASK: Wifi start[0m
+[0;32mI (1826) MQTT TASK: Event received: 7[0m
+I (1828) wifi:[0;32mI (1830) MQTT TASK: DEFUALT[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (1835) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1852) esp-tls: Failed to open new connection[0m
+[0;31mE (1857) transport_base: Failed to open a new connection[0m
+[0;31mE (1864) mqtt_client: Error transport connect[0m
+[0;32mI (1869) MQTT TASK: Event received: 0[0m
+[0;32mI (1873) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (1877) MQTT TASK: Event received: 2[0m
+[0;32mI (1881) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+I (2360) wifi:state: init -> auth (b0)
+I (2364) wifi:state: auth -> assoc (0)
+I (2370) wifi:state: assoc -> run (10)
+I (2432) wifi:connected with michele-HP-ProBook-450-G6, aid = 1, channel 1, BW20, bssid = 0c:dd:24:b4:3d:86
+I (2433) wifi:security: WPA2-PSK, phy: bgn, rssi: -58
+I (2445) wifi:pm start, type: 1
+
+I (2445) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2447) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+[0;32mI (2457) MQTT TASK: Wifi event[0m
+[0;32mI (2459) MQTT TASK: Wifi event default[0m
+I (2486) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (2486) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (7458) esp_netif_handlers: sta ip: 10.42.0.138, mask: 255.255.255.0, gw: 10.42.0.1[0m
+[0;32mI (11886) MQTT TASK: Event received: 7[0m
+[0;32mI (11886) MQTT TASK: DEFUALT[0m
+[0;31mE (18890) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18892) esp-tls: Failed to open new connection[0m
+[0;31mE (18897) transport_base: Failed to open a new connection[0m
+[0;31mE (18904) mqtt_client: Error transport connect[0m
+[0;32mI (18909) MQTT TASK: Event received: 0[0m
+[0;32mI (18913) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (18917) MQTT TASK: Event received: 2[0m
+[0;32mI (18922) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (18927) MQTT TASK: Message sent: 'Average input signal 1875.480469', sent result 45134[0m
+[0;32mI (18935) INPUT TASK: Input values[0m
+[0;32mI (19964) INPUT TASK: Input values[0m
+[0;32mI (20988) INPUT TASK: Input values[0m
+[0;32mI (21586) MQTT TASK: Message sent: 'Average input signal 2600.533691', sent result 47645[0m
+[0;32mI (21587) INPUT TASK: Input values[0m
+[0;32mI (22612) INPUT TASK: Input values[0m
+[0;32mI (23636) INPUT TASK: Input values[0m
+[0;32mI (24234) MQTT TASK: Message sent: 'Average input signal 1874.228638', sent result 4943[0m
+[0;32mI (24235) INPUT TASK: Input values[0m
+[0;32mI (25260) INPUT TASK: Input values[0m
+[0;32mI (26284) INPUT TASK: Input values[0m
+[0;32mI (26882) MQTT TASK: Message sent: 'Average input signal 1874.536255', sent result 5525[0m
+[0;32mI (26883) INPUT TASK: Input values[0m
+[0;32mI (27908) INPUT TASK: Input values[0m
+[0;32mI (28927) MQTT TASK: Event received: 7[0m
+[0;32mI (28927) MQTT TASK: DEFUALT[0m
+[0;32mI (28934) INPUT TASK: Input values[0m
+[0;31mE (35931) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35933) esp-tls: Failed to open new connection[0m
+[0;31mE (35938) transport_base: Failed to open a new connection[0m
+[0;31mE (35945) mqtt_client: Error transport connect[0m
+[0;32mI (35950) MQTT TASK: Event received: 0[0m
+[0;32mI (35954) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (35958) MQTT TASK: Event received: 2[0m
+[0;32mI (35963) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (35968) MQTT TASK: Message sent: 'Average input signal 1872.566162', sent result 41494[0m
+[0;32mI (35976) INPUT TASK: Input values[0m
+[0;32mI (37005) INPUT TASK: Input values[0m
+[0;32mI (38029) INPUT TASK: Input values[0m
+[0;32mI (38627) MQTT TASK: Message sent: 'Average input signal 1875.246460', sent result 8216[0m
+[0;32mI (38628) INPUT TASK: Input values[0m
+[0;32mI (39653) INPUT TASK: Input values[0m
+[0;32mI (40677) INPUT TASK: Input values[0m
+[0;32mI (41275) MQTT TASK: Message sent: 'Average input signal 1874.822754', sent result 45797[0m
+[0;32mI (41276) INPUT TASK: Input values[0m
+[0;32mI (42301) INPUT TASK: Input values[0m
+[0;32mI (43325) INPUT TASK: Input values[0m
+[0;32mI (43923) MQTT TASK: Message sent: 'Average input signal 1875.401001', sent result 49513[0m
+[0;32mI (43924) INPUT TASK: Input values[0m
+[0;32mI (44949) INPUT TASK: Input values[0m
+[0;32mI (45968) MQTT TASK: Event received: 7[0m
+[0;32mI (45968) MQTT TASK: DEFUALT[0m
+[0;32mI (45975) INPUT TASK: Input values[0m
+[0;31mE (52971) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (52973) esp-tls: Failed to open new connection[0m
+[0;31mE (52978) transport_base: Failed to open a new connection[0m
+[0;31mE (52985) mqtt_client: Error transport connect[0m
+[0;32mI (52990) MQTT TASK: Event received: 0[0m
+[0;32mI (52994) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (52998) MQTT TASK: Event received: 2[0m
+[0;32mI (53003) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (53008) MQTT TASK: Message sent: 'Average input signal 1873.823486', sent result 63012[0m
+[0;32mI (53016) INPUT TASK: Input values[0m
+[0;32mI (54045) INPUT TASK: Input values[0m
+[0;32mI (55069) INPUT TASK: Input values[0m
+[0;32mI (55667) MQTT TASK: Message sent: 'Average input signal 1874.106934', sent result 33148[0m
+[0;32mI (55668) INPUT TASK: Input values[0m
+[0;32mI (56693) INPUT TASK: Input values[0m
+[0;32mI (57717) INPUT TASK: Input values[0m
+[0;32mI (58315) MQTT TASK: Message sent: 'Average input signal 1873.298950', sent result 59296[0m
+[0;32mI (58316) INPUT TASK: Input values[0m
+[0;32mI (59341) INPUT TASK: Input values[0m
+[0;32mI (60365) INPUT TASK: Input values[0m
+[0;32mI (60963) MQTT TASK: Message sent: 'Average input signal 1874.427002', sent result 20442[0m
+[0;32mI (60964) INPUT TASK: Input values[0m
+[0;32mI (61989) INPUT TASK: Input values[0m
+[0;32mI (63008) MQTT TASK: Event received: 7[0m
+[0;32mI (63008) MQTT TASK: DEFUALT[0m
+[0;32mI (63015) INPUT TASK: Input values[0m
+[0;31mE (70012) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (70014) esp-tls: Failed to open new connection[0m
+[0;31mE (70019) transport_base: Failed to open a new connection[0m
+[0;31mE (70026) mqtt_client: Error transport connect[0m
+[0;32mI (70031) MQTT TASK: Event received: 0[0m
+[0;32mI (70035) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (70039) MQTT TASK: Event received: 2[0m
+[0;32mI (70044) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (70049) MQTT TASK: Message sent: 'Average input signal 1873.108032', sent result 5168[0m
+[0;32mI (70057) INPUT TASK: Input values[0m
+[0;32mI (71085) INPUT TASK: Input values[0m
+[0;32mI (72109) INPUT TASK: Input values[0m
+[0;32mI (72707) MQTT TASK: Message sent: 'Average input signal 1875.705933', sent result 63215[0m
+[0;32mI (72708) INPUT TASK: Input values[0m
+[0;32mI (73733) INPUT TASK: Input values[0m
+[0;32mI (74757) INPUT TASK: Input values[0m
+[0;32mI (75355) MQTT TASK: Message sent: 'Average input signal 1875.230103', sent result 64369[0m
+[0;32mI (75356) INPUT TASK: Input values[0m
+[0;32mI (76381) INPUT TASK: Input values[0m
+[0;32mI (77405) INPUT TASK: Input values[0m
+[0;32mI (78003) MQTT TASK: Message sent: 'Average input signal 1874.648193', sent result 57925[0m
+[0;32mI (78004) INPUT TASK: Input values[0m
+[0;32mI (79029) INPUT TASK: Input values[0m
+[0;32mI (80049) MQTT TASK: Event received: 7[0m
+[0;32mI (80049) MQTT TASK: DEFUALT[0m
+[0;32mI (80055) INPUT TASK: Input values[0m
+[0;31mE (87052) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (87054) esp-tls: Failed to open new connection[0m
+[0;31mE (87059) transport_base: Failed to open a new connection[0m
+[0;31mE (87066) mqtt_client: Error transport connect[0m
+[0;32mI (87071) MQTT TASK: Event received: 0[0m
+[0;32mI (87075) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (87079) MQTT TASK: Event received: 2[0m
+[0;32mI (87084) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (87089) MQTT TASK: Message sent: 'Average input signal 1875.272827', sent result 20802[0m
+[0;32mI (87097) INPUT TASK: Input values[0m
+[0;32mI (88126) INPUT TASK: Input values[0m
+[0;32mI (89150) INPUT TASK: Input values[0m
+[0;32mI (89748) MQTT TASK: Message sent: 'Average input signal 1874.851074', sent result 63024[0m
+[0;32mI (89749) INPUT TASK: Input values[0m
+[0;32mI (90774) INPUT TASK: Input values[0m
+[0;32mI (91798) INPUT TASK: Input values[0m
+[0;32mI (92396) MQTT TASK: Message sent: 'Average input signal 1875.418701', sent result 18680[0m
+[0;32mI (92397) INPUT TASK: Input values[0m
+[0;32mI (93422) INPUT TASK: Input values[0m
+[0;32mI (94446) INPUT TASK: Input values[0m
+[0;32mI (95044) MQTT TASK: Message sent: 'Average input signal 1874.846191', sent result 53926[0m
+[0;32mI (95045) INPUT TASK: Input values[0m
+[0;32mI (96070) INPUT TASK: Input values[0m
+[0;32mI (97089) MQTT TASK: Event received: 7[0m
+[0;32mI (97089) MQTT TASK: DEFUALT[0m
+[0;32mI (97096) INPUT TASK: Input values[0m
+[0;31mE (104093) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (104095) esp-tls: Failed to open new connection[0m
+[0;31mE (104101) transport_base: Failed to open a new connection[0m
+[0;31mE (104107) mqtt_client: Error transport connect[0m
+[0;32mI (104112) MQTT TASK: Event received: 0[0m
+[0;32mI (104116) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (104121) MQTT TASK: Event received: 2[0m
+[0;32mI (104125) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (104130) MQTT TASK: Message sent: 'Average input signal 1874.022339', sent result 872[0m
+[0;32mI (104139) INPUT TASK: Input values[0m
+[0;32mI (105167) INPUT TASK: Input values[0m
+[0;32mI (106191) INPUT TASK: Input values[0m
+[0;32mI (106789) MQTT TASK: Message sent: 'Average input signal 1875.241821', sent result 26755[0m
+[0;32mI (106790) INPUT TASK: Input values[0m
+[0;32mI (107816) INPUT TASK: Input values[0m
+[0;32mI (108840) INPUT TASK: Input values[0m
+[0;32mI (109438) MQTT TASK: Message sent: 'Average input signal 1875.182129', sent result 4602[0m
+[0;32mI (109439) INPUT TASK: Input values[0m
+[0;32mI (110465) INPUT TASK: Input values[0m
+[0;32mI (111489) INPUT TASK: Input values[0m
+[0;32mI (112087) MQTT TASK: Message sent: 'Average input signal 1875.161743', sent result 8429[0m
+[0;32mI (112088) INPUT TASK: Input values[0m
+[0;32mI (113114) INPUT TASK: Input values[0m
+[0;32mI (114130) MQTT TASK: Event received: 7[0m
+[0;32mI (114130) MQTT TASK: DEFUALT[0m
+[0;32mI (114140) INPUT TASK: Input values[0m
+[0;31mE (121135) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (121137) esp-tls: Failed to open new connection[0m
+[0;31mE (121143) transport_base: Failed to open a new connection[0m
+[0;31mE (121149) mqtt_client: Error transport connect[0m
+[0;32mI (121154) MQTT TASK: Event received: 0[0m
+[0;32mI (121158) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (121163) MQTT TASK: Event received: 2[0m
+[0;32mI (121167) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (121172) MQTT TASK: Message sent: 'Average input signal 1874.930786', sent result 24916[0m
+[0;32mI (121181) INPUT TASK: Input values[0m
+[0;32mI (122209) INPUT TASK: Input values[0m
+[0;32mI (123233) INPUT TASK: Input values[0m
+[0;32mI (123831) MQTT TASK: Message sent: 'Average input signal 1874.862427', sent result 13580[0m
+[0;32mI (123832) INPUT TASK: Input values[0m
+[0;32mI (124858) INPUT TASK: Input values[0m
+[0;32mI (125882) INPUT TASK: Input values[0m
+[0;32mI (126480) MQTT TASK: Message sent: 'Average input signal 1875.118286', sent result 8705[0m
+[0;32mI (126481) INPUT TASK: Input values[0m
+[0;32mI (127507) INPUT TASK: Input values[0m
+[0;32mI (128531) INPUT TASK: Input values[0m
+[0;32mI (129129) MQTT TASK: Message sent: 'Average input signal 1874.465942', sent result 17900[0m
+[0;32mI (129130) INPUT TASK: Input values[0m
+[0;32mI (130156) INPUT TASK: Input values[0m
+[0;32mI (131172) MQTT TASK: Event received: 7[0m
+[0;32mI (131172) MQTT TASK: DEFUALT[0m
+[0;32mI (131182) INPUT TASK: Input values[0m
+[0;31mE (138176) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (138178) esp-tls: Failed to open new connection[0m
+[0;31mE (138184) transport_base: Failed to open a new connection[0m
+[0;31mE (138190) mqtt_client: Error transport connect[0m
+[0;32mI (138195) MQTT TASK: Event received: 0[0m
+[0;32mI (138199) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (138204) MQTT TASK: Event received: 2[0m
+[0;32mI (138208) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (138213) MQTT TASK: Message sent: 'Average input signal 1874.392700', sent result 42813[0m
+[0;32mI (138222) INPUT TASK: Input values[0m
+[0;32mI (139250) INPUT TASK: Input values[0m
+[0;32mI (140274) INPUT TASK: Input values[0m
+[0;32mI (140872) MQTT TASK: Message sent: 'Average input signal 1874.834106', sent result 18247[0m
+[0;32mI (140873) INPUT TASK: Input values[0m
+[0;32mI (141899) INPUT TASK: Input values[0m
+[0;32mI (142923) INPUT TASK: Input values[0m
+[0;32mI (143521) MQTT TASK: Message sent: 'Average input signal 1874.746826', sent result 25677[0m
+[0;32mI (143522) INPUT TASK: Input values[0m
+[0;32mI (144548) INPUT TASK: Input values[0m
+[0;32mI (145572) INPUT TASK: Input values[0m
+[0;32mI (146170) MQTT TASK: Message sent: 'Average input signal 1875.552124', sent result 12576[0m
+[0;32mI (146171) INPUT TASK: Input values[0m
+[0;32mI (147197) INPUT TASK: Input values[0m
+[0;32mI (148213) MQTT TASK: Event received: 7[0m
+[0;32mI (148213) MQTT TASK: DEFUALT[0m
+[0;32mI (148223) INPUT TASK: Input values[0m
+[0;31mE (155216) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (155218) esp-tls: Failed to open new connection[0m
+[0;31mE (155224) transport_base: Failed to open a new connection[0m
+[0;31mE (155230) mqtt_client: Error transport connect[0m
+[0;32mI (155235) MQTT TASK: Event received: 0[0m
+[0;32mI (155239) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (155244) MQTT TASK: Event received: 2[0m
+[0;32mI (155248) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (155253) MQTT TASK: Message sent: 'Average input signal 1873.491699', sent result 47567[0m
+[0;32mI (155262) INPUT TASK: Input values[0m
+[0;32mI (156290) INPUT TASK: Input values[0m
+[0;32mI (157314) INPUT TASK: Input values[0m
+[0;32mI (157912) MQTT TASK: Message sent: 'Average input signal 1875.157959', sent result 51209[0m
+[0;32mI (157913) INPUT TASK: Input values[0m
+[0;32mI (158939) INPUT TASK: Input values[0m
+[0;32mI (159963) INPUT TASK: Input values[0m
+[0;32mI (160561) MQTT TASK: Message sent: 'Average input signal 1875.369629', sent result 28797[0m
+[0;32mI (160562) INPUT TASK: Input values[0m
+[0;32mI (161588) INPUT TASK: Input values[0m
+[0;32mI (162612) INPUT TASK: Input values[0m
+[0;32mI (163210) MQTT TASK: Message sent: 'Average input signal 1874.123169', sent result 56002[0m
+[0;32mI (163211) INPUT TASK: Input values[0m
+[0;32mI (164237) INPUT TASK: Input values[0m
+[0;32mI (165253) MQTT TASK: Event received: 7[0m
+[0;32mI (165253) MQTT TASK: DEFUALT[0m
+[0;32mI (165263) INPUT TASK: Input values[0m
+[0;31mE (172257) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (172259) esp-tls: Failed to open new connection[0m
+[0;31mE (172265) transport_base: Failed to open a new connection[0m
+[0;31mE (172271) mqtt_client: Error transport connect[0m
+[0;32mI (172276) MQTT TASK: Event received: 0[0m
+[0;32mI (172280) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (172285) MQTT TASK: Event received: 2[0m
+[0;32mI (172289) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (172294) MQTT TASK: Message sent: 'Average input signal 1874.136841', sent result 20687[0m
+[0;32mI (172303) INPUT TASK: Input values[0m
+[0;32mI (173331) INPUT TASK: Input values[0m
+[0;32mI (174355) INPUT TASK: Input values[0m
+[0;32mI (174953) MQTT TASK: Message sent: 'Average input signal 1874.284546', sent result 10082[0m
+[0;32mI (174954) INPUT TASK: Input values[0m
+[0;32mI (175980) INPUT TASK: Input values[0m
+[0;32mI (177004) INPUT TASK: Input values[0m
+[0;32mI (177602) MQTT TASK: Message sent: 'Average input signal 1875.396851', sent result 46603[0m
+[0;32mI (177603) INPUT TASK: Input values[0m
+[0;32mI (178629) INPUT TASK: Input values[0m
+[0;32mI (179653) INPUT TASK: Input values[0m
+[0;32mI (180251) MQTT TASK: Message sent: 'Average input signal 1876.041626', sent result 26945[0m
+[0;32mI (180252) INPUT TASK: Input values[0m
+[0;32mI (181278) INPUT TASK: Input values[0m
+[0;32mI (182294) MQTT TASK: Event received: 7[0m
+[0;32mI (182294) MQTT TASK: DEFUALT[0m
+[0;32mI (182304) INPUT TASK: Input values[0m
+[0;31mE (189298) esp-tls: couldn't get hostname for :0990f18322944025907409d1514a0cf7.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (189300) esp-tls: Failed to open new connection[0m
+[0;31mE (189306) transport_base: Failed to open a new connection[0m
+[0;31mE (189312) mqtt_client: Error transport connect[0m
+[0;32mI (189317) MQTT TASK: Event received: 0[0m
+[0;32mI (189321) MQTT TASK: MQTT_EVENT_ERROR[0m
+[0;32mI (189326) MQTT TASK: Event received: 2[0m
+[0;32mI (189330) MQTT TASK: MQTT_EVENT_DISCONNECT[0m
+[0;32mI (189335) MQTT TASK: Message sent: 'Average input signal 1874.197998', sent result 481[0m
+[0;32mI (189344) INPUT TASK: Input values[0m
+[0;32mI (190372) INPUT TASK: Input values[0m

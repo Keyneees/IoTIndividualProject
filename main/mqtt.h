@@ -13,8 +13,8 @@
 // #include "struct.h"
 
 #define MQTT "MQTT TASK"
-#define WIFI_SSID "TIM-30577277"
-#define WIFI_PWD "SHsxdHKFQGHch6dsTYH4FyQu"
+#define WIFI_SSID "michele-HP-ProBook-450-G6"
+#define WIFI_PWD "OZq2MZ44"
 
 #define MQTT_USERNAME "IotIndividualAssignment"
 #define MQTT_PWD "IotTest0"
