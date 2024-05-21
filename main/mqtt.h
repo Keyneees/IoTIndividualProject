@@ -35,6 +35,7 @@ long secdiff=0;
 long nsecdiff=0;
 long latency=0;
 
+//MQTT HANDLER
 static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_t event_id, void* event_data){
     esp_mqtt_event_handle_t event=event_data;
     client=event->client;
@@ -62,8 +63,8 @@ static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_
             ESP_LOGI(MQTT, "MQTT_EVENT_ERROR");
             break;
         case MQTT_EVENT_PUBLISHED:
-            ESP_LOGI(MQTT, "MQTT_EVENT_PUBLISHED");
             clock_gettime(CLOCK_MONOTONIC, &end);
+            ESP_LOGI(MQTT, "MQTT_EVENT_PUBLISHED");
             secdiff=end.tv_sec-start.tv_sec;
             nsecdiff=end.tv_nsec-start.tv_nsec;
             latency=secdiff*1000+nsecdiff/1000000;
@@ -76,6 +77,7 @@ static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_
     }
 }
 
+//WIFI HANDLER
 static void wifi_event_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data){
     if (event_base == WIFI_EVENT) {
         ESP_LOGI(MQTT, "Wifi event");
@@ -83,7 +85,6 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base, int32_t e
             esp_wifi_connect();
             ESP_LOGI(MQTT, "Wifi start");
         } else if (event_id == WIFI_EVENT_STA_DISCONNECTED) {
-            // prova a riconnettersi
             ESP_LOGI(MQTT, "Wifi disconnect");
         } else {
             ESP_LOGI(MQTT, "Wifi event default");
@@ -98,9 +99,9 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base, int32_t e
     } else {
         ESP_LOGI(MQTT, "Default");
     }
-
 }
 
+//AVERAGE MESSAGE SENDER
 static void mqtt_configuration(float input_avg){
     char msg[64];
     sprintf(msg, "Average input signal %f", input_avg);
@@ -111,17 +112,17 @@ static void mqtt_configuration(float input_avg){
 
 }
 
+//BRIDGE FOR MAIN 
 static void mqtt_send_avg(float input_avg){
-    // esp_wifi_connect();
     mqtt_configuration(input_avg);
 }
 
 void mqtt_init_wifi(float input_avg){
+    //INITIALIZATION OF WIFI AND MQTT ELEMENTS
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
-    //connetersi al wifi
     EventGroupHandle_t s_wifi_event_group = xEventGroupCreate();
     
     esp_netif_create_default_wifi_sta();
